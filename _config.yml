@@ -23,7 +23,7 @@ github_username: 无
 
 # Build settings
 markdown: kramdown
-theme: jekyll-theme-dinky  # minima
+theme: minima
 plugins:
   - jekyll-feed
 
