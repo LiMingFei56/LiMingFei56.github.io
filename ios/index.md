@@ -3,7 +3,7 @@
 # Edit theme's home layout instead if you wanna make some changes
 # See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 layout: page
-permalink: /computer-system/
+permalink: /ios/
 ---
 
-## 计算机系统
+### IOS

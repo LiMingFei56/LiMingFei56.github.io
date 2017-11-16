@@ -17,4 +17,4 @@ layout: page
 * [Linux](/linux/)
 * [Andoird](/android/)
 * [IOS](/ios/)
-* [工具](/tools/)
+* [工具与其他](/tools/)
