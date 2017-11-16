@@ -6,4 +6,4 @@ layout: page
 permalink: /linux/
 ---
 
-### Linux
+Linux
