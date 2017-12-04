@@ -3,10 +3,7 @@
 # Edit theme's home layout instead if you wanna make some changes
 # See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 layout: page
-permalink: /ios/guide/
+permalink: /ios/guide/basic/view
 ---
 
-Guide
-
-* [程序入口](./basic/main)
-* [User Interface](./basic/view)
+User Interface
