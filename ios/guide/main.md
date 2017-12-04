@@ -36,4 +36,33 @@ AppDelegate实现了多个方法，这些方法用于代理和应用间的通信
 会调用这些方法。
 
 ### The View Controller Source File
+ViewController继承UIViewController
 
+### Storyboard
+是应用程序的直观表示，显示内容的屏幕以及它们之间的转换。可以使用storyboard来驱
+动应用的流程或者故事，可以在构建过程中准确的了解构建的结果，并即时的修改用户界面
+。storyboard背后是一个canvas。
+
+storyboard打开后显示一个scene，这个scene代表用户看到的内容。scene左边一个箭头显示
+storyboard entry point，代表应用启动时进入。这个scene还包含一个简单的view controller。
+
+开发的时候可以调用屏幕的方向显示，方便屏幕适配。
+
+Xcode提供一个库对象，可以添加到storyboard中。这些元素可以添加到用户界面中，如一个
+button和textview。还可以添加view controller和gesture recognizers,定义这些行为。
+
+用户界面元素都是View，View是用来组合一个用户界面的基石。所有的View对象都是IOS中
+的UIView或者它的子类.
+
+在应用中所以可以被用户看见的文字都要[国际化](https://developer.apple.com/internationalization/).
+
+### Auto Layout
+使用Auto Layout来适配不同的屏幕。AutoLayout是一个强大的布局引擎，会根据定义的constraints
+对于不同的屏幕计算位置和大小。
+
+如果显示的效果没有达到预期，可以使用AutoLayoutDebug功能。可以使用Update Frames button
+和Resolve Auto Layout Issues menu.
+
+Update Frames 可以更新选中的View。
+Resolve Auto Layout Issues menu 可以作用选中的View或者整个ViewController
+可以刷新Constraints，还可以删除所有Constraints.
