@@ -8,4 +8,4 @@ permalink: /ios/guide/
 
 Guide
 
-* [程序入口](程序入口.md)
+* [程序入口](./程序入口.md)
