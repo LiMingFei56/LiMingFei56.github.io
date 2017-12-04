@@ -6,7 +6,7 @@ layout: page
 permalink: /ios/guide/main
 ---
 
-## 程序入口
+程序入口
 
 使用Xcode创建项目后，会自动创建AppDelegate.swift文件，这个文件主要做两件事：
 
@@ -21,6 +21,19 @@ permalink: /ios/guide/main
 作为响应，系统会创建一个application对象。这个对象负责管理应用的生命周期。系统也
 会创建一个AppDelegate对象，并赋值给application对象，最后系统会启动App.
 
-### UIApplicationDelegate
+### AppDelegate
 
-AppDelegate遵循UIApplicationDelegate协议
+AppDelegate遵循UIApplicationDelegate协议,该协议定义了多个方法来设备应用。
+
+	1. 响应应用的状态改变
+	2. 处理其他的应用级事件
+
+AppDelegate包含一个window属性，是UIWindows类型。这个window代表root view，是应用
+所有内容被绘制的地方。它是一个optional，证明有可以为空。
+
+AppDelegate实现了多个方法，这些方法用于代理和应用间的通信，我们不用管这个方法在
+什么时候调用，IOS平台会自己管理这些方法的调用。方法上默认提供注释，说明什么时候
+会调用这些方法。
+
+### The View Controller Source File
+
