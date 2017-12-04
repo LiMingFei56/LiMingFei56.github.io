@@ -3,7 +3,7 @@
 # Edit theme's home layout instead if you wanna make some changes
 # See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 layout: page
-permalink: /ios/guide/程序入口.md
+permalink: /ios/guide/main
 ---
 
 程序入口
