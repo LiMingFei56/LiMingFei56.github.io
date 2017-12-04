@@ -3,9 +3,7 @@
 # Edit theme's home layout instead if you wanna make some changes
 # See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 layout: page
-permalink: /operate-system/
+permalink: /operate-system/MacOS/
 ---
 
-操作系统
-
-* [IOS][/MacOS/]
+MacOS开发
