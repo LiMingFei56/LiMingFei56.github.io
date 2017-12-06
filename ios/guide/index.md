@@ -10,3 +10,4 @@ Guide
 
 * [程序入口](./basic/main)
 * [User Interface](./basic/view)
+* [View Controller](./basic/view-controller)
