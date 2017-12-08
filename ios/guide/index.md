@@ -13,3 +13,4 @@ Guide
 * [View Controller](./basic/view-controller)
 * [Table View](./basic/tableview)
 * [Navigation](./basic/navigation)
+* [Persist Data](./basic/persistdata)
