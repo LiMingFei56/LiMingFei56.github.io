@@ -67,3 +67,16 @@ StoryBoard中加载。
 	* UIColor
 
 添加Inspectable properties 需要在上面的类型的属性前加上@IBInspectable
+
+
+### Button states
+	* normal
+	* highlighted
+	* focused
+	* selected
+	* disabled
+
+### Accessibility Information
+IOS内置有辅助功能信息，可以为特殊需求的人群提供卓越的移动体验。这些包括 VoiceOver
+, Switch Control, playback of closed captioned or audio described video
+, Guided Access, Text to Speech等等
