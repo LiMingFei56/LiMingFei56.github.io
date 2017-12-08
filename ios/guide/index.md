@@ -8,7 +8,7 @@ permalink: /ios/guide/
 
 Guide
 
-* [程序入口](./basic/main)
+* [Main](./basic/main)
 * [User Interface](./basic/view)
 * [View Controller](./basic/view-controller)
 * [Table View](./basic/tableview)
