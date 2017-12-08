@@ -8,5 +8,4 @@ permalink: /ios/design/ios
 
 Design
 
-### Overview
-* [Themes](/ios/design/ios/overview-themes)
+* [Overview](/ios/design/ios/overview)
