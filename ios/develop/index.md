@@ -3,11 +3,9 @@
 # Edit theme's home layout instead if you wanna make some changes
 # See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 layout: page
-permalink: /ios/
+permalink: /ios/develop
 ---
 
-IOS
+Develop
 
 * [Guide](/ios/guide/)
-* [Design](/ios/Design)
-* [Develop](/ios/Develop)
