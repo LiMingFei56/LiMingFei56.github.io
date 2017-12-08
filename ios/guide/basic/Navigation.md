@@ -9,6 +9,7 @@ Navigation
 在两个Scenes之间跳转使用Segue。
 
 Action Segue有多个类型:
+
 	* Show
 	* Show Detail
 	* Present Modally
@@ -16,6 +17,7 @@ Action Segue有多个类型:
 	* Custom
 
 Scene间传递数据的两种方法:
+
 	* 使用Unwind Segue，用来传送简单的数据
 	* 使用Delegate，用来传送复杂的数据
 
