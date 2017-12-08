@@ -9,5 +9,5 @@ permalink: /ios/
 IOS
 
 * [Guide](/ios/guide/)
-* [Design](/ios/Design)
-* [Develop](/ios/Develop)
+* [Design](/ios/design)
+* [Develop](/ios/develop)
