@@ -20,3 +20,4 @@ Guide
 ### Detail
 * [Introduction](./detail/introduction)
 * [Expected App Behaviors](./detail/expected-app-behaviors)
+* [The App Life Cycle](./detail/the-app-life-cycle)
