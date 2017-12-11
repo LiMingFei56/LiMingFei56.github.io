@@ -15,3 +15,8 @@ Guide
 * [Table View](./basic/tableview)
 * [Navigation](./basic/navigation)
 * [Persist Data](./basic/persistdata)
+
+
+### Detail
+* [Introduction](./detail/introduction)
+* [Expected App Behaviors](./detail/expected-app-behaviors)
