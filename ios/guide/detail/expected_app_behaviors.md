@@ -28,8 +28,13 @@ Expected App Behaviors
 
 A typical app bundle
 
-File     | Example | Description
----------|---------|--------------------------------
+File     | Example   | Description
+---------|-----------|--------------------------------
 App executable | MyApp  | 可执行文件包含编译的代码。名字为应用名减去.app后缀，这个文件是必须的
 The information property list file | Info.plist | 应用信息文件，这个文件必须叫Info.plist
-baz | baz  | baz
+App icons | Icon.png | 一般在设备主屏幕显示，其他的分辨率显示在合适的地方，@2x显示带有Retina显示器
+Launch images | Default.png | 在启动应用时显示
+Storyboard file(or nib files) | MainBoard.storyboard | 包括View和ViewController，用来显示内容，
+也可以使用Segues通过Identify实现2个Scene间的跳转。可以在Info.plist中修改主Storyboard
+，UIMainStoryboardFile(nib file使用NSMainNibFile)
+
