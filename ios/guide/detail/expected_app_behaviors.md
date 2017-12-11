@@ -26,9 +26,10 @@ Expected App Behaviors
 当build iOS应用时，Xcode会把项目捆绑成一个程序包。程序包是一个目录，会将执行文件
 和资源（Icon,image等）集中在一起。
 
+A typical app bundle
 
-dog | bird | cat
-----|------|----
-foo | foo  | foo
-bar | bar  | bar
+File     | Example | Description
+---------|---------|--------------------------------
+App executable | MyApp  | 可执行文件包含编译的代码。名字为应用名减去.app后缀，这个文件是必须的
+The information property list file | Info.plist | 应用信息文件，这个文件必须叫Info.plist
 baz | baz  | baz
