@@ -22,6 +22,7 @@ Guide
 * [Expected App Behaviors](./detail/expected-app-behaviors)
 * [The App Life Cycle](./detail/the-app-life-cycle)
 * [Background Execution](./detail/background-execution)
+* [Strategies for Handling App State Transitions](./detail/strategies-for-handling-app-state-transitions)
 
 
 ### More
@@ -42,3 +43,4 @@ Guide
 * [Implementing a Multitasking-aware OpenGL ES Application](https://developer.apple.com/library/content/documentation/3DDrawing/Conceptual/OpenGLES_ProgrammingGuide/ImplementingaMultitasking-awareOpenGLESApplication/ImplementingaMultitasking-awareOpenGLESApplication.html#//apple_ref/doc/uid/TP40008793-CH5)
 * [OpenGL ES Programming Guide](https://developer.apple.com/library/content/documentation/3DDrawing/Conceptual/OpenGLES_ProgrammingGuide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40008793)
 * [External Accessory Programming Topics](https://developer.apple.com/library/content/documentation/iPhone/Conceptual/iPhoneOSProgrammingGuide/BackgroundExecution/BackgroundExecution.html#//apple_ref/doc/uid/TP40007072-CH4-SW4)
+* [File System Programming Guide](https://developer.apple.com/library/content/documentation/FileManagement/Conceptual/FileSystemProgrammingGuide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40010672)
