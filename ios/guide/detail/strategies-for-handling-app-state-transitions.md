@@ -89,10 +89,66 @@ Sleep/Wake按钮后会锁住系统屏幕，并抛弃打开被保护文件的密�
 消失时就应该保存他的数据。
 
 #### 响应短暂的打断
-当基于警告的打断产生时（如）
+当基于警告的打断产生时（如来了电话），应用会暂时移动到`inactive`状态。应用会保持这个状态，直到用户解除警告。在这个时候，应用会回到
+`active`状态或者到后台状态。
+
+*处理警告打断*
+![处理警告打断](/assets/ios/ios-guide-app-interruptions.png)
+
+通知会显示一个标示，而不会关闭应用。这个标示会长时间在屏幕的顶部边缘，应用可以继续接收触摸事件。然而当用户
+下拉这个标示显示通知中心，用户会移动到`inactive`状态，基于警告的打断就发生了。用户取消这个通告，或者开启其他的应用，应用会
+移动到`active`状态或者`background`状态。应用可以使用Setting APP配置通知显示是一个banner或者是一个alert。
+
+按Sleep/Wake按钮是其他类型的打断，会短暂的停止应用。当用户触发这个事件时，系统会停止触摸事件，把应用移动到`background`状态，
+设置应用`applicationState`属性成`UIApplicationStateBackground`，并且锁住屏幕。
 
 
 ### 当应用进入前台时要做什么
 当应用从后台进入前台，需要重新开始在进入后台时停止的任务。`applicationWillEnterForeground:`方法应该
 撤消在`applicationDidEnterBackground:`方法中完成的任何事，`applicationDidBecomeActive:`方法应该继续
 执行同样的事情在启动时。
+
+*从后台进入前台*
+![从后台进入前台](/assets/ios/ios-guide-app-back-to-fort.png)
+
+注: `UIApplicationWillEnterForegroundNotification`通知也可以用于跟踪应用何时重新进入前台。可以使用默认的通知来注册。
+
+#### 准备处理通知队列
+应用在`Suspended`状态时应该准备返回到前台或者后台时处理通知队列。`Suspended`状态的应用不能执行任何的代码，所以这个时候
+发生影响应用运行的事件（方向改变，时间改变，首选项改变等）时应用不能处理。为了让这些事件不丢失，系统会用一个队列保存所以
+的通知，当应用可以处理时发送给应用。为了防止事件的重复，系统会确保每种类型的通知只有一个。
+
+下面是可以合并和分发的通知，大多数通知是直接发送到注册的观察者。一些，像设备方向有关的通知，一般系统框架会拦截下来，以
+另一种方式发送。
+
+![通知分发](/assets/ios/ios-guide-app-notification-delivered.png)
+
+通知队列分发到应用的主运行环中，一般发生在所有触摸事件或者其他用户输入之前。处理这些通知应该快速，不要造成延迟。如果延迟发
+生，可以使用`Instruments`确定发生延迟的地方。
+
+应用返回到前台也会收到View更新的通知，告诉应用最后更新后产生的脏View。应用在后台运行，可以调用`setNeedDisplay`
+或者`setNeedDisplayInRect`方法请求更新View。但是后台应用不能更新视图，所以系统会合并这些请求，在应用返回前台时通知
+应用。
+
+#### 处理iCloud改变
+如果iCloud因为任何原因而改变状态，系统会分发`NSUbiquityidentityDidChangNotification`通知给应用。这个状态是当iCloud
+当用户登入或者登出或者打开同步或者关闭同步。这个通知暗示应用更新缓存和跟iCloud相关的用户界面。例如，当用户登出iCloud时，
+应用应该删除所以iCloud相关的文件和数据。
+
+如果应用已经提示用户保存文件在iCloud中，不要当iCloud状态改变后重复提示用户。在第一次提示后，应该在首选项中提供给应用选择
+保存的位置。
+
+#### 处理位置改变
+当应用处于`Suspended`状态时，用户位置发生重大改变，应用可以在回到前台时使用`NSCurrentlocaleDidChangeNotification`通知
+去强制更新所有跟位置信息有关的视图。
+
+* 使用NSLocale的`autoupdatingCurrentLocale`方法。这个方法返回一个本地对象。
+* 每当当前语言环境信息更改时，重新创建任何缓存的日期和数字格式化程序对象。
+
+#### 处理应用配置改变
+应用使用Settings app管理应用的配置时，应该观察`NSUserDefaultsDidChangeNotification`通知。因为用户可以在应用不在前台时修改
+应用的配置，所以可以使用这个通知去响应重要的配置的改变。即时响应配置有时候可以消除安全漏洞。在接收到配置改变通知时，应用
+方法重新读取所有配置，如果有必要，需要重置用户界面。
+
+### 应用进入后台做些什么
+

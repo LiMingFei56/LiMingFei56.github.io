@@ -80,3 +80,8 @@ StoryBoard中加载。
 IOS内置有辅助功能信息，可以为特殊需求的人群提供卓越的移动体验。这些包括 VoiceOver
 , Switch Control, playback of closed captioned or audio described video
 , Guided Access, Text to Speech等等
+
+### 自定义View @IBInspectable 和 @IBDesignable
+
+@IBInspectable 可以让Attributes Inspector配置自定义属性
+@IBDesignable 可以让Interface Builder显示自定义View
