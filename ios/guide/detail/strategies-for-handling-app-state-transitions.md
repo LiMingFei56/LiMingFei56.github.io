@@ -151,4 +151,44 @@ Sleep/Wake按钮后会锁住系统屏幕，并抛弃打开被保护文件的密�
 方法重新读取所有配置，如果有必要，需要重置用户界面。
 
 ### 应用进入后台做些什么
+当应用从前台进入后台，可以使用` applicationDidEnterBackground: `方法来完成下面的事情：
 
+* 准备好应用的快照，当` applicationDidEnterBackground: `方法返回，系统会抓拍应用的快照。
+* 保存应用状态相关的信息，用户关键数据与应用状态。
+* 根据需要释放内存，如果应用占用了太多的内存，系统会第一时间终止应用。
+
+` applicationDidEnterBackground: `方法最多执行5秒钟，如果在5秒内没有返回，那么应用会被杀死。如果需要更多的时间，
+可以使用`beginBackgroundTaskWithExpirationHandler:`方法异步执行任务。
+
+系统除了调用生命周期方法外，还会在应用从前台进入后台后发送`UIApplicationDidEnterBackgroundNotification`通知。
+
+#### 后台转换生命周期
+当用户按下Home键，按下Sleep/wake键，或者启动其他的应用，会使应用从前台进入到后台，这个过程会调用应用的`applicationWillResignActive:`
+方法和`applicationDidEnterBackground:`方法。进入后台之后，大多应用会在短时间内进入到Suspended状态，除非设置了后台服务。
+
+*应用从前台进入后台*
+![应用从前台进入后台](/assets/ios/ios-guide-app-fort-to-back.png)
+
+#### 准备应用快照
+当应用的`applicationDidEnterBackground:`方法调用之后，系统会获取应用的快照。当一个应用程序被唤醒来执行后台任务时，系统可能
+会拍摄一个新的快照以反映任何相关的变化。
+
+如果确定在后台对View进行了改变，可以调用`snapshotViewAfterScreenUpdates: `方法强制重新绘制主View。调用`setNeedsDisplay`方法对
+快照无效。
+
+#### 减少内存占用
+进入后台后，应用应该释放尽可能多的内存。系统会在内存中保留尽可能多的应用，但是当内存不足时，会终止Suspended状态的应用的。占用大量内存
+的应用是第一个被终止的。
+
+应用在不需要对象时，应立即移除对象的强引用。移除对象的强引用，可让编译器可以释放对应的内存空间，当需要缓存对象，提高性能时。
+可以当应用移动到后台，再删除他们的强引用。
+
+需要尽快删除强引用的对象：
+* 创建的Image对象（UIImage返回的对象，系统会自动清除）
+* 大的视频或者数据文件。
+* 其他的数据，应用不再需要，并且可以重新创建。
+
+当应用移动到后台，系统会帮忙清理一些数据：
+* 清除所有的Core Animation layer。
+* 清除所有系统引用的Image
+* 清除系统管理的强引用的数据缓存
