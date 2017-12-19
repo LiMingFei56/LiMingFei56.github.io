@@ -23,6 +23,7 @@ Guide
 * [The App Life Cycle](./detail/the-app-life-cycle)
 * [Background Execution](./detail/background-execution)
 * [Strategies for Handling App State Transitions](./detail/strategies-for-handling-app-state-transitions)
+* [Strategies for Implementing Specific App Features](./detail/strategies-for-implementing-specific-app-features)
 
 
 ### More
