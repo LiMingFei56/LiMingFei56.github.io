@@ -25,6 +25,7 @@ Guide
 * [Strategies for Handling App State Transitions](./detail/strategies-for-handling-app-state-transitions)
 * [Strategies for Implementing Specific App Features](./detail/strategies-for-implementing-specific-app-features)
 * [Inter-app Comunication](./detail/inter-app-communication)
+* [Performance Tips](./detail/performance-tips)
 
 
 ### More
