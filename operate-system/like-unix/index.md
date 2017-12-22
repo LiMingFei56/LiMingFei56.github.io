@@ -8,4 +8,4 @@ permalink: /operate-system/like-unix/
 
 Like Unix
 
-* [Common command](./like-unix/common-command)
+* [Common command](./common-command)
