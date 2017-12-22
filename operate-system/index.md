@@ -8,4 +8,4 @@ permalink: /operate-system/
 
 操作系统
 
-* [Like-unix][/operate-system/like-unix/]
+* [Like-unix](/operate-system/like-unix/)
