@@ -8,6 +8,6 @@ permalink: /program-language/
 
 编程语言
 
-* [C](/program-language/c/)
-* [Objective-C](/program-language/objective-c/)
+* [C](/program-language/c)
+* [Objective-C](/program-language/objective-c)
 
