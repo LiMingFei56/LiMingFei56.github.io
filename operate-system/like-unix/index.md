@@ -3,9 +3,9 @@
 # Edit theme's home layout instead if you wanna make some changes
 # See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 layout: page
-permalink: /operate-system/
+permalink: /operate-system/like-unix/
 ---
 
-操作系统
+Like Unix
 
-* [Like-unix][/operate-system/like-unix/]
+* [Common command](./like-unix/common-command)

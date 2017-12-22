@@ -8,9 +8,6 @@ permalink: /program-language/
 
 编程语言
 
-### C
-* [Environment](/program-language/c/environment)
-* [Grammar](/program-language/c/grammar)
-* [Effective](/program-language/c/effective)
+* [C](/program-language/c)
 
 
