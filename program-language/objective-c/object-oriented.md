@@ -90,4 +90,68 @@ Object Oriented
 * 定义在@implementation文件中的成员不能访问
 * 如果继承类在基类中实现方法，则执行派生类中的方法
 
+### Categories
+在现有的类里添加新的行为，可以使用`Categories`和`extensions`
+
+#### 定义类别
+
+	@interface ClassName (CategoryName)
+
+	@end
+
+* 即使没有原始的实现代码，也可以为所有有类定义类别
+* 在类别中声明的任何方法都将可用于原始类的所有实例以及原始类的任何子类
+* 在运行时，类别添加的方法与原始类别实现的方法没有区别
+* 编译时必须引入类别定义的头文件，不然会编译出错
+
+### Posing
+Mac OS X 10.5后不可用。
+
+使用一个类代替另一个类。
+
+* 一个类只能直接或间接代替它的超类。
+* 冒充类不能定义目标类中没有的新的实例变量（虽然它可能定义或覆盖方法）
+* 目标类可能在被冒充之前不会收到任何消息
+* 一个冒充的类可以通过超级方法调用被覆盖的方法，从而结合目标类的实现
+* 冒充类可以覆盖在类别中定义的方法
+
+### Extensions
+* 跟`Categories`很像，声明时不用使用`CategoryName`，所以又叫匿名类别。
+* 声明的方法必须在implementation中实现，所以不能扩展没有源码的类，如NSString
+* 可以添加私有方法和私有属性
+* 即使对于继承的类，任何在扩展中声明的方法或变量都是不可访问的
+
+### Protocols
+Objective-C允许你定义协议，这些协议声明预期用于特定情况的方法。协议在符合协议的类中实现。
+
+	@protocol ProtocolName
+	@required
+	// list of required methods
+	@optional
+	// list of optional methods
+	@end
+
+	@interface MyClass : NSObject <MyProtocol>
+	...
+	@end
+
+### Dynamic Binding
+动态绑定决定了在运行时而不是在编译时调用的方法。动态绑定也被称为后期绑定
+
+在Objective-C中，所有的方法都是在运行时动态解析的。执行的确切代码由方法名称（选择器）和接收对象决定
+
+动态绑定启用多态性。例如，考虑包括Rectangle和Square的对象集合。每个对象都有自己的printArea方法的实现
+
+### Fast Enumeration
+
+	for (classType variable in collectionObject )
+	{ 
+		statements 
+	}
+
+	for (classType variable in [collectionObject reverseObjectEnumerator] )
+	{
+		statements
+	}
+
 
