@@ -9,5 +9,6 @@ permalink: /program-language/
 编程语言
 
 * [C](/program-language/c)
+* [C++](/program-language/c++)
 * [Objective-C](/program-language/objective-c)
 * [Python](/program-language/python)

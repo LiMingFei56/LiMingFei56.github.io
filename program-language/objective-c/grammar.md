@@ -63,6 +63,8 @@ extern type variable_list; // 声明一个外部变量
 \#define identifier value // 预处理，常量定义
 const type variable = value; // 关键字，常量定义，只是表示当前的引用不可修改，不表示这个内存不能修改
 
+变量前加上"_"是Apple的编程规范，表示成员变量。一般使用@synthesize来定义别名。这个是Xcode自动定义的
+
 ### 操作符
 * 算术操作符
 * 关系操作符
@@ -94,6 +96,8 @@ const type variable = value; // 关键字，常量定义，只是表示当前的
 	- (return_type) function_name:( argumentType1 )argumentName1 
 	joiningArgument2:( argumentType2 )argumentName2 ... 
 	joiningArgumentn:( argumentTypen )argumentNamen;	
+
++ 开头的方法可以不用实例调用，相当于静态方法
 
 #### Method Defining
 
