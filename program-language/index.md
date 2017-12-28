@@ -12,3 +12,5 @@ permalink: /program-language/
 * [C++](/program-language/c++)
 * [Objective-C](/program-language/objective-c)
 * [Python](/program-language/python)
+* [JavaScript](/program-language/javascript)
+
