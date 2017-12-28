@@ -92,4 +92,70 @@ Object Oriented
 
 	friend class ClassTwo;
 
+#### 内联函数
+使用`inline`修饰的函数
+
+	inline int Max(int x, int y) {
+		return (x > y)? x : y;
+	}
+
+#### This 指针
+c++中所有对象都有指向自己的指针，名称为`this`
+
+#### 静态成员
+可以使用`static`关键字修饰成员，变量和方法
+
+静态变量在类中只有一个副本，可以通过类直接引用。
+静态方法可以通过类直接引用。
+
+### 继承
+
+	class derived-class: access-specifier base-class
+
+访问权限默认为私有的。
+
+Accessi         | public | protected | private
+----------------+--------+-----------+------------
+Same class      | yes    | yes       | yes
+Derived classes	| yes    | yes       | no
+Outside classes | yes    | no        | no
+
+派生类会继承基类下面所有的方法：
+
+* 构造函数、析造函数、Copy构造函数
+* 重载操作符
+* Friend方法
+
+使用访问限定符时有下面规则：
+
+* 使用public继承：基类的访问控制不变
+* 使用protect继承：基类的public和protect成员，继承来为protect
+* 使用private继承：基类的public和protect成员，继承来为private
+
+#### 多重继承
+
+	class derived-class: access baseA, access baseB....
+
+
+### Overload
+C++中有方法重载和操作符重载。
+
+#### 方法重载
+使用相同的方法名，但是方法参数不一样
+
+#### 操作符重载
+
+	Box operator+(const Box&);
+
+### 多态
+在C++中函数默认采用静态连接，所以不能实现多态。
+
+需要在实现多态的方法前加上`virtual`，让该方法采用动态连接。
+
+#### 纯虚拟方法,相当于抽像方法
+
+	// pure virtual function
+      virtual int area() = 0;
+
+
 

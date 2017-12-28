@@ -197,3 +197,18 @@ C++是值传递，可以指定默认值
 	   member definition;
 	} [one or more structure variables];  
 
+### Exception Handling
+
+	try {
+	   // protected code
+	} catch( ExceptionName e1 ) {
+	   // catch block
+	} catch( ExceptionName e2 ) {
+	   // catch block
+	} catch( ExceptionName eN ) {
+	   // catch block
+	}
+
+	throw "Division by zero condition!";
+
+	
