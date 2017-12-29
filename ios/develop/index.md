@@ -8,4 +8,5 @@ permalink: /ios/develop
 
 Develop
 
+* [Network](/ios/develop/network)
 * [Debugging](/ios/develop/debugging)
