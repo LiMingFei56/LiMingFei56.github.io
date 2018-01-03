@@ -8,6 +8,6 @@ permalink: /ios/develop
 
 Develop
 
-* [Model](ios/develop/model)
+* [Model](/ios/develop/model)
 * [Network](/ios/develop/network)
 * [Debugging](/ios/develop/debugging)
