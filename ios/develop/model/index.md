@@ -3,11 +3,10 @@
 # Edit theme's home layout instead if you wanna make some changes
 # See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 layout: page
-permalink: /ios/develop
+permalink: /ios/develop/model
 ---
 
-Develop
+Model
 
-* [Model](ios/develop/model)
-* [Network](/ios/develop/network)
-* [Debugging](/ios/develop/debugging)
+* [Core Data](/ios/develop/model/core-data)
+* [Document Based](/ios/develop/model/document-based)

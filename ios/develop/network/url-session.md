@@ -78,6 +78,18 @@ Session和Task符合NSCopying协议：
 * 当复制Session或者Task对象时，可以得到同样的对象。
 * 当复制配置对象，可以得到一个新副本。
 
+### 实现代理
+
+	NS_ASSUME_NONNULL_BEGIN
+	typedef void (^CompletionHandler)();
+	 
+	@interface MySessionDelegate : NSObject <NSURLSessionDelegate, NSURLSessionTaskDelegate, NSURLSessionDataDelegate, NSURLSessionDownloadDelegate, NSURLSessionStreamDelegate>
+	 
+	@property NSMutableDictionary <NSString *, CompletionHandler>*completionHandlers;
+	 
+	@end
+	NS_ASSUME_NONNULL_END
+
 ### 创建和配置Session
 NSURLSession提供下面这些配置：
 * 对于单个Session提供私有的存储缓存，cookies，凭证，协议
@@ -98,5 +110,120 @@ NSURLSession提供下面这些配置：
 如果支持后台传输，那么必须设置Session代理。
 
 在实例化会话对象之后，不能在不创建新会话的情况下更改配置或委托
+
+#### 接收结果-系统提供代理
+* 需要创建配置对象和session对象
+* 提供下载完成处理代理
+
+#### 接收结果-自定义代理
+* `URLSession:dataTask:didReceiveData:` - 从一个请求提供数据到您的任务，一次一个。
+* `URLSession:task:didCompleteWithError:` - 告诉代理任务完成传输数据，如果出错error参数不为空。
+
+### 下载文件
+* `URLSession:downloadTask:didFinishDownloadingToURL:` - 文件下载完成，需要处理文件，不然方法返回后会删除临时文件。
+* `URLSession:downloadTask:didWriteData:totalBytesWritten:totalBytesExpectedToWrite:` - 提供下载的状态。
+* `URLSession:downloadTask:didResumeAtOffset:expectedTotalBytes:` - 重新尝试下载出错的任务成功。
+* `URLSession:task:didCompleteWithError:` - 告诉代理任务完成传输数据，如果出错error参数不为空。
+
+* `cancelByProducingResumeData:` - 暂停任务
+* `downloadTaskWithResumeData:` 或 `downloadTaskWithResumeData:completionHandler:` - 重新开启任务
+
+如果断点续传成功，userInfo中包含`NSURLSessionDownloadTaskResumeData`，
+
+### 上传body
+实现HTTP POST请求有三种方法：NSData,File,stream：
+* 如果您的应用程序已经有内存中的数据，并没有理由处置它，请使用NSData对象。
+* 如果正在上传的内容作为文件存在于磁盘上，如果您正在进行后台传输，或者如果您的应用程序将其写入磁盘以便释放与该数据关联的内存
+	，请使用File。
+* 如果您通过网络接收数据，请使用流。
+
+`URLSession:task:didSendBodyData:totalBytesSent:totalBytesExpectedToSend: ` - 获取上传进度
+`URLSession:task:needNewBodyStream:` - 如果使用的是流，那么需要实现这个方法
+
+#### 上传body - NSBData
+调用session`uploadTaskWithRequest:fromData:`和`uploadTaskWithRequest:fromData:completionHandler:`方法创建一个upload task。
+使用`fromData`参数提供body数据，session对象会计算body数据得到`Content-Length`。
+
+	NSURL *textFileURL = [NSURL fileURLWithPath:@"/path/to/file.txt"];
+	NSData *data = [NSData dataWithContentsOfURL:textFileURL];
+	
+	NSURL *url = [NSURL URLWithString:@"https://www.example.com/"];
+	NSMutableURLRequest *mutableRequest = [NSMutableURLRequest requestWithURL:url];
+	mutableRequest.HTTPMethod = @"POST";
+	[mutableRequest setValue:[NSString stringWithFormat:@"%lld", data.length] forHTTPHeaderField:@"Content-Length"];
+	[mutableRequest setValue:@"text/plain" forHTTPHeaderField:@"Content-Type"];
+	
+	NSURLSessionUploadTask *uploadTask = [defaultSession uploadTaskWithRequest:mutableRequest fromData:data];
+	[uploadTask resume];
+
+#### 上传body - File
+调用session`uploadTaskWithRequest:fromFile:`和`uploadTaskWithRequest:fromFile:completionHandler: `方法创建一个upload task。
+使用`fromFile`参数提供file URL。session对象会计算body数据得到`Content-Length`。
+
+	NSURL *textFileURL = [NSURL fileURLWithPath:@"/path/to/file.txt"];
+	
+	NSURL *url = [NSURL URLWithString:@"https://www.example.com/"];
+	NSMutableURLRequest *mutableRequest = [NSMutableURLRequest requestWithURL:url];
+	mutableRequest.HTTPMethod = @"POST";
+	
+	NSURLSessionUploadTask *uploadTask = [defaultSession uploadTaskWithRequest:mutableRequest fromFile:textFileURL];
+	[uploadTask resume];
+
+#### 上传body - stream
+调用session`uploadTaskWithStreamedRequest:`方法创建一个upload task。必须提供：
+* 读取body的流
+* body的`Content-Type`
+* body的`Content-Length`
+
+	NSURL *textFileURL = [NSURL fileURLWithPath:@"/path/to/file.txt"];
+	 
+	NSURL *url = [NSURL URLWithString:@"https://www.example.com/"];
+	NSMutableURLRequest *mutableRequest = [NSMutableURLRequest requestWithURL:url];
+	mutableRequest.HTTPMethod = @"POST";
+	mutableRequest.HTTPBodyStream = [NSInputStream inputStreamWithFileAtPath:textFileURL.path];
+	[mutableRequest setValue:@"text/plain" forHTTPHeaderField:@"Content-Type"];
+	[mutableRequest setValue:[NSString stringWithFormat:@"%lld", data.length] forHTTPHeaderField:@"Content-Length"];
+	 
+	NSURLSessionUploadTask *uploadTask = [defaultSession uploadTaskWithStreamedRequest:mutableRequest];
+	[uploadTask resume];
+
+#### 上传body通过 Download Task
+要为下载任务上传正文内容，您的应用程序必须提供NSData对象或正文流作为创建下载请求时提供的NSURLRequest对象的一部分。
+
+使用`URLSession:task:needNewBodyStream:`
+
+
+### 处理认证和自定义TLS链验证
+如果远程服务器返回一个状态码，指示需要身份验证，并且该身份验证需要连接级别的质询（如SSL客户端证书）
+，则NSURLSession将调用身份验证质询委托方法.
+
+如果使用流的方式上传内容时，认证失败，那么应该重新创建session再尝试。
+
+### 处理iOS后台活动
+`application:handleEventsForBackgroundURLSession:completionHandler:`
+`URLSessionDidFinishEventsForBackgroundURLSession: `
+
+### 编解码URL
+percent-encode使用NSString的`stringByAddingPercentEncodingWithAllowedCharacters:`方法:
+
+* User: URLUserAllowedCharacterSet
+* Password: URLPasswordAllowedCharacterSet
+* Host: URLHostAllowedCharacterSet
+* Path: URLPathAllowedCharacterSet
+* Fragment: URLFragmentAllowedCharacterSet
+* Query: URLQueryAllowedCharacterSet
+
+	NSString *originalString = @"color-#708090";
+	NSCharacterSet *allowedCharacters = [NSCharacterSet URLFragmentAllowedCharacterSet];
+	NSString *percentEncodedString = [originalString stringByAddingPercentEncodingWithAllowedCharacters:allowedCharacters];
+	NSLog(@"%@", percentEncodedString"); // prints "color-%23708090"
+	
+	NSURL *URL = [NSURL URLWithString:@"https://example.com/#color-%23708090"];
+	NSURLComponents *components = [NSURLComponents componentsWithURL:URL resolvingAgainstBaseURL:NO];
+	NSString *fragment = components.fragment;
+	NSLog(@"%@", fragment); // prints "color-#708090"
+
+### 处理重定向和其他请示改变
+当服务器返回重定向，NSURLSession会调用代理`URLSession:task:willPerformHTTPRedirection:newRequest:completionHandler:`方法。
 
 

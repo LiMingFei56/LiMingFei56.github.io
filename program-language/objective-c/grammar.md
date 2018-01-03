@@ -65,6 +65,8 @@ const type variable = value; // 关键字，常量定义，只是表示当前的
 
 变量前加上"_"是Apple的编程规范，表示成员变量。一般使用@synthesize来定义别名。这个是Xcode自动定义的
 
+@dynamic 告诉编译器，这个属性运行时定义。
+
 ### 操作符
 * 算术操作符
 * 关系操作符
