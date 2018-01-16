@@ -3,9 +3,9 @@
 # Edit theme's home layout instead if you wanna make some changes
 # See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 layout: page
-permalink: /tools/
+permalink: /tools/vim
 ---
 
-工具与其他
+VIM
 
-* [Vim](/tools/vim)
+* [Vim Plug Depend](/tools/vim/vim-plug-depend)
