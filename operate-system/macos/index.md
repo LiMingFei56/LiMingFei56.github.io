@@ -3,11 +3,10 @@
 # Edit theme's home layout instead if you wanna make some changes
 # See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 layout: page
-permalink: /operate-system/
+permalink: /operate-system/macos
 ---
 
-操作系统
+MacOS
 
-* [Like-unix](./like-unix/)
-* [MacOS](./macos)
+* [Environment](/operate-system/macos/environment)
 
