@@ -9,4 +9,4 @@ permalink: /operate-system/macos
 MacOS
 
 * [Environment](/operate-system/macos/environment)
-
+* [Upload Ios APP](/operate-system/macos/uploadIosApp)
