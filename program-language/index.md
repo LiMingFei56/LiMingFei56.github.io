@@ -8,6 +8,8 @@ permalink: /program-language/
 
 编程语言
 
+* [Grammar](/program-language/grammar)
+
 * [Program Feature](/program-language/program-featur)
 
 * [C](/program-language/c)

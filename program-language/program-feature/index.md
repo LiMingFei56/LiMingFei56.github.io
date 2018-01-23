@@ -8,5 +8,10 @@ permalink: /program-language/program-feature
 
 Program Feature
 
+Data type Transformation
+Garbage collection
+String Format
 Closure
- 
+Reference(alias)
+Function Declaration(Function type)
+Genericity
