@@ -18,6 +18,7 @@ Grammar
 ## 基本类型
 
 ### C
+
 |Type     | Type Express | Explanation                              | Format Specifier    | sizeof |
 |---------|--------------|------------------------------------------|---------------------|--------|
 |Character| char         | 'A' or 65 or 0x41 or 0101                | %c                  | 1      |
