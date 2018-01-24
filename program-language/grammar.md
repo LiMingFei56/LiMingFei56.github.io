@@ -168,14 +168,16 @@ Boolean 使用bool表示, 0 = false; 非0 = true。 长度为1;
 ## Control Flow
 ### C
 
-#### IF Expression
+#### IF Statement
 
     if () {
     } else if() {
     } else {
     }
 
-#### SWITCH Expression
+#### SWITCH Statement
+switch的分支是可以穿透的(Fallthrough)，需要使用`break`语句来打断穿透
+
     switch(){
         case :
             break;
@@ -183,17 +185,22 @@ Boolean 使用bool表示, 0 = false; 非0 = true。 长度为1;
             break;
     }
 
-#### FOR Expression
+#### FOR Statement
 
     for( ; ;){}
 
-#### WHILE Expression
+#### WHILE Statement
 
     while(){}
 
-#### DO-WHILE Expression
+#### DO-WHILE Statement
 
     do{}while();
+
+#### Jumps
+
+    break 打断穿透；跳出当前循环
+    continue 路过当前循环，并开始下一次
 
 ### C++
 同C
@@ -204,42 +211,85 @@ Boolean 使用bool表示, 0 = false; 非0 = true。 长度为1;
 ### Java
 同C
 
-#### FOREACH Expression
+#### FOREACH Statement
+Like C# foreach ，循环Iterator
 
-    foreach;
+Interator:
+    * 实现Iterator接口
+
+    for (item: <Iterator>){}
 
 ### Kotlin
-    
-    if Expression 是表达式，大括号中最后一个表达式就是返回值
 
-    when Expression 是表达式， 大括号中最后一个表达式就是返回值
-        when {
-            x.isOdd() -> print("x is odd")
-            x.isEven() -> print("x is even")
-            else -> print("x is funny")
-        }
-    不用break，每个分支是断开的
+#### IF Expression
+if是表达式，会返回一个值，括号最后一个表达式就是返回的值
 
-    for loops 为迭代器，相当于C# foreach，只作用于可迭代的
-        array.indices
-        array.withIndex()
+    var a = if(a < b) a else b
 
-    while () {}
-
-    do {} while()
-
-### Swift
-
-    if expression {
-    } else if expression {
+    if () {
+    } else if () {
     } else {
     }
 
-    switch(){
-        case :
-        default:
+#### WHEN Expression
+when是表达式， 大括号中最后一个表达式就是返回值
+when分支不是穿透的(Fallthrough)，不用使用break语句
+
+        var a = when(d1){
+            123.0 -> "小于"
+            123.5 -> "大于"
+            else -> "else"
+        }
+
+分支条件只能是常量或者Boolean值，多个条件使用','分隔，可以使用in is表达式
+
+#### For Statement
+C#类型的foreach，循环Iterator
+
+Iterator:
+    * 成员或扩展函数 iterator(), 返回type
+    * 成员或扩展函数 next(), 返回boolean
+    * 成员或扩展函数 hasNext(), 返回boolean
+    * 这三个方法必须使用`operator`修饰
+
+    for (item in collection) print(item)
+
+    for (i in array.indices) {
+        print(array[i])
     }
-    不用break，每个分支是断开的
+
+    for ((index, value) in array.withIndex()) {
+        println("the element at $index is $value")
+    }
+
+#### While Statement
+
+    while (x > 0) {
+        x--
+    }
+
+#### Do..while Statement
+
+    do {
+        val y = retrieveData()
+    } while (y != null) // y is visible here!
+
+#### Jumpe
+
+    break. 终止最近的封闭循环
+    continue. 进入最近的封闭循环的下一步
+
+Labels. 在循环前加上labelname@,可以控制指定的循环（内层终止外层）
+
+    loop@ for (i in 1..100) {
+        for (j in 1..100) {
+            if (...) break@loop
+        }
+    }
+
+### Swift
+
+
 
 ### Python
 
