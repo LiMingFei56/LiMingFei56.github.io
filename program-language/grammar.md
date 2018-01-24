@@ -53,6 +53,7 @@ Boolean 使用bool表示, 0 = false; 非0 = true。 长度为1;
 ***整数默认为int, 浮点数默认为double***
 
 ### Java
+
 |Type     | Type Express | Explanation                              | sizeof |
 |---------|--------------|------------------------------------------|--------|
 |Byte     | byte or Byte | 1 or 0x1 or 01 or 0b0000001 or 000_001   | 1      |
@@ -70,6 +71,7 @@ Boolean 使用bool表示, 0 = false; 非0 = true。 长度为1;
 ***数值支持下划线***
 
 ### Kotlin
+
 |Type     | Type Express | Explanation                              | sizeof |
 |---------|--------------|------------------------------------------|--------|
 |Double   | Double       | 123.5, 123.5e10                          | 8      |
@@ -87,6 +89,7 @@ Boolean 使用bool表示, 0 = false; 非0 = true。 长度为1;
 ***整数默认为int, 浮点数默认为double***
 
 ### Swift
+
 |Type     | Type Express | Explanation                              | sizeof |
 |---------|--------------|------------------------------------------|--------|
 |Double   | Double       | 123.5 or 1.24e2 or 0xFp2                 | 8      |
@@ -101,6 +104,7 @@ Boolean 使用bool表示, 0 = false; 非0 = true。 长度为1;
 ***整数默认为int, 浮点数默认为double***
 
 ### Python
+
 |Type     | Type Express | Explanation                               |
 |---------|--------------|-------------------------------------------|
 |Integer  | int          | 123                                       |
