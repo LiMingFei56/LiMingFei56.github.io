@@ -15,7 +15,12 @@ permalink: /program-language/grammar
 
 Grammar
 
-## 基本类型
+* [1.Basic Type](#1)
+* [2.Declaration And Definition Variable](#2)
+* [3.Control Flow](#3)
+* [4.Function And Lambda](#4)
+
+<h2 id="1">1.Basic Type</h2>
 
 ### C
 
@@ -82,7 +87,9 @@ Boolean 使用bool表示, 0 = false; 非0 = true。 长度为1;
 |Byte     | Byte         | 123 or 0x0F or 0b00000001                | 2      |
 |Character| Char         | '' 不是一个数字                          |        |
 |Boolean  | Boolean      | true or flast 不是一个数字               |        |
-|String   | String       | "abc" """abc""""                                    | +1     |
+|String   | String       | "abc" """abc"""                          | +1     |
+|Unit     | Unit         | 相当与java的void，表示无类型             |        |
+|Nothing  | Nothing      | 表示没有实例，永远到不了的地方           |        |
 
 ***不支持8进制***
 ***数值支持下划线***
@@ -113,7 +120,9 @@ Boolean 使用bool表示, 0 = false; 非0 = true。 长度为1;
 
 ***数值支持下划线***
 
-## Declaration And Definition Variable
+
+<h2 id="2">2.Declaration And Definition Variable</h2>
+
 ### C
 定义是特殊的声明，会分配内存并初始化；
     
@@ -165,7 +174,8 @@ Boolean 使用bool表示, 0 = false; 非0 = true。 长度为1;
 
     i = 12
 
-## Control Flow
+<h2 id="3">3.Control Flow</h2>
+
 ### C
 
 #### IF Statement
@@ -289,7 +299,370 @@ Labels. 在循环前加上labelname@,可以控制指定的循环（内层终止�
 
 ### Swift
 
+#### If Statement
 
+    if temperatureInFahrenheit <= 32 {
+        print("It's very cold. Consider wearing a scarf.")
+    } else if temperatureInFahrenheit >= 86 {
+        print("It's really warm. Don't forget to wear sunscreen.")
+    } else {
+        print("It's not that cold. Wear a t-shirt.")
+    }
+
+#### Switch Statement
+
+* 不会显示的穿透(Fallthough)
+* 条件可以有多个，使用','分隔
+* 可以使用Interval Matching
+* 可以使用元组
+* 可以使用let，值绑定
+* 可以使用where，做额外的比较
+
+
+    // normal
+    switch some value to consider {
+        case value 1:
+            respond to value 1
+        case value 2,
+             value 3:
+            respond to value 2 or 3
+        default:
+            otherwise, do something else
+        }
+
+    // Interval Matching
+    let approximateCount = 62
+    let countedThings = "moons orbiting Saturn"
+    let naturalCount: String
+    switch approximateCount {
+    case 0:
+        naturalCount = "no"
+    case 1..<5:
+        naturalCount = "a few"
+    case 5..<12:
+        naturalCount = "several"
+    case 12..<100:
+        naturalCount = "dozens of"
+    case 100..<1000:
+        naturalCount = "hundreds of"
+    default:
+        naturalCount = "many"
+    }
+    print("There are \(naturalCount) \(countedThings).")
+
+    // Tuple
+    let somePoint = (1, 1)
+    switch somePoint {
+    case (0, 0):
+        print("\(somePoint) is at the origin")
+    case (_, 0):
+        print("\(somePoint) is on the x-axis")
+    case (0, _):
+        print("\(somePoint) is on the y-axis")
+    case (-2...2, -2...2):
+        print("\(somePoint) is inside the box")
+    default:
+        print("\(somePoint) is outside of the box")
+    }
+
+    // Where
+    let yetAnotherPoint = (1, -1)
+    switch yetAnotherPoint {
+    case let (x, y) where x == y:
+        print("(\(x), \(y)) is on the line x == y")
+    case let (x, y) where x == -y:
+        print("(\(x), \(y)) is on the line x == -y")
+    case let (x, y):
+        print("(\(x), \(y)) is just some arbitrary point")
+    }
+
+
+#### For Statement
+Like C# foreach, 循环迭代Iterator，数组，Range, String, Dictionary
+
+    let names = ["Anna", "Alex", "Brian", "Jack"]
+    for name in names {
+        print("Hello, \(name)!")
+    }
+
+#### While Statement
+
+    while condition {
+        statements
+    }
+
+#### Repeat-While Statement
+
+    repeat {
+        statements
+    } while condition
+
+#### Guard Statement
+提前退出，判断一个条件是否成立，如果不成立就会执行else语句，该语句中最后只能return, break, continue, or throw
+
+    guard let name = person["name"] else {
+        return
+    }
+
+#### Jumpe
+
+    continue - 跳过当前循环，进入下一步
+    break - loop(结束最近的loop);switch(结束当前分支)
+    Fallthrough - 开启Switch穿透
+
+Labeled Statement
+
+    label name: while condition {
+        statements
+    }
+    
+    break label name
 
 ### Python
+
+#### If Statement
+
+    if_stmt ::=  "if" expression ":" suite
+             ( "elif" expression ":" suite )*
+             ["else" ":" suite]
+
+#### For Statement
+迭代Sequence
+
+    for_stmt ::=  "for" target_list "in" expression_list ":" suite
+              ["else" ":" suite]
+
+#### While Statement
+
+    while_stmt ::=  "while" expression ":" suite
+                ["else" ":" suite]
+
+#### Jumpe
+
+    continue - 继续下一个迭代
+    break    - 结束当前迭代
+    pass     - 占位符，什么都不做，一般表示还没有实现
+
+
+<h2 id="4">4.Function And Lambda</h2>
+### C
+
+#### Function
+
+    // 函数原型，声明在头文件中
+    <return_type> function_name(parameter_list);
+
+    // 定义需要跟函数原型的参数类型和返回类型一至,收用函数原型的头文件
+    <return_type> function_name(parameter_list){
+    }
+
+#### inline
+使用inline修饰的函数为内联函数
+
+### C++
+同C
+
+### Objc
+
+#### Function
+
+    // 函数声明
+    -(return_type)function_name:(one_parameter_type)one_parameter_name two_argument_label:(two_parageter_type)two_parageter_name;
+
+    // 函数定义
+    -(return_type)function_name:(one_parameter_type)one_parameter_name two_argument_label:(two_parageter_type)two_parageter_name{
+    }
+
+#### Block
+
+    // Block 声明
+    double (^multiplyTwoValues)(double, double);
+
+    // Block 定义
+    ^ (double firstValue, double secondValue) {
+        return firstValue * secondValue;
+    }
+
+    使用__block修饰closure中变量的值，不然是只读的
+
+#### Inline
+使用inline修饰的函数为内联函数
+
+### Java
+
+#### Function
+
+    public void myFunction(int a, int b){
+    }
+
+#### Lambda jdk 8
+只支持functional interfaces（SAM(单一抽象方法/Single Abstract Method)），相当与匿名函数
+
+    // 1. 不需要参数,返回值为 5  
+    () -> 5  
+      
+    // 2. 接收一个参数(数字类型),返回其2倍的值  
+    x -> 2 * x  
+      
+    // 3. 接受2个参数(数字),并返回他们的差值  
+    (x, y) -> x – y  
+      
+    // 4. 接收2个int型整数,返回他们的和  
+    (int x, int y) -> x + y  
+      
+    // 5. 接受一个 string 对象,并在控制台打印,不返回任何值(看起来像是返回void)  
+    (String s) -> System.out.print(s)  
+
+#### Inline
+使用关键字`final`修饰的函数为内联函数
+
+### Kotlin
+
+#### Function
+
+    fun read(b: Array<Byte>, off: Int = 0, len: Int = b.size): Int {
+        ...
+    }
+
+    fun double(x: Int): Int = x * 2
+
+infix Function:
+* 成员函数或扩展函数
+* 单个函数参数
+* 使用`infix`修饰
+
+
+    infix fun Int.shl(x: Int): Int {
+    ...
+    }
+
+    // call extension function using infix notation
+
+    1 shl 2
+
+嵌套函数:
+
+    fun dfs(graph: Graph) {
+        fun dfs(current: Vertex, visited: Set<Vertex>) {
+            if (!visited.add(current)) return
+            for (v in current.neighbors)
+                dfs(v, visited)
+        }
+    
+        dfs(graph.vertices[0], HashSet())
+    }
+
+#### Lambda
+
+    // 声明
+    (T, T) -> Boolean
+
+    // 定义
+    { x: Int, y: Int -> x + y }
+
+Anonymous Functions
+
+    fun(x: Int, y: Int): Int = x + y
+
+Function Literals with Receiver
+
+    sum : Int.(other: Int) -> Int
+    1.sum(2)
+
+#### inline
+内联函数 - 使用关键字`inline`修饰
+非内联函数 - 使用关键字`noinline`修饰
+
+    inline fun foo(inlined: () -> Unit, noinline notInlined: () -> Unit) {
+        // ...
+    }
+
+#### Tail recursive functions
+
+    tailrec fun findFixPoint(x: Double = 1.0): Double
+        = if (x == Math.cos(x)) x else findFixPoint(Math.cos(x))
+
+### Swift
+#### Function
+    
+    func greet(person: String, alreadyGreeted: Bool = false) -> String {
+        if alreadyGreeted {
+            return greetAgain(person: person)
+        } else {
+            return greet(person: person)
+        }
+    }
+    print(greet(person: "Tim", alreadyGreeted: true))
+
+    // 多个返回对象
+    func minMax(array: [Int]) -> (min: Int, max: Int)?  
+
+    // 声明argument labels
+    func someFunction(argumentLabel parameterName: Int)
+
+    // 嵌套函数
+    func chooseStepFunction(backward: Bool) -> (Int) -> Int {
+        func stepForward(input: Int) -> Int { return input + 1 }
+        func stepBackward(input: Int) -> Int { return input - 1 }
+        return backward ? stepBackward : stepForward
+    }
+
+#### Function type
+    
+    func addTwoInts(_ a: Int, _ b: Int) -> Int {
+        return a + b
+    }
+
+    (Int, Int) -> Int
+
+#### Lambda
+
+    { (parameters) -> return type in
+        statements
+    }
+
+    { (s1: String, s2: String) -> Bool in
+        return s1 > s2
+    }
+
+Operator Methods
+
+Trailing Closures
+
+    func someFunctionThatTakesAClosure(closure: () -> Void) {
+        // function body goes here
+    }
+
+    someFunctionThatTakesAClosure(closure: {
+        // closure's body goes here
+    })
+
+Escaping Closures
+    
+    @escaping
+
+Autoclosures
+
+    @autoclosure
+
+### Python
+
+#### Function
+    
+    def fib(n)
+    // Argument Values
+    def ask_ok(prompt, retries=4, reminder='Please try again!'):
+    // Keyword Arguments
+    def parrot(voltage, state='a stiff', action='voom', type='Norwegian Blue'):
+    // Arbitrary Argument Lists
+    def write_multiple_items(file, separator, *args):
+    // Unpacking Argument Lists
+    def parrot(voltage, state='a stiff', action='voom'):
+    d = {"voltage": "four million", "state": "bleedin' demised", "action": "VOOM"}
+    parrot(**d)
+
+#### Lambda
+Small anonymous functions
+
+    lambda a, b: a+b
 
