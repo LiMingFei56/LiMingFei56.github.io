@@ -61,3 +61,7 @@ clang -fobjc-arc <source.m> -o <target>
 http://www.gnu.org/software/gnustep/windows/installer.html
 
 	gcc `gnustep-config --objc-flags` -L/usr/GNUstep/Local/Library/Libraries -lgnustep-base helloWorld.m -o helloWorld
+
+### Clang
+
+    clang -fobjc-arc -framework Foundation literal.m
