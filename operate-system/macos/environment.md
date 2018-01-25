@@ -15,7 +15,7 @@ Environment
 
 #### Installation
 
-![见](https://docs.brew.sh/Installation.html)
+[见](https://docs.brew.sh/Installation.html)
 
 #### 用发
 

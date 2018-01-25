@@ -11,7 +11,7 @@ VIM Plug Depend
 ### 插件依赖环境
 #### vim-instant-markdown
 
-* 需要安装node.js,npm ![Install npm](https://docs.npmjs.com/getting-started/installing-node)
+* 需要安装node.js,npm [Install npm](https://docs.npmjs.com/getting-started/installing-node)
 * [sudo] npm -g install instant-markdown-d
 	- xdg-utils
 	- curl
