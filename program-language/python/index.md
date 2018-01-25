@@ -21,7 +21,7 @@ permalink: /program-language/python
 * [IO Stream](./python/io-stream)
 * [Network](./python/network)
 * [Concurrent](./python/concurrent)
-* [Features](./python/features)
+* [features](./python/features)
 * [Multilingual](./python/multilingual)
 
 

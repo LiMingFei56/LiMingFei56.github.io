@@ -21,7 +21,7 @@ permalink: /program-language/default
 * [IO Stream](./default/io-stream)
 * [Network](./default/network)
 * [Concurrent](./default/concurrent)
-* [Features](./default/features)
+* [features](./default/features)
 * [Multilingual](./default/multilingual)
 
 

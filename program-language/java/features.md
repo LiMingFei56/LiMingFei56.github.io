@@ -1,6 +1,6 @@
 ---
 layout: page
-permalink: /program-language/java/Features
+permalink: /program-language/java/features
 ---
 
-Features
+features

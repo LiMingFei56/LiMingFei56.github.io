@@ -1,6 +1,6 @@
 ---
 layout: page
-permalink: /program-language/default/Features
+permalink: /program-language/default/features
 ---
 
-Features
+features

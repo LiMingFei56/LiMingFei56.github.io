@@ -21,7 +21,7 @@ permalink: /program-language/javascript
 * [IO Stream](./javascript/io-stream)
 * [Network](./javascript/network)
 * [Concurrent](./javascript/concurrent)
-* [Features](./javascript/features)
+* [features](./javascript/features)
 * [Multilingual](./javascript/multilingual)
 
 

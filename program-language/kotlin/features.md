@@ -1,6 +1,6 @@
 ---
 layout: page
-permalink: /program-language/kotlin/Features
+permalink: /program-language/kotlin/features
 ---
 
-Features
+features

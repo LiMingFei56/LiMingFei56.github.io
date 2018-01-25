@@ -21,7 +21,7 @@ permalink: /program-language/swift
 * [IO Stream](./swift/io-stream)
 * [Network](./swift/network)
 * [Concurrent](./swift/concurrent)
-* [Features](./swift/features)
+* [features](./swift/features)
 * [Multilingual](./swift/multilingual)
 
 

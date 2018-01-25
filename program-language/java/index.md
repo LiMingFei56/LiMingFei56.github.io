@@ -21,7 +21,7 @@ permalink: /program-language/java
 * [IO Stream](./java/io-stream)
 * [Network](./java/network)
 * [Concurrent](./java/concurrent)
-* [Features](./java/features)
+* [features](./java/features)
 * [Multilingual](./java/multilingual)
 
 

@@ -1,9 +1,9 @@
 ---
 layout: page
-permalink: /program-language/python/Features
+permalink: /program-language/python/features
 ---
 
-Features
+features
 
 ### New In Python 2.7
 

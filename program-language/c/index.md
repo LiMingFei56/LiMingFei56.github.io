@@ -21,7 +21,7 @@ permalink: /program-language/c
 * [IO Stream](./c/io-stream)
 * [Network](./c/network)
 * [Concurrent](./c/concurrent)
-* [Features](./c/features)
+* [features](./c/features)
 * [Multilingual](./c/multilingual)
 
 

@@ -21,7 +21,7 @@ permalink: /program-language/kotlin
 * [IO Stream](./kotlin/io-stream)
 * [Network](./kotlin/network)
 * [Concurrent](./kotlin/concurrent)
-* [Features](./kotlin/features)
+* [features](./kotlin/features)
 * [Multilingual](./kotlin/multilingual)
 
 

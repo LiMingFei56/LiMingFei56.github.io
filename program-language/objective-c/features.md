@@ -1,6 +1,6 @@
 ---
 layout: page
-permalink: /program-language/objective-c/Features
+permalink: /program-language/objective-c/features
 ---
 
-Features
+features

@@ -1,6 +1,6 @@
 ---
 layout: page
-permalink: /program-language/c++/Features
+permalink: /program-language/c++/features
 ---
 
-Features
+features

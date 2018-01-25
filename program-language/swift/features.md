@@ -1,6 +1,6 @@
 ---
 layout: page
-permalink: /program-language/swift/Features
+permalink: /program-language/swift/features
 ---
 
-Features
+features

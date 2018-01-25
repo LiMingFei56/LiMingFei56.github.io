@@ -21,7 +21,7 @@ permalink: /program-language/objective-c
 * [IO Stream](./objective-c/io-stream)
 * [Network](./objective-c/network)
 * [Concurrent](./objective-c/concurrent)
-* [Features](./objective-c/features)
+* [features](./objective-c/features)
 * [Multilingual](./objective-c/multilingual)
 
 
