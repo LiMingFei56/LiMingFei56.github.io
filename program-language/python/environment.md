@@ -37,3 +37,11 @@ Python被设计为高可读性。使用英文关键字，不像其它的语言�
 6 -c cmd run Python script sent in as cmd string
 7 file run Python script from given file
 
+
+### 程序入口
+
+    #!/usr/bin/python3
+    #!/usr/bin/env python3
+
+    python3 helloworld.py
+    ./helloworld.py

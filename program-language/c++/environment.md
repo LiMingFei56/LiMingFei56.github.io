@@ -14,6 +14,18 @@ Environment
 * 面向泛型
 * 支持C语言
 
+### 程序入口
+
+    #include <iostream>
+
+    using namespace std;
+
+    int main(int argc, char **argv){
+
+    }
+
 ### Environment
 
 	clang++ -Wall -g -std=c++11 -stdlib=libc++ HelloWorld.cpp
+
+
