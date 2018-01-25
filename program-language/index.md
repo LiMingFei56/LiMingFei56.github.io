@@ -16,3 +16,5 @@ permalink: /program-language/
 * [Swift](/program-language/swift)
 * [Python](/program-language/python)
 * [JavaScript](/program-language/javascript)
+
+* [Knowledge](/program-language/knowledge)
