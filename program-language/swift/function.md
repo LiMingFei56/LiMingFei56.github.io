@@ -17,3 +17,20 @@ Funcation
     func addTwoInts(_ a: Int, _ b: Int) -> Int {
         return a + b
     }
+
+### Selector
+
+    在swift2.2前使用Selector("method")方法，但是这个方法容易造成输入错误。
+    在swift2.2后使用#selector对应objc@selector。
+
+    class Thing {
+    ...
+    func doStuff(stuff: Int) {
+        print("do Stuff \(stuff)")
+    }
+
+    func doStuff(stuff: Double, fluffy: String) {
+        print("do Stuff \(stuff) - \(fluffy)")
+    }
+
+    #selector(Thing.doStuff(_:fluffy:)))
