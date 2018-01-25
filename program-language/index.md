@@ -8,12 +8,11 @@ permalink: /program-language/
 
 编程语言
 
-* [Grammar](/program-language/grammar)
-
-* [Program Feature](/program-language/program-featur)
-
 * [C](/program-language/c)
 * [C++](/program-language/c++)
+* [Java](/program-language/java)
+* [Kotlin](/program-language/kotlin)
 * [Objective-C](/program-language/objective-c)
+* [Swift](/program-language/swift)
 * [Python](/program-language/python)
 * [JavaScript](/program-language/javascript)
