@@ -8,4 +8,10 @@ permalink: /tools/
 
 工具与其他
 
+### Main
 * [Vim](/tools/vim)
+
+### Literature
+* [Markdown](/tools/literature/markdown)
+* [LaTeX](/tools/literature/latex)
+

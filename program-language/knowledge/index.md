@@ -7,3 +7,5 @@ permalink: /program-language/knowledge
 ---
 
 编程方面的知识
+
+* [Architectural Pattern](/program-language/knowledge/architectural-pattern)

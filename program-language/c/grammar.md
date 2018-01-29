@@ -56,6 +56,14 @@ switch的分支是可以穿透的(Fallthrough)，需要使用`break`语句来打
 
     break 打断穿透；跳出当前循环
     continue 路过当前循环，并开始下一次
+    
+#### goto
+
+    // 声明Label，goto使用
+    a: steds = 3;
+    b: help = 2 * steds;
+
+    goto b;
 
 ### Function And Lambda
 #### Function

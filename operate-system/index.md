@@ -7,7 +7,3 @@ permalink: /operate-system/
 ---
 
 操作系统
-
-* [Like-unix](./like-unix/)
-* [MacOS](./macos)
-
