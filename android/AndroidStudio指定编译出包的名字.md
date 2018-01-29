@@ -1,3 +1,10 @@
+---
+layout: page
+permalink: /android/android/AndroidStudio指定编译出包的名字
+---
+
+AndroidStudio指定编译出包的名字.md
+
 ### APK
 如果使用的插件是`apply plugin: 'com.android.application'`
 
