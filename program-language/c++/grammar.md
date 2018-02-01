@@ -21,6 +21,12 @@ Grammar
 
     #define i 123;
 
+### Initialization
+
+#### list-inisialization
+
+    int i = {};  //  初始化为0, 不会转换类型
+
 ### Control Flow
 
 #### IF Statement

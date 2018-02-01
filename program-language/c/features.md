@@ -57,3 +57,5 @@ pp #ifdef，#ifndef, #endif
 都是不同的。
 
 
+### Interpositioning
+通过编写与库函数同名的函数来取代该库函数的行为。

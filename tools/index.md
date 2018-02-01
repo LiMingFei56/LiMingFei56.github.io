@@ -14,4 +14,12 @@ permalink: /tools/
 ### Literature
 * [Markdown](/tools/literature/markdown)
 * [LaTeX](/tools/literature/latex)
+* [Regular Expressions Introduction](./regular_expressions/introduction)
+* [Regular Expressions Syntax](./regular_expressions/syntax)
 
+### Html And CSS
+* [Html And CSS](./html_css)
+
+### 技术栈
+* [前端开发技术](./front_stack)
+* [系统开发技术](./system_stack)

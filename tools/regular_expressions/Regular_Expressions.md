@@ -1,4 +1,9 @@
-## 正则表达式
+---
+layput: page
+permalink: /tools/regular_expressions/introduction
+---
+
+正则表达式
 
 ### 介绍
 [Regular Expressions](http://www.regular-expressions.info/tutorial.html)

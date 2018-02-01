@@ -5,6 +5,8 @@ permalink: /program-language/c/data-structrue
 
 Data structrue
 
+表达式中 或者 传递参数时，char short会自动转换成int，float 会自动转换成double。计算完成会再转换回来
+
 ### 基本数据类型
 
 |Type     | Type Express | Explanation                              | Format Specifier    | sizeof |

@@ -1,6 +1,6 @@
 ---
 layout: page
-permalink: /android/android/AndroidStudio指定编译出包的名字
+permalink: ./AndroidStudio指定编译出包的名字
 ---
 
 AndroidStudio指定编译出包的名字.md

@@ -1,4 +1,10 @@
-## 正则表达式语法
+---
+layout: page
+permalink: /tools/regular_expressions/syntax
+---
+
+正则表达式语法
+
 ### 1. 字符字面值
 *abc*: 字符字面值是最基本的regex是字符字面值,区分大小写
 

@@ -17,6 +17,11 @@ Heap  - 在运行时动态分配的内存，需要自己管理
 避免在C++中使用C的malloc()函数，因为`new`可以有效的创建对象
 
 ### 命名空间
+声明名称空间有4种方法，使作用域不一样
+* using namespace std;放在函数定义之前，文件中所有地方都可以使用
+* using namespace std;放在函数定义中，只能在函数中使用
+* using std::cout;放在函数中，只能在函数中使用cout
+* 完全不使用编译指令using，使用std::来引用
 
 #### 定义Namespace
 
