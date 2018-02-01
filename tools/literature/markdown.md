@@ -1,6 +1,6 @@
 ---
 layout: page
-permalink: /tools/literatrue/markdown
+permalink: /tools/literature/markdown
 ---
 
 Markdown
