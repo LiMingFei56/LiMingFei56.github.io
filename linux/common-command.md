@@ -1,6 +1,6 @@
 ---
 layout: page
-permalink: /operate-system/like-unix/common-command
+permalink: /linux/common-command
 ---
 
 Common Command

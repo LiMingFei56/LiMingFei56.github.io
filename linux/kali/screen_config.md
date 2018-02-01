@@ -1,3 +1,7 @@
+---
+layout: page
+permalink: /linux/kali/screen_config
+---
 ## screen_config
 https://www.raspberrypi.org/forums/viewtopic.php?&t=43060
 https://learn.adafruit.com/adafruit-pitft-3-dot-5-touch-screen-for-raspberry-pi

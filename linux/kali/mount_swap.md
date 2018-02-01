@@ -1,3 +1,7 @@
+---
+layout: page
+permalink: /linux/kali/mount_swap
+---
 ## mount swap
 
 Use "mkswap" Setting swap

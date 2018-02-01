@@ -9,3 +9,22 @@ permalink: /linux/
 Linux
 
 * [Common command](./common-command)
+
+
+### kali
+* [China Input](./kali/china_input)
+* [Create User](./kali/create_user)
+* [Lunach Status](./kali/lunact_status)
+* [Mount Swap](./kali/mount_swap)
+* [Network Config](./kali/network_config)
+* [Replace Source](./kali/replace_source)
+* [Replace Timezone](./kali/replace_timezone)
+* [Screen Config](./kali/screen_config)
+* [Error](./kali/error)
+
+### macos
+* [Environment](./macos/environment)
+* [UploadIosApp](./macos/uploadIosApp)
+
+### raspberry
+* [Backups](./raspberry/backups)

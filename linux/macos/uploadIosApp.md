@@ -1,6 +1,6 @@
 ---
 layout: page
-permalink: /operate-system/macos/uploadIosApp
+permalink: /linux/macos/uploadIosApp
 ---
 
 Upload Ios APP

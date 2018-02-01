@@ -1,3 +1,8 @@
+---
+layout: page
+permalink: /linux/kali/create_user
+---
+
 ## create user
 1. useradd -m lmf
 2. passwd lmf

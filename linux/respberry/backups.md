@@ -1,3 +1,9 @@
+---
+layout: page
+permalink: /linux/raspberry/backups
+---
+
+
 ## 备份系统
 It may be sensible for you to keep a copy of the entire SD card image, so you
 can restore the card if you lose it or it becomes corrupt. You can do this using

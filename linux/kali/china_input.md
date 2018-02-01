@@ -1,3 +1,8 @@
+---
+layout: page
+permalink: /linux/kali/china_input
+---
+
 ## china input
 install china fonts
 	apt search wqy

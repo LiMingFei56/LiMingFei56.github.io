@@ -1,3 +1,7 @@
+---
+layout: page
+permalink: /linux/kali/network_config
+---
 ## network config
 
 ### 1. put on wlan0 interfaces config

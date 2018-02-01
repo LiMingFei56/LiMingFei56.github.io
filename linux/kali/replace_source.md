@@ -1,3 +1,7 @@
+---
+layout: page
+permalink: /linux/kali/replace_source
+---
 ## Replace Source
 China
 deb http://mirrors.ustc.edu.cn/kali kali-rolling main non-free contrib

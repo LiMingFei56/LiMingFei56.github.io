@@ -1,3 +1,7 @@
+---
+layout: page
+permalink: /linux/kali/replace_timezone
+---
 ## replace timezone
 tzselect
 vim .profile
