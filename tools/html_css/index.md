@@ -9,5 +9,5 @@ permalink: /tools/html_css
 Html And Css
 
 ### CSS Layout
-* [Display, position, float](./display_position_float)
-* [Flex](./flex)
+* [Display, position, float](./html_css/display_position_float)
+* [Flex](./html_css/flex)

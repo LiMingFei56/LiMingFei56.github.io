@@ -3,12 +3,8 @@
 # Edit theme's home layout instead if you wanna make some changes
 # See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 layout: page
-permalink: /ios/
+permalink: /ios/technical
 ---
 
-IOS
+Technical
 
-* [Guide](/ios/guide/)
-* [Design](/ios/design)
-* [Develop](/ios/develop)
-* [Technical](/ios/technical)
