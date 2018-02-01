@@ -1,3 +1,7 @@
+---
+layout: page
+permalink: /android/url_scheme
+---
 ## Uri-Scheme介绍和使用
     由于苹果的app都是在沙盒中，相互是不能访问数据的。但是苹果还是给出了一个可以
 在app之间跳转的方法：URL Scheme。简单的说，URL Scheme就是一个可以让app相互之间

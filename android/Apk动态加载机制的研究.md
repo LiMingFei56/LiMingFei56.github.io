@@ -1,3 +1,7 @@
+---
+layout: page
+permalink: /android/apk_dynamic_load
+---
 ## Apk动态加载机制的研究
 未安装的Apk是不能直接访问的,但是可以通过一个Apk(宿主程序)来动态的加载另一个Apk文
 件并将其放在自己的进程中执行.其中有几个难点:

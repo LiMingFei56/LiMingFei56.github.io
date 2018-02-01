@@ -1,3 +1,7 @@
+---
+layout: page
+permalink: /android/image_base64
+---
 ## 图片Base64+压缩
 
 Base64是为了传输而使用的

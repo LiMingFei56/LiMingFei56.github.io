@@ -1,6 +1,6 @@
 ---
 layout: page
-permalink: ./AndroidStudio指定编译出包的名字
+permalink: /android/output_apk_name
 ---
 
 AndroidStudio指定编译出包的名字.md

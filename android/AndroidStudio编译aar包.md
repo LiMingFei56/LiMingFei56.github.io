@@ -1,3 +1,8 @@
+---
+layout: page
+permalink: /android/build_arr
+---
+
 1. apply plugin: 'com.android.application'
 	改成 apply plugin: 'com.android.library'
 

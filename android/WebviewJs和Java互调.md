@@ -1,3 +1,7 @@
+---
+layout: page
+permalink: /android/js_java_interactive
+---
 ## WebviewJs和Java互调
 
 ### Js调用Java

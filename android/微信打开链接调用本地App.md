@@ -1,3 +1,7 @@
+---
+layout: page
+permalink: /android/weixin_call_app
+---
 ## 微信打开链接调用本地App
 
 在H5页面中使用URI Scheme跟本地App通信,IOS,ANDROID都支持.
