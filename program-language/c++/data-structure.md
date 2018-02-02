@@ -60,3 +60,100 @@ signed long long
 
     std::vector<double> scores;
     auto pv = scores.begin();
+
+### Array
+
+    //声明数组
+    typeName arrayname[arraySize];
+
+    // 初始化
+    int cards[4] = {3, 6, 8, 10};
+    int cards[4] = {3, 6}; // 其他设置为0
+    double earnings[4] {1, 2}; // C++11初始化方法 其他设置为0
+
+### String
+
+    string str1;
+    string str2 = "panther";
+
+    // C++11
+    char first_date[] = {"Le Chapon Dodu"};
+    char second_date[] = {"The Elegant Plate"};
+    string third_date = {"The Bread Bow"};
+
+    L"Chief Astrogator"; // w_char string
+    u"Felonia Ripova"; // char_16 string
+    U"Humber Super Snipe"; // char_32 string
+    u8"UTF-8"; // 1~4位字符
+    R"\n"; 原始字符
+
+### Struct 同c
+    
+    struct inflatable
+    {
+        char name[20];
+        float volume;
+        double price;
+    };
+
+    //C++11 初始化
+    inflatable duck {"Daphne"}; // 未设置的都设置为0
+
+### Union 同c
+
+    union one4all
+    {
+        int int_val;
+        long long_val;
+        double double_val;
+    };
+
+### Enum 同c
+
+    enum spectrum
+    {
+        red
+        , orange
+        , yellow
+        , green
+        , blue
+        , violet
+        , indigo
+        , ultraviolet
+    };
+
+### 指针 同c
+指针与数组基本等价的原因在于指针算术和C++内部处理数组的方式。
+
+指针算术:
+数组: 数组+1 就是值加1
+指针：指针+1 就是指针+1*指针类型字节
+
+数组地址:
+数组名被解释为其第一个元素的地址，而对数组名应用地址运算符时，得到的是整个数组的地址。
+
+    short tell[10];
+    cout << tell << endl; // displays &tell[0]
+    cout << &tell << endl; // displays address of whole array
+
+&tell[0] - 是一个2字节内存块
+&tell - 是一个20字节的内存块
+
+### 模板类vector
+    
+    #include <vector>
+    using namespace std;
+
+    vector<double> a2(4);
+    a2[1] = 1.0 / 5.0;
+
+### 模板类array c++11
+
+    #include <array>
+    using namespace std;
+
+    array<double, 4> a3 = {};
+    a3 = a3;
+
+    a3[1] = 12;
+

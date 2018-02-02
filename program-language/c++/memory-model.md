@@ -53,4 +53,23 @@ Heap  - 在运行时动态分配的内存，需要自己管理
 	// to access members of namespace:name1
 	using namespace namespace_name1;
 
+### new delete
+c++中使用new 和delete 代替malloc() free()
 
+int * psome = new int [10];
+delete [] psome;
+
+* 不要使用delete来释放不是new分配的内存
+* 不要使用delete释放同一个内存块两次
+* 如果使用new[]为数组分配内存，则应使用delete[]来释放
+* 如果使用new[]为一个实体分配内存，则应使用delete来释放
+* 对空指针应用delete是安全的
+
+### 对象存储
+#### 自动存储
+
+#### 静态存储
+
+#### 动态存储
+
+#### 线程存储

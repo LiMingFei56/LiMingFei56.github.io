@@ -48,7 +48,16 @@ switch的分支是可以穿透的(Fallthrough)，需要使用`break`语句来打
 
 #### FOR Statement
 
-    for( ; ;){}
+    for(initialization; test-expression; update-expression)
+    {
+        statement;
+    }
+
+    // range-based 简化了对数组，容器类的迭代
+    for(for-init-statement condition; expression)
+    {
+        statement;
+    }
 
 #### WHILE Statement
 
