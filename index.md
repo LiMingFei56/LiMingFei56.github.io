@@ -18,3 +18,6 @@ layout: page
 * [Andoird](/android/)
 * [IOS](/ios/)
 * [工具与其他](/tools/)
+
+* [机器学习](/machine_learning)
+* [CV VR AR](/cv_vr_ar)
