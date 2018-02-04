@@ -9,6 +9,7 @@ permalink: /linux/
 Linux
 
 * [Common command](./common-command)
+* [Install Nvidia](./install_nvidia)
 
 
 ### kali
@@ -20,6 +21,7 @@ Linux
 * [Replace Source](./kali/replace_source)
 * [Replace Timezone](./kali/replace_timezone)
 * [Screen Config](./kali/screen_config)
+* [Sound](./kali/sound)
 * [Error](./kali/error)
 
 ### macos
