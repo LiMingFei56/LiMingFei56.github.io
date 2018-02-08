@@ -3,9 +3,7 @@
 # Edit theme's home layout instead if you wanna make some changes
 # See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 layout: page
-permalink: /netword-system/
+permalink: /netword-system/http
 ---
 
-网络系统
-
-* [Http](/netword-system/http)
+## Http

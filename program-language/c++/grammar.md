@@ -21,6 +21,13 @@ Grammar
 
     #define i 123;
 
+    // 引用变量, 左值引用
+    int rats;
+    int & rodents = rats; // makes rodents an alias for rats
+
+    // 右值引用  C++11
+    double && rref = std::sqrt(36.00);
+
 ### Initialization
 
 #### list-inisialization
@@ -81,6 +88,21 @@ switch的分支是可以穿透的(Fallthrough)，需要使用`break`语句来打
     // 定义需要跟函数原型的参数类型和返回类型一至,收用函数原型的头文件
     <return_type> function_name(parameter_list){
     }
+
+    // 支持默认参数
+    void defaultFun(int a, int b = 1)
+    {
+    }
+
+    // 函数模板 // implicit instantiation
+    template <typename AnyType>
+    void Swap(AnyType &a, AnyType &b)
+    {
+        ...
+    }
+
+    template void Swap<int> (int, int); //explicit instantiation
+    template <> void Swap(int &, int &);
 
 #### inline
 使用inline修饰的函数为内联函数

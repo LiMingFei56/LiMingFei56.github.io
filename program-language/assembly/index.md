@@ -3,9 +3,12 @@
 # Edit theme's home layout instead if you wanna make some changes
 # See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 layout: page
-permalink: /netword-system/
+permalink: /program-language/assembly
 ---
 
-网络系统
+## 汇编
 
-* [Http](/netword-system/http)
+* [运行原理](./running)
+* [寄存器](./register)
+* [取地址](./address)
+* [中断](./interception)

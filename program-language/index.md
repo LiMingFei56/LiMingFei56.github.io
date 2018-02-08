@@ -8,6 +8,8 @@ permalink: /program-language/
 
 编程语言
 
+* [Assembly](/pregram-language/assembly)
+
 * [C](/program-language/c)
 * [C++](/program-language/c++)
 * [Java](/program-language/java)

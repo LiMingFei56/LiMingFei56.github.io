@@ -9,6 +9,7 @@ permalink: /tools/
 工具与其他
 
 ### Main
+* [Build](/tools/build)
 * [Vim](/tools/vim)
 
 ### Literature
