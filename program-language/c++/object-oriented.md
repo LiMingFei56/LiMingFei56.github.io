@@ -79,12 +79,22 @@ Object Oriented
 
 	~Line();
 
-#### Copy Constructor
+#### Copy Constructor 默认的复制构造函数的功能
 根据一个对象创建另一个对象
 
 	classname (const classname &obj) {
 	   // body of constructor
 	}
+
+何时调用：
+> 初化时调用
+
+    StringBad ditto(motto);
+    StringBad metoo = motto;
+    String also = StringBad(motto);
+    StringBad *pStringBad = new StringBad(motto);
+
+> 按值参数传递时
 
 #### Friend Method
 可以在外面访问私有变量,相当于Java中的静态变量
@@ -139,12 +149,6 @@ Outside classes | yes    | no        | no
 
 	class derived-class: access baseA, access baseB....
 
-
-### Overload
-C++中有方法重载和操作符重载。
-
-#### 方法重载
-使用相同的方法名，但是方法参数不一样
 
 #### 操作符重载
 
