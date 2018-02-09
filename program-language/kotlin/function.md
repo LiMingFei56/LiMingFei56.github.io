@@ -19,3 +19,11 @@ Funcation
     fun myFunc(a: Int, b: Int): Int{
         return a + b
     }
+
+### 语言链接性
+函数签名使用参数列表(参数个数和参数类型)
+fun Line_0.abc(kotlin.Int): kotlin.Unit
+
+### Function Override And Overland
+override - 需要父类声明方法为open，子类使用override关键字重写
+overland - 需要保证函数签名不一样，

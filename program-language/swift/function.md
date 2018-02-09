@@ -34,3 +34,10 @@ Funcation
     }
 
     #selector(Thing.doStuff(_:fluffy:)))
+
+### 语言链接性 Language Linking
+根据参数列表生成函数签名，跟参数描述、个数有关，跟参数类型无关
+
+### Function Override And Overland
+override - 需要使用关键字override
+overland - 保证函数签名不同
