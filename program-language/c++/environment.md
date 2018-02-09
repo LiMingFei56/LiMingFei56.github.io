@@ -28,4 +28,3 @@ Environment
 
 	clang++ -Wall -g -std=c++11 -stdlib=libc++ HelloWorld.cpp
 
-

@@ -5,6 +5,9 @@ permalink: /program-language/c++/object-oriented
 
 Object Oriented
 
+### this关键字
+在类中非静态函数后面加const，如`double add() const;`表示该函数不会修改this对象
+
 ### Class 
 
 *definitions*

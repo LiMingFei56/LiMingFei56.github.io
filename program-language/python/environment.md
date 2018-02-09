@@ -45,3 +45,25 @@ Python被设计为高可读性。使用英文关键字，不像其它的语言�
 
     python3 helloworld.py
     ./helloworld.py
+
+### PIP
+阿里云 http://mirrors.aliyun.com/pypi/simple/
+
+中国科技大学 https://pypi.mirrors.ustc.edu.cn/simple/
+
+豆瓣(douban) http://pypi.douban.com/simple/
+
+清华大学 https://pypi.tuna.tsinghua.edu.cn/simple/
+
+中国科学技术大学 http://pypi.mirrors.ustc.edu.cn/simple/
+
+    pip install web.py -i http://pypi.douban.com/simple
+    pip install web.py -i http://pypi.douban.com/simple --trusted-host pypi.douban.com
+
+linux的文件在~/.pip/pip.conf，
+windows在%HOMEPATH%\pip\pip.ini），
+
+    [global]
+    index-url = http://pypi.douban.com/simple
+    [install]
+    trusted-host=pypi.douban.com

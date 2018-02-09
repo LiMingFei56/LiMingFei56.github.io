@@ -59,3 +59,7 @@ pp #ifdef，#ifndef, #endif
 
 ### Interpositioning
 通过编写与库函数同名的函数来取代该库函数的行为。
+
+### 语言链接性 Language Linking
+一个名称是对应一个函数，为了满足内部需求，编译器可能将spiff这样的函数名翻译为_spiff，这种方法
+叫做C语言的语言链接性。
