@@ -114,6 +114,9 @@ Object Oriented
 
 	friend class ClassTwo;
 
+友元函数可以通过强制类型转换，将派生类引用或指针转换为基类引用或指针，然后使用该
+指针或引用调用基类的友元函数。
+
 #### 内联函数
 使用`inline`修饰的函数
 
@@ -144,15 +147,25 @@ Outside classes | yes    | no        | no
 
 派生类会继承基类下面所有的方法：
 
-* 构造函数、析造函数、Copy构造函数
-* 重载操作符
-* Friend方法
+* Copy构造函数
+* 重载操作符，除赋值操作符
+
+构造函数不会继承，只能调用派生类构造函数，派生类的构造函数会自动调用基类的构造函灵敏
+，可以使用member initialization list来指定调用基数的构造函数。
+
+析构函数和赋值操作符也不继承
+
+继承时需要考虑是否要重写，析构函数，复制构造函数，赋值操作符
 
 使用访问限定符时有下面规则：
-
 * 使用public继承：基类的访问控制不变
 * 使用protect继承：基类的public和protect成员，继承来为protect
 * 使用private继承：基类的public和protect成员，继承来为private
+
+有关派生类构造函数的要点如下：
+* 首先创建基类对象
+* 派生类构造函数应通过成员初始化列表将基类信息传递给基类构造函数
+* 派生类构造函数应初始化派生类新增的数据成员
 
 #### 多重继承
 
@@ -169,9 +182,17 @@ Outside classes | yes    | no        | no
 需要在实现多态的方法前加上`virtual`，让该方法采用动态连接。
 
 #### 纯虚拟方法,相当于抽像方法
+abc(abstract base class) - 当类包含纯虚拟方法时，则不能创建该类的对象，只能做为基类
 
 	// pure virtual function
       virtual int area() = 0;
 
+在派生类中使用`override`关键字描述的虚方法，会让编译器检查该虚方法是否正确实现:
+
+    void PrintTuring() override;
+
+#### 虚析构函数
+如果不指定析构函数为`virtual`，那么只会调用基类的析构函数。
+如果指定了`virtual`，会先调用子类的析构函数，然后自动调用基类的析构函数
 
 
