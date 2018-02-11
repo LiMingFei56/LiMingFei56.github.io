@@ -9,6 +9,10 @@ Genericity
 
 模板是泛型编程的基础，它涉及以独立于任何特定类型的方式编写代码
 
+    template<class Type>
+    等价于
+    template<typename Type>
+
 #### 模板函数的发展
 
 ##### 1. 是什么类型 C++98
@@ -46,16 +50,56 @@ decltype(expression) var;工作原理（为确定类型，编译器必须遍历�
 
 #### Function Template
 
-	template <class type> ret-type func-name(parameter list) {
+	template <class type>
+    ret-type func-name(type t1, type t2) {
 	   // body of function
 	}
 
-#### Class Template
+    bool Stack<type>::isempty()
+    {
+    }
 
-	template <class type> class class-name {
-	   .
-	   .
-	   .
+### Class Template
+    
+	template <class type> // 首先定义一个模板
+    class class-name {
+        private:
+            type items[MAX];
 	}
+
+    Statck<type>::Stack()
+    {
+    }
+
+    // 使用模板
+    Stack<int> kernels;
+
+### 模板多功能性
+
+> 递归使用模板
+
+    ArrayTF<ArrayTF<int, 5>, 10> twodee;
+
+> 使用多个类型参数
+
+    template<class T1, class T2>
+
+> 默认类型模板参数
+
+    template<class T1, class T2 = int>
+
+### 模板的具体化
+类模板与函数模板很相似，因为可以有隐式实例化、显式实例化和显式具体化，统称为具体化(specialization)
+。模板以泛型的方式描述类，而具体化是使用具体的类型生成类声明。
+
+1. 隐式实例化 - 声明一个或多个对象，指出所需的类型，而编译器使用通用模板提供的处方生成具体的类定义。
+    编译器在需要对象之前，不会生成类的隐式实例化（如指针，定义时不需要，初始化时才需要）。
+    `ArrayTP<double, 30> *pt; // a pointer, no object needed yet`
+
+2. 显式实例化 - 使用关键字template指出所需类型来声明类时，编译器将生成类声明的显式实例化。
+    `template class ArrayTP<String, 100>;`
+
+3. 显式具体化 - 是特写类型的定义（用于替换摸板中的泛型）。
+    `template <> class Classname<specialized-type-name>`
 
 

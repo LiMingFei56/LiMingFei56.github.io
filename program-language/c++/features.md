@@ -37,3 +37,26 @@ typeName为转换目标类型
 * 转换函数必须是类方法
 * 转换函数不能指定返回类型
 * 转换函数不能有参数
+
+### RTTI
+运行阶段类型识别(Runntime Type Identification)。
+
+* 如果可能的话，dynamic_cast运算符将使用一个指向基类的指针来生成一个指向派生类的指针
+    否则，该运算符返回0 -- 空指针
+* typeid运算符返回一个指出对象的类型的值
+* type_info结构存储了有关特定类型的信息
+
+只能将RTTI用于包含虚函数的类层次结构，原因在于只有对于这种类层次结构，才应该将派生对象的
+地址赋给基类指针。
+
+### 类型转换运算符
+C++的通用类型转换太过松散，最好使用下面的方法，指出了进行类型转换的原因，并让编译
+器能够检查程序的行为是否与设计者想法吻合。
+
+* dynamic_cast - dynamic_cast <type-name>(expression)，安全的运行时类型转换
+* const_cast - const_cast<type-name>(expression)，改变值为const或volatile，或去掉这2个修改
+* static_cast - static_cast<type-name>(expression)，仅当type-name可被隐式转换为expression所属的类型
+    或反过来时，转换才是合法的，否则出错。
+* reinaterpret_cast - reinterpret_cast<type-name>(expression)，内存地址转换成对象等
+
+

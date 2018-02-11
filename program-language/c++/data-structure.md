@@ -157,3 +157,29 @@ signed long long
 
     a3[1] = 12;
 
+### 智能指针模板类
+智能指针是行为类似于指针的类对象，可以用来帮助管理动态内存分配。动态分配内存后，忘记
+或者产生异常，而没有调用delete，那么会导至内存泄漏。智能指针可以使指针被释放时，也释放
+指针指向的内存。
+
+* auto_ptr C++98   C++11中被摒弃
+* unique_ptr C++11
+* shared_ptr C++11
+* weak_ptr
+
+这三个智能指针模析都定义了类似指针的对象，可以将new获得(直接或间接)的地址赋给这种对象。
+当智能指针过期时，其析构函数将使用delete来释放内存
+
+    auto_ptr<double> pd(new double);
+    unique_prt<double> pdu(new double);
+    shared_prt<double> pss(new double);
+
+区别：
+> auto_ptr 可以指向同一个对象，所以程序将试图删除同一个对象两次。解决这个问题有3个方法，
+第一种是定义赋值运算符，使之执行深复制；
+第二种建立所有权(ownership)概念，这就是unique_ptr；
+第三种是使用引用计数(reference counting)，这就是shared_prt；
+
+
+
+
