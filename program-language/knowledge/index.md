@@ -8,5 +8,6 @@ permalink: /program-language/knowledge
 
 编程方面的知识
 
+* [Program Mode](./knowledge/program-mode)
 * [Language Sheory](./knowledge/language_sheory)
 * [Architectural Pattern](/program-language/knowledge/architectural-pattern)

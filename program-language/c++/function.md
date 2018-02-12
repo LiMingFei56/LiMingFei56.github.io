@@ -5,6 +5,8 @@ permalink: /program-language/c++/funcation
 
 Funcation
 
+使用`constexpr`修饰函数，告诉函数编译期间有可能计算出值。
+
 ### 临时变量、引用参数和const
     如果实参与引用参数不匹配，C++将生成临时变量。当前，仅当参数为const引用时，C++才
 允许这样做，但以前不是这样。
@@ -88,4 +90,40 @@ C++中不允许使一个类型的对象，赋值给另一个类型。但是继�
 * 友元不能是`virtual`
 * 可以使用基数限定符调用基类非私有方法 Base::call();
 
+使用override修饰虚函数声明，必须定义(编译器会检查函数的特征码是否一样)，如果特征
+码不一样就不会覆盖基类虚函数，而是隐藏。
+
+    virtual void f(char * ch) override;
+
+使用final修饰虚函数声明，不允许被覆盖
+
+    virtual void f(char ch) final {....};
+
+### 函数对象
+重载运算符`()`来实现函灵敏对象，也叫函数值。可以像调用函数一样使用对象。
+
+* 生成器（generator）是不用参数就可以调用的函数符
+* 一元函数（unary function）是用一个参数可以调用的函数符
+* 二元函数（binary function）是用两个参数可以调用的函数符
+
+* 返回bool值的一元函数是谓词（predicate）
+* 返回bool值的二元函数是二元谓词(binary predicate)
+
+自适应函数符
+adaptable
+
+
+### Lambda函数
+Lambda calculus - 一种定义和应用函数的数学系统，这个系统可以让您能够使用匿名函数。仅
+当lambad表达式完全由一条返回语句组成时，自动类型推断才管用；否则，需要使用返回类型
+后置语法：
+
+    [](double x) -> double {int y = x; reutrn x -y;}
+
+    [&count](int x){count += (x % 13 == 0);}
+
+    [] 为函数名，中间可以捕获动态变量，代码块中可以使用;[=]捕获所有动态变量的值；
+        [&]捕获所有动态变量的引用
+    () 主参数列表
+    {} 为代码码，返回值为dealtype自动推断，如果没有返回值就返回void
 

@@ -7,6 +7,12 @@ Genericity
 
 ### Templates
 
+模板类型简化：
+ auto
+ decltype
+ using = 
+ typedef
+
 模板是泛型编程的基础，它涉及以独立于任何特定类型的方式编写代码
 
     template<class Type>
@@ -102,4 +108,40 @@ decltype(expression) var;工作原理（为确定类型，编译器必须遍历�
 3. 显式具体化 - 是特写类型的定义（用于替换摸板中的泛型）。
     `template <> class Classname<specialized-type-name>`
 
+### 泛型
+使用模板和通用算法来实现。模板使得算法独立于存储的数据类型，而迭代器使算法独立于使用的
+容器类型。
 
+#### 迭代器
+* 应能够对迭代器执行解除引用的操作，以便能够访问它引用的值。即如果p是一个迭代器，则应对*p进行定义
+* 应能够将一个赋给另一个。即如果p和q都是迭代器，则应对表达式p=q进行定义
+* 应能够将一个迭代器和另一个进行比较，看它们是否相等。即如果p和q都是迭代器，则应对p==q和p!=q进行定义
+* 应能够使用迭代器遍历容器中的所有元素，这可以通过为迭代器p定义++p和p++来实现
+
+### 包装器function
+当模板参数接收一个可调用类型（callable type），就会导致模板的效率极低。调用类型分为函
+数名、函数指针、函数对象或有名称的lambda表达式，模板会根据这些不同类型生成不同的模板对象
+
+可以使用包装器function来解决上述问题，因为上述的可调用类型的调用特征标(call signature)相同。它
+从调用特征标的角度定义了一个对象，可用于包装调用特征标相同的call type。
+
+    std::function<double(char, int)> fdci; 2个参数char, int，返回double
+
+    function<double(double)> ef1 = Fq(10.0);
+    use_f(y, ef1);
+
+### 可变参数模板(variadic template)
+一般定义模板参数，会分为模板参数包(parameter pack)，里面包含模板类型; 函数参数包，里面包含形参值
+。C++11提供了一个用省略号表示的元运算符(meta-operator)
+
+    template<typename... Args>
+    void show_list1(Args... args)
+    {
+    }
+
+Args是一个模板参数包
+args是一个函数参数包
+
+    showlist1('$', 80, "sweet", 4.5);
+
+args... 为函数参数包展开

@@ -18,6 +18,7 @@ Grammar
     const int i;
     extern const int i;
     static const int i;
+    constexpr int i = 1; // 只能用常量表达式初始化，限定在了编译期常量
 
     #define i 123;
 

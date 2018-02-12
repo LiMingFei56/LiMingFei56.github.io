@@ -180,6 +180,34 @@ signed long long
 第二种建立所有权(ownership)概念，这就是unique_ptr；
 第三种是使用引用计数(reference counting)，这就是shared_prt；
 
+### 容器
 
+#### 迭代器
 
+* 输入迭代器：只读，单向，单通过
+* 输出迭代器：只写，单向，单通行
+* 正向迭代器：读写，迭代顺序相同
+* 双向迭代器：同正向迭代器，并且支持递减运算符
+* 随机访问迭代器：支持随机访问
 
+#### 容器种类
+
+##### 序列
+* vector - 数组，自动内存管理，可变长度，随机访问
+* deque - 双端队列，like vector
+* list - 双向链表
+* forward_list - 单链表
+* queue - 适配器类，提供典型的队列接口
+* priority_queue - 适配器类，最大的元素被移到队首
+* stack - 适配器类，提供典型的栈接口
+* array - 数组，长度固定
+
+##### 关联容器
+* set - 关联集合，可反转，可排序，键唯一
+* multimap - 可反转，可排序，一个键对应多个值
+
+无序关联容器
+* unordered_set
+* unordered_multiset
+* unordered_map
+* unordered_multimap

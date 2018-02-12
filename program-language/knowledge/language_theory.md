@@ -34,3 +34,7 @@ permalink: /program-language/knowledge/language_theory
 显式具体化(explicit specialization) - 在泛型编程中针对特定的类型，需要具体化。当编译器找到与
     函数调用匹配的具体化定义时，将使用该定义，而不再寻找模板。
 
+
+### 移动语义
+把数据留在原地，只修改引用。
+需要定义移动构造函数，移动赋值运行符。使用右值引用实现（&&）
