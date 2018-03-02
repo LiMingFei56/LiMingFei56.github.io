@@ -7,3 +7,5 @@ permalink: /math/
 ---
 
 算法与数据结构
+
+* [算法复杂度](./complexity)
