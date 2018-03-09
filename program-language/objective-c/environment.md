@@ -26,6 +26,15 @@ Foundation Framework提供了大量的特性
 
 Xcode自带有Clang，Xcode5后去掉了GCC，GCC只是Clang别名
 
+    #import <Foundation/Foundation.h>
+
+    int main(int argc, char** argv)
+    {
+        NSLog(@"Hello, World! \n");
+        return 0;
+    }
+
+
 #### Linux
 
 1. 安装gcc和gcc Objective-C包：
