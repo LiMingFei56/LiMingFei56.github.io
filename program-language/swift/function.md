@@ -6,6 +6,10 @@ permalink: /program-language/swift/funcation
 Funcation
 
 ### Function Type
+    // Closures
+    { (parameters) -> return type in
+        statements
+    }
 
     // 声明函数类型
     (Int, Int) -> Int 2个int参数，返回为Int的函数类型
