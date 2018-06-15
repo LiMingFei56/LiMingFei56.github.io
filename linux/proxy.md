@@ -69,4 +69,35 @@ permalink: /linux/proxy
     export http_proxy=http://127.0.0.1:8118
     export ftp_proxy=http://127.0.0.1:8118
 
+### Polipo
+    同Privoxy
+
+#### 安装
+
+    sudo apt-get install polipo  
+
+#### 配置
+
+    /etc/polipo/config
+
+    logSyslog = true
+    logFile = /var/log/polipo/polipo.log
+    
+    proxyAddress = "0.0.0.0"
+    
+    socksParentProxy = "127.0.0.1:1080"
+    socksProxyType = socks5
+    
+    chunkHighMark = 50331648
+    objectHighMark = 16384
+    
+    serverMaxSlots = 64
+    serverSlots = 16
+    serverSlots1 = 3
+
+    sudo service polipo restart  重启服务
+
+    export http_proxy="http://127.0.0.1:8123"  
+    export https_proxy="https://127.0.0.1:8123" 
+
 
