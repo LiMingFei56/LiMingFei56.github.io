@@ -10,6 +10,7 @@ Linux
 
 * [Common command](./common-command)
 * [Install Nvidia](./install_nvidia)
+* [Proxy](./proxy)
 
 
 ### kali
