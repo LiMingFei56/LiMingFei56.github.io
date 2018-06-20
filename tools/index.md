@@ -24,3 +24,6 @@ permalink: /tools/
 ### 技术栈
 * [前端开发技术](./front_stack)
 * [系统开发技术](./system_stack)
+
+### 微信小程序
+* [小程序的坑](./wxapp)
