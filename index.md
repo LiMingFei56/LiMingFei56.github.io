@@ -21,3 +21,5 @@ layout: page
 
 * [机器学习](/machine_learning)
 * [CV VR AR](/cv_vr_ar)
+
+* [English](/english)
