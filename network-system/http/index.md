@@ -6,8 +6,6 @@ layout: page
 permalink: /network-system/http
 ---
 
-## Http
-
 * [HTTP: Web的基础](./http-basic)
 
 * [Java-post请求取不到数据](./java-post-getparameter)
