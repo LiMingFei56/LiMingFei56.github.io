@@ -8,4 +8,4 @@ permalink: /english
 
 English
 
-* [单标](./phonetic-symbol)
+* [音标](./english/phonetic-symbol)
