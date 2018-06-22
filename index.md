@@ -9,7 +9,7 @@ layout: page
 
 * [计算机系统](/computer-system/)
 * [操作系统](/operate-system/)
-* [网络系统](/network-system/)
+* [网络系统](/network-system)
 * [编程语言](/program-language/)
 * [算法与数据结构](/math/)
 * [多媒体](/media/)
