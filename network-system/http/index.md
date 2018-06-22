@@ -6,7 +6,7 @@ layout: page
 permalink: /network-system/http
 ---
 
-* [HTTP: Web的基础](./http-basic)
+* [HTTP: Web的基础](./http/http-basic)
 
-* [Java-post请求取不到数据](./java-post-getparameter)
-* [文件上传的报文格式](./文件上传的报文格式)
+* [Java-post请求取不到数据](./http/java-post-getparameter)
+* [文件上传的报文格式](./http/文件上传的报文格式)
