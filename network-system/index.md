@@ -8,4 +8,4 @@ permalink: /network-system/
 
 网络系统
 
-* [Http](/netword-system/http)
+* [http](/http)
