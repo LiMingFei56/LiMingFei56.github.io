@@ -7,6 +7,9 @@ permalink: /network-system/http
 ---
 
 * [HTTP: Web的基础](./http/http-basic)
+* [HTTP-URL](./http/http-basic-url)
+* [HTTP-MESSAGE](./http/http-basic-message)
+* [HTTP-CONNECT](./http/http-basic-connect)
 
 * [Java-post请求取不到数据](./http/java-post-getparameter)
 * [文件上传的报文格式](./http/文件上传的报文格式)
