@@ -21,3 +21,10 @@ Environment
 
 * brew      - 管理命令行的程序
 * brew cask - 管理有界面的程序
+
+### CocoaPod
+    sudo gem install cocoapods
+
+    pod repo remove master
+    git clone https://git.coding.net/CocoaPods/Specs.git ~/.cocoapods/repos/master
+    pod repo update $ pod repo

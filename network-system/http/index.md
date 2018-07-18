@@ -12,4 +12,4 @@ permalink: /network-system/http
 * [HTTP-CONNECT](./http/http-basic-connect)
 
 * [Java-post请求取不到数据](./http/java-post-getparameter)
-* [文件上传的报文格式](./http/文件上传的报文格式)
+* [文件上传的报文格式](./http/file-upload-message)
