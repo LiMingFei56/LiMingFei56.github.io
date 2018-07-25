@@ -134,7 +134,147 @@ Phonetic Symbol
 ##### [ʊə]
 
     * our oor ure - tour moor surely
+
+### 辅音
+
+#### 爆破音-清辅音
+
+##### [p]
+
+    * p pp - pig apple
+
+##### [t]
+
+    * t tt - little sit
+
+##### [k]
+
+    * k c ck ch - like cat lock ache
+
+#### 爆破音-浊辅音
+
+##### [b]
+
+    * b bb - big rubbish
+
+##### [d]
+
+    * d dd - day sudden
+    规则动词以清辅音结尾(t除外)变为过去式或过去分词词尾加ed发[t],以浊辅音结尾(d除外)变为过去式或过去分词词尾加ed发[d];例词：
+    * lived calmed
+
+##### [ɡ]
+
+    * g gg - game egg
+
+#### 摩擦音-清辅音
+
+##### [f]
+
+    * f ff - life office
+
+##### [s]
+
+    * s ss c sc - sit pass ice scent
+
+##### [ʃ]
+
+    * sh - shut wish
+    * s在u前 - sure sugar
+    * ss ci ti在单词后缀 - assure social national
+
+##### [θ]
+
+    * th - thing death
+
+##### [h]
+
+    * h - hair hate
+    * 有些h首字母不发音 - hour honest
+
+#### 摩擦音-浊辅音
+
+##### [v]
+
+    * v - live have
+
+##### [z]
+
+    * z s zz x - zoo rose puzzle xerox
+
+##### [ʒ]
+
+    * si su在后缀中 - collision measure casual
+
+##### [ð]
+
+    * th - that father
+
+##### [r]
+
+    * r rr wr - rise arrive write
+
+#### 破擦音-清辅音
+
+##### [tʃ]
+
+    * ch t tch - chair natural catch
+
+##### [tr]
+
+    * tr - treat train
+
+##### [ts]
+
+    * 以t结尾的规则名词变为复数或规则动词变为第三人称单数时，我们通常在单词后加s,这时单词结尾的字母组合ts就发［ts］
+        - hats starts
+
+#### 破擦音-浊辅音
+
+##### [dʒ]
+
+    * g dge j - page bridge jack
+    * du - procedure
+
+##### [dr]
+
+    * dr - drink draw
+
+##### [dz]
+
+    * 以d结尾的规则名词变为复数或规则动词变为第三人称单数时在词尾加s,单词结尾的字母组合ds发[dz] 
+        - reads hands
+
+#### 鼻音-浊辅音
+
+##### [m]
+
+    * m mm - mile common
+
+##### [n]
+
+    * n nn gn - nine dinner sign
+
+##### [ŋ]
+
+    * n ng - ink sing
+    * n后接k/g发[ŋ],n后接t/d时发[n] - bank band
+
+#### 舌则音-浊辅音
+
+##### [l]
     
+    * l ll - lot bell
+
+#### 半元音-浊辅音
+
+##### [j]
+
+    * y i - you million
+
+##### [w]
+
+    * w wh - war which
 
 ### 其他
 
