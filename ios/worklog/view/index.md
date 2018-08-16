@@ -5,4 +5,4 @@ permalink: /ios/worklog/view
 
 ## View
 
-* [UIScrollView](./view-scroll)
+* [UIScrollView](./view/view-scroll)
