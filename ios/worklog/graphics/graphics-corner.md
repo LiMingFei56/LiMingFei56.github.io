@@ -1,6 +1,6 @@
 ---
 layout: page
-permalink: /ios/worklog/graphics-corner
+permalink: /ios/worklog/graphics/graphics-corner
 ---
 
 ## 设置圆角
