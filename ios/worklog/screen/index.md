@@ -5,8 +5,10 @@ permalink: /ios/worklog/screen
 
 ## screen
 
-status bar = 高度为20px
+status bar = 高度为20px  (不一定， 有的设备的状态栏比这个高)
 navigation bar = 竖屏时为44px；横屏为32px
+
+self.navigationController.navigationBar.frame.size.height + self.navigationController.navigationBar.frame.origin.y  计算实际高度
 
 通常为容器视图来管理屏幕属性，如是否显示navigation bar，y点从哪开始等等
 
@@ -17,6 +19,9 @@ iOS7.0之前导航栏默认是不透明的, ios7.0之后默认是透明的
 透明度translucent是导航栏的属性, 不是导航视图控制器的属性
 firstNevigation.navigationBar.translucent = NO;
 
+当controller的view是UIview时，会自动把y坐标减64
+需要把autoresize subviews设置成NO
+导舰栏要设置成不透明， 不然xib不计算导航栏了高度
 
 ### 沉浸式状态拦
 自定义容器类  实现：

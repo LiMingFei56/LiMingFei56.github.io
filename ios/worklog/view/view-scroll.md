@@ -1,6 +1,6 @@
 ---
 layout: page
-permalink: /ios/worklog/view/view-scrool
+permalink: /ios/worklog/view/view-scroll
 ---
 
 ## UIScrollView
