@@ -14,7 +14,7 @@ permalink: /linux/proxy
     sudo pip install shadowsocks
 
 #### 配置
-
+    /etc/shadowsocks.json
     { 
         “server”: “111.111.111.111”, 
         “server_port”: 443, 

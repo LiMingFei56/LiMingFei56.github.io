@@ -3,12 +3,9 @@
 # Edit theme's home layout instead if you wanna make some changes
 # See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 layout: page
-permalink: /tools/public
+permalink: /tools/qt
 ---
 
-## 微信公众号
+## Qt
 
-* [Environment](/tools/public/environmental)
-* [Pay](/tools/public/pay)
-
-jsapi 可以使用h5  和 jssdk   
+* [Environment](./qt/environment)

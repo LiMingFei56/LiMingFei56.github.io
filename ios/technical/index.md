@@ -8,3 +8,4 @@ permalink: /ios/technical
 
 Technical
 
+* [Cpu Architecture](./technical/ios-cpu-architecture)

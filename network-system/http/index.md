@@ -18,6 +18,8 @@ permalink: /network-system/http
 * [HTTP-NG](./http/http-ng)
 * [HTTP-IDENTIFYING-USER](./http/http-identifying-user)
 * [HTTP-IDENTIFYING-BASIC](./http/http-identifying-basic)
+* [HTTP-IDENTIFYING-DIGEST](./http/http-identifying-DIGEST)
+* [HTTP-HTTPS](./http/http-https)
 
 * [Java-post请求取不到数据](./http/java-post-getparameter)
 * [文件上传的报文格式](./http/file-upload-message)

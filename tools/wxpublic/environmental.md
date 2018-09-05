@@ -12,6 +12,8 @@ permalink: /tools/public/environmental
     3. 接口权限-网页授权获取用户基本信息-修改
     4. 自定义菜单-网页授权回调
     5. JS域名 一个月只能修改3次
+    6. 如果有支付，需要配置支付URL（哪个页面调用支付，需要配置这个页面URL中path的目录）
+        如：http://abc/abc/abc,  那么配置http://abc/abc/
 
 ### 1. AppSecret
     配置好后不能查看，需要保存好

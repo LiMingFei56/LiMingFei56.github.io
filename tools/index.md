@@ -11,6 +11,7 @@ permalink: /tools/
 ### Main
 * [Build](/tools/build)
 * [Vim](/tools/vim)
+* [Qt](/tools/qt)
 
 ### Literature
 * [Markdown](/tools/literature/markdown)
@@ -28,3 +29,4 @@ permalink: /tools/
 ### 微信
 * [公众号](./public)
 * [小程序的坑](./wxapp)
+
