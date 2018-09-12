@@ -72,3 +72,13 @@ firstNevigation.navigationBar.translucent = NO;
 状态栏变黑不是主window没有背景  就是当前ViewController的主view没有背景
 AppDelegate *delegate = (AppDelegate *) [[UIApplication sharedApplication] delegate];
     delegate.window.backgroundColor = UIColor.whiteColor;
+
+### 界面上移20px
+使用safe area时，高度是根据status bar，navigation bar, toolbar, tab bar等来计算高度，
+可以安全的显示view。不用但心view背遮挡。
+
+但是有时候计算有问题(有时间会上移20px，如弹出键盘再收回)，这个是xib的bug。在story board中没有这个问题
+
+解决判法：
+1. 使navigation bar 和 statuc bar 不透明
+2. 加个与superview的约束，设置>=某个值，设置距离Safe Area的约束优先级比距离SuperView约束优先级低。
