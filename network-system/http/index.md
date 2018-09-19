@@ -23,6 +23,7 @@ permalink: /network-system/http
 * [实体](./http/http-entity)
 * [国际化](./http/http-international)
 * [内容协商](./http/http-content)
+* [重定向](./http/http-redirect)
 
 * [Java-post请求取不到数据](./http/java-post-getparameter)
 * [文件上传的报文格式](./http/file-upload-message)
