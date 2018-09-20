@@ -9,3 +9,4 @@ permalink: /tools/qt
 ## Qt
 
 * [Environment](./qt/environment)
+* [Windows](./qt/windows)
