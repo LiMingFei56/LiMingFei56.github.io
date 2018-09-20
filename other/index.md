@@ -3,12 +3,7 @@
 # Edit theme's home layout instead if you wanna make some changes
 # See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 layout: page
-permalink: /tools/qt
+permalink: /other
 ---
 
-## Qt
-
-* [Environment](./qt/environment)
-* [Windows](./qt/windows)
-* [信号和槽](./qt/signal-and-slots)
-* [布局管理](./qt/layout-manager)
+* [2018-09-20 如何赚被动收入的方法](./other/2018092001)

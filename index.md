@@ -23,3 +23,5 @@ layout: page
 * [CV VR AR](/cv_vr_ar)
 
 * [English](/english)
+
+* [Other](/other)
