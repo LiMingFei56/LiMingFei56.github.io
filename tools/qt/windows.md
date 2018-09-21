@@ -155,3 +155,14 @@ decimals-  小数位数
 QScrollBar - 一般用于QScrollArea来实现滚动区域
 QSlider    - 音量控制或进度
 QDial      - 刻度表盘部件
+
+## 主窗口
+Qt提供QMainWindow和其他一些相关的类共同完成主窗口的管理。
+
+1. QMenuBar：菜单栏，由QAction实现，一个主窗口只能有一个菜单栏
+2. QToolBar: 工具栏, 可以移动，可以多个
+3. Central Widget: 中心部件, 只能拥有一个
+4. QDockWidget: Dock部件，多个Dock部件
+5. QStatusBar: 状态栏，只能有一个
+
+
