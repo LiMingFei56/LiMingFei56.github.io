@@ -1,0 +1,70 @@
+
+// 主页
+curl --header "Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8" --header "Accept-Encoding: deflate" --header "Accept-Language: en-US,en;q=0.9,zh;q=0.8,zh-CN;q=0.7,zh-TW;q=0.6" --header "Cache-Control: max-age=0" --header "User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36" --cookie "PANWEB=1; BAIDUID=43ED699620DB05D0A7A137000B37C8D7:FG=1; BDUSS=HlkWW8zdThMVDdZbE12b1ZjOURXSHR-ZHZVLVhxc0ppRzh1fnh6TzdQOGhITzFiQVFBQUFBJCQAAAAAAAAAAAEAAABdp5wJZGw4NDgzNzYxOAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACGPxVshj8VbN; pan_login_way=1; SCRC=93d82af1494e56070041055449bf595c; STOKEN=1f48f205ba2eed2c68d659168e4a3a1c1b8442c3e5c0fa9c1cf242054968dd76; BIDUPSID=43ED699620DB05D0A7A137000B37C8D7; PSTM=1539673969; H_PS_PSSID=1467_21127_22159; delPer=0; PSINO=3; cflag=15%3A3; PANPSC=549291655886786750%3AcQu3KcN2CPfuwbI8A2ioIy%2BYkxcWdNAE2jmahp4aZjjXRqmDNNDr%2BXgXofrWESI4aASZMqDZKaP%2FHSZRhh6%2BPa1Sr93PEHDiy5m1O19tFWJ0uYcvQDeNMieKHrlyURG2vIcMCeE%2BEzPl0236xFtTr1QxIuFgE8LFzlMymqcoIUw%3D" -v https://pan.baidu.com/disk/home?
+
+// 取列表
+curl --header "Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8" --header "Accept-Encoding: deflate" --header "Accept-Language: en-US,en;q=0.9,zh;q=0.8,zh-CN;q=0.7,zh-TW;q=0.6" --header "Cache-Control: max-age=0" --header "User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36" --cookie "PANWEB=1; BAIDUID=43ED699620DB05D0A7A137000B37C8D7:FG=1; BDUSS=HlkWW8zdThMVDdZbE12b1ZjOURXSHR-ZHZVLVhxc0ppRzh1fnh6TzdQOGhITzFiQVFBQUFBJCQAAAAAAAAAAAEAAABdp5wJZGw4NDgzNzYxOAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACGPxVshj8VbN; pan_login_way=1; SCRC=93d82af1494e56070041055449bf595c; STOKEN=1f48f205ba2eed2c68d659168e4a3a1c1b8442c3e5c0fa9c1cf242054968dd76; BIDUPSID=43ED699620DB05D0A7A137000B37C8D7; PSTM=1539673969; H_PS_PSSID=1467_21127_22159; delPer=0; PSINO=3; cflag=15%3A3; PANPSC=549291655886786750%3AcQu3KcN2CPfuwbI8A2ioIy%2BYkxcWdNAE2jmahp4aZjjXRqmDNNDr%2BXgXofrWESI4aASZMqDZKaP%2FHSZRhh6%2BPa1Sr93PEHDiy5m1O19tFWJ0uYcvQDeNMieKHrlyURG2vIcMCeE%2BEzPl0236xFtTr1QxIuFgE8LFzlMymqcoIUw%3D" -v https://pan.baidu.com/api/list?dir=%2F&bdstoken=f4b513371b38d64a8c483bf52ee9d54e&logid=MTUzOTY3NjI3MTExMjAuNjI1Nzk0NDY4NTAxNzExNg==&num=100&order=time&desc=1&clienttype=0&showempty=0&web=1&page=1&channel=chunlei&web=1&app_id=250528
+
+
+// 得到下载链接
+curl --header "Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8" --header "Accept-Encoding: deflate" --header "Accept-Language: en-US,en;q=0.9,zh;q=0.8,zh-CN;q=0.7,zh-TW;q=0.6" --header "Cache-Control: max-age=0" --header "User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36" --header "Referer: https://pan.baidu.com/disk/home?" --header "X-Requested-With: XMLHttpRequest" --cookie "PANWEB=1; BAIDUID=43ED699620DB05D0A7A137000B37C8D7:FG=1; BDUSS=HlkWW8zdThMVDdZbE12b1ZjOURXSHR-ZHZVLVhxc0ppRzh1fnh6TzdQOGhITzFiQVFBQUFBJCQAAAAAAAAAAAEAAABdp5wJZGw4NDgzNzYxOAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACGPxVshj8VbN; pan_login_way=1; SCRC=93d82af1494e56070041055449bf595c; STOKEN=1f48f205ba2eed2c68d659168e4a3a1c1b8442c3e5c0fa9c1cf242054968dd76; BIDUPSID=43ED699620DB05D0A7A137000B37C8D7; PSTM=1539673969; H_PS_PSSID=1467_21127_22159; delPer=0; PSINO=3; cflag=15%3A3; PANPSC=549291655886786750%3AcQu3KcN2CPfuwbI8A2ioIy%2BYkxcWdNAE2jmahp4aZjjXRqmDNNDr%2BXgXofrWESI4aASZMqDZKaP%2FHSZRhh6%2BPa1Sr93PEHDiy5m1O19tFWJ0uYcvQDeNMieKHrlyURG2vIcMCeE%2BEzPl0236xFtTr1QxIuFgE8LFzlMymqcoIUw%3D" -v https://pan.baidu.com/api/download?sign=dwQrFHuP6qdV7sAwiJ%2F49ibYvTutLcuIPgYvaMtj4xdNVHML%2Bg6yMQ%3D%3D&timestamp=1539678188&fidlist=%5B563092083424722%5D&type=dlink&channel=chunlei&web=1&app_id=250528&bdstoken=f4b513371b38d64a8c483bf52ee9d54e&logid=MTUzOTY3ODM4NjEyOTAuNTAyNDQ5MTA3NDk5MDM4Nw==&clienttype=0&startLogTime=1539678386129
+
+bdstoken 请求主页中得到
+sign: dwQrFHuP6qdV7sAwiJ/49ibYvTutLcuIPgYvaMtj4xdNVHML+g6yMQ==
+timestamp: 1539678188
+fidlist: [563092083424722]   取列表中得到  fs_id
+type: dlink
+channel: chunlei
+web: 1
+app_id: 250528    取列表中得到   url1 中截取
+bdstoken: f4b513371b38d64a8c483bf52ee9d54e    请求主页中得到
+logid: MTUzOTY3OTAyNDY0NjAuNjgxMzM1MTU1MTM3Njc1NA==  startLogTime.? base64 15396790246460.6813351551376754
+clienttype: 0
+startLogTime: 1539679024646 登陆时间
+
+    function getLogID(){
+        var name = "BAIDUID";
+        var u = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/~！@#￥%……&";
+        var d = /[\uD800-\uDBFF][\uDC00-\uDFFFF]|[^\x00-\x7F]/g;
+        var f = String.fromCharCode;
+        function l(e){
+            if (e.length < 2) {
+                var n = e.charCodeAt(0);
+                return 128 > n ? e : 2048 > n ? f(192 | n >>> 6) + f(128 | 63 & n) : f(224 | n >>> 12 & 15) + f(128 | n >>> 6 & 63) + f(128 | 63 & n);
+            }
+            var n = 65536 + 1024 * (e.charCodeAt(0) - 55296) + (e.charCodeAt(1) - 56320);
+            return f(240 | n >>> 18 & 7) + f(128 | n >>> 12 & 63) + f(128 | n >>> 6 & 63) + f(128 | 63 & n);
+        }
+        function g(e){
+            return (e + "" + Math.random()).replace(d, l);
+        }
+        function m(e){
+            var n = [0, 2, 1][e.length % 3];
+            var t = e.charCodeAt(0) << 16 | (e.length > 1 ? e.charCodeAt(1) : 0) << 8 | (e.length > 2 ? e.charCodeAt(2) : 0);
+            var o = [u.charAt(t >>> 18), u.charAt(t >>> 12 & 63), n >= 2 ? "=" : u.charAt(t >>> 6 & 63), n >= 1 ? "=" : u.charAt(63 & t)];
+            return o.join("");
+        }
+        function h(e){
+            return e.replace(/[\s\S]{1,3}/g, m);
+        }
+        function p(){
+            return h(g((new Date()).getTime()));
+        }
+        function w(e,n){
+            return n ? p(String(e)).replace(/[+\/]/g, function(e) {
+                return "+" == e ? "-" : "_";
+            }).replace(/=/g, "") : p(String(e));
+        }
+        return w(getCookie(name));
+    }
+
+
+        function getSign(){
+            var signFnc;
+            try{
+                signFnc = new Function("return " + yunData.sign2)();
+            } catch(e){
+                throw new Error(e.message);
+            }
+            return base64Encode(signFnc(yunData.sign5,yunData.sign1));
+        }
