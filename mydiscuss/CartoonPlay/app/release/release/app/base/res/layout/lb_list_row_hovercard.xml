@@ -1,0 +1,26 @@
+
+¦
+
+9
+android*http://schemas.android.com/apk/res/androidLinearLayout"m
+*http://schemas.android.com/apk/res/androidid@+id/hovercard_panel"(Ğ„2
+î€ øid/hovercard_panel"a
+*http://schemas.android.com/apk/res/androidlayout_heightwrap_content"(õ„2:0şÿÿÿÿÿÿÿÿ"`
+*http://schemas.android.com/apk/res/androidlayout_widthwrap_content"(ô„2:0şÿÿÿÿÿÿÿÿ"R
+*http://schemas.android.com/apk/res/androidorientationvertical"(Ä„2:0*
+    $*‡
+şTextView"Rstyle?attr/rowHoverCardTitleStyle"2'
+%¿Œøattr/rowHoverCardTitleStyle"Y
+*http://schemas.android.com/apk/res/androidid
+@+id/title"(Ğ„2
+× øid/title"a
+*http://schemas.android.com/apk/res/androidlayout_heightwrap_content"(õ„2:0şÿÿÿÿÿÿÿÿ"`
+*http://schemas.android.com/apk/res/androidlayout_widthwrap_content"(ô„2:0şÿÿÿÿÿÿÿÿ*
+    /*Ÿ
+–TextView"^style"?attr/rowHoverCardDescriptionStyle"2-
++¾Œø!attr/rowHoverCardDescriptionStyle"e
+*http://schemas.android.com/apk/res/androidid@+id/description"(Ğ„2
+»€ øid/description"a
+*http://schemas.android.com/apk/res/androidlayout_heightwrap_content"(õ„2:0şÿÿÿÿÿÿÿÿ"`
+*http://schemas.android.com/apk/res/androidlayout_widthwrap_content"(ô„2:0şÿÿÿÿÿÿÿÿ*	
+5

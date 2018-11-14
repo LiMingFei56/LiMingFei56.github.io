@@ -1,0 +1,15 @@
+
+’
+9
+android*http://schemas.android.com/apk/res/android	ImageView"S
+*http://schemas.android.com/apk/res/androidadjustViewBoundstrue"(‚„2:@"…
+*http://schemas.android.com/apk/res/android	elevation@dimen/lb_details_overview_z"(Àˆ„2%
+#ã€”ødimen/lb_details_overview_z"{
+*http://schemas.android.com/apk/res/androidid@+id/details_overview_image"(Ğ„2#
+!Ä€ øid/details_overview_image"a
+*http://schemas.android.com/apk/res/androidlayout_heightwrap_content"(õ„2:0şÿÿÿÿÿÿÿÿ"`
+*http://schemas.android.com/apk/res/androidlayout_widthwrap_content"(ô„2:0şÿÿÿÿÿÿÿÿ"•
+*http://schemas.android.com/apk/res/android	maxHeight$@dimen/lb_details_v2_logo_max_height"( ‚„2-
++ï€”ø#dimen/lb_details_v2_logo_max_height"’
+*http://schemas.android.com/apk/res/androidmaxWidth#@dimen/lb_details_v2_logo_max_width"(Ÿ‚„2,
+*ğ€”ø"dimen/lb_details_v2_logo_max_width

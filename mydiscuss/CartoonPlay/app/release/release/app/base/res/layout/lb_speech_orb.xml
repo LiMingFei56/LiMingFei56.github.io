@@ -1,0 +1,32 @@
+
+µ
+
+9
+android*http://schemas.android.com/apk/res/androidmerge*
+
+    C*©
+ View"|
+*http://schemas.android.com/apk/res/android
+background@drawable/lb_speech_orb"(Ô„2 
+­€˜ødrawable/lb_speech_orb"c
+*http://schemas.android.com/apk/res/androidid@+id/search_orb"(Ğ„2
+È øid/search_orb"™
+*http://schemas.android.com/apk/res/androidlayout_height$@dimen/lb_search_bar_speech_orb_size"(õ„2-
++î”ø#dimen/lb_search_bar_speech_orb_size"˜
+*http://schemas.android.com/apk/res/androidlayout_width$@dimen/lb_search_bar_speech_orb_size"(ô„2-
++î”ø#dimen/lb_search_bar_speech_orb_size*
+
+    ;*˜
+	ImageView"ˆ
+*http://schemas.android.com/apk/res/androidcontentDescription@string/orb_search_action"(ó„„2"
+ §€´østring/orb_search_action"W
+*http://schemas.android.com/apk/res/androidid	@+id/icon"(Ğ„2
+ï€ øid/icon"S
+*http://schemas.android.com/apk/res/androidlayout_gravitycenter"(³„2:8"a
+*http://schemas.android.com/apk/res/androidlayout_heightwrap_content"(õ„2:0şÿÿÿÿÿÿÿÿ"`
+*http://schemas.android.com/apk/res/androidlayout_widthwrap_content"(ô„2:0şÿÿÿÿÿÿÿÿ"ƒ
+*http://schemas.android.com/apk/res/androidsrc@drawable/lb_ic_search_mic_out"(™‚„2'
+%œ€˜ødrawable/lb_ic_search_mic_out*
+
+
+ E

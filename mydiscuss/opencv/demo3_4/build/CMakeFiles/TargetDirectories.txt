@@ -1,0 +1,3 @@
+/Users/lmf/git/LiMingFei56.github.io/mydiscuss/opencv/demo3_2/build/CMakeFiles/rebuild_cache.dir
+/Users/lmf/git/LiMingFei56.github.io/mydiscuss/opencv/demo3_2/build/CMakeFiles/edit_cache.dir
+/Users/lmf/git/LiMingFei56.github.io/mydiscuss/opencv/demo3_2/build/CMakeFiles/demo2_7.dir

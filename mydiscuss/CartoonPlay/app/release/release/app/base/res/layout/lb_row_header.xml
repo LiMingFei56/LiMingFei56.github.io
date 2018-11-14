@@ -1,0 +1,28 @@
+
+›
+9
+android*http://schemas.android.com/apk/res/androidLinearLayout"a
+*http://schemas.android.com/apk/res/androidlayout_heightwrap_content"(õ„2:0şÿÿÿÿÿÿÿÿ"`
+*http://schemas.android.com/apk/res/androidlayout_widthwrap_content"(ô„2:0şÿÿÿÿÿÿÿÿ"R
+*http://schemas.android.com/apk/res/androidorientationvertical"(Ä„2:0*
+
+    C*
+ø1android.support.v17.leanback.widget.RowHeaderView"=style?rowHeaderStyle"2
+»Œøattr/rowHeaderStyle"c
+*http://schemas.android.com/apk/res/androidid@+id/row_header"(Ğ„2
+Å øid/row_header"Z
+*http://schemas.android.com/apk/res/androidimportantForAccessibilityno"(ª‡„2:0"a
+*http://schemas.android.com/apk/res/androidlayout_heightwrap_content"(õ„2:0şÿÿÿÿÿÿÿÿ"`
+*http://schemas.android.com/apk/res/androidlayout_widthwrap_content"(ô„2:0şÿÿÿÿÿÿÿÿ*
+
+    %*†
+ıTextView"Sstyle?rowHeaderDescriptionStyle"2*
+(¹Œøattr/rowHeaderDescriptionStyle"{
+*http://schemas.android.com/apk/res/androidid@+id/row_header_description"(Ğ„2#
+!Æ øid/row_header_description"Z
+*http://schemas.android.com/apk/res/androidimportantForAccessibilityno"(ª‡„2:0"a
+*http://schemas.android.com/apk/res/androidlayout_heightwrap_content"(õ„2:0şÿÿÿÿÿÿÿÿ"`
+*http://schemas.android.com/apk/res/androidlayout_widthwrap_content"(ô„2:0şÿÿÿÿÿÿÿÿ*
+
+
+$1

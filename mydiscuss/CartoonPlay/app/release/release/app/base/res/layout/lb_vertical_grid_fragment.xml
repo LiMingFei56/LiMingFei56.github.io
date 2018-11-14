@@ -1,0 +1,30 @@
+
+ÿ
+
+9
+android*http://schemas.android.com/apk/res/androidFrameLayout"g
+*http://schemas.android.com/apk/res/androidid@+id/browse_dummy"(Ğ„2
+€ øid/browse_dummy"a
+*http://schemas.android.com/apk/res/androidlayout_heightmatch_parent"(õ„2:0ÿÿÿÿÿÿÿÿÿ"`
+*http://schemas.android.com/apk/res/androidlayout_widthmatch_parent"(ô„2:0ÿÿÿÿÿÿÿÿÿ*
+
+    **ë
+â5android.support.v17.leanback.widget.BrowseFrameLayout"e
+*http://schemas.android.com/apk/res/androiddescendantFocusabilityafterDescendants"(ñ„2:0"L
+*http://schemas.android.com/apk/res/android	focusabletrue"(Ú„2:@"W
+*http://schemas.android.com/apk/res/androidfocusableInTouchModetrue"(Û„2:@"c
+*http://schemas.android.com/apk/res/androidid@+id/grid_frame"(Ğ„2
+Ô€ øid/grid_frame"a
+*http://schemas.android.com/apk/res/androidlayout_heightmatch_parent"(õ„2:0ÿÿÿÿÿÿÿÿÿ"`
+*http://schemas.android.com/apk/res/androidlayout_widthmatch_parent"(ô„2:0ÿÿÿÿÿÿÿÿÿ*
+
+
+        .*Ì
+ÃFrameLayout"o
+*http://schemas.android.com/apk/res/androidid@+id/browse_grid_dock"(Ğ„2
+¡€ øid/browse_grid_dock"a
+*http://schemas.android.com/apk/res/androidlayout_heightmatch_parent"(õ„2:0ÿÿÿÿÿÿÿÿÿ"`
+*http://schemas.android.com/apk/res/androidlayout_widthmatch_parent"(ô„2:0ÿÿÿÿÿÿÿÿÿ*
+
+    !3*	
+#<

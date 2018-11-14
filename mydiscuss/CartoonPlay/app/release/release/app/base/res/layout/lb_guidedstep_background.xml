@@ -1,0 +1,12 @@
+
+”
+9
+android*http://schemas.android.com/apk/res/android6android.support.v17.leanback.widget.NonOverlappingView"„
+*http://schemas.android.com/apk/res/android
+background?attr/guidedStepBackground"(Ô„2%
+#ã€Œøattr/guidedStepBackground"y
+*http://schemas.android.com/apk/res/androidid@+id/guidedstep_background"(Ğ„2"
+ ë€ øid/guidedstep_background"a
+*http://schemas.android.com/apk/res/androidlayout_heightmatch_parent"(õ„2:0ÿÿÿÿÿÿÿÿÿ"`
+*http://schemas.android.com/apk/res/androidlayout_widthmatch_parent"(ô„2:0ÿÿÿÿÿÿÿÿÿ"X
+*http://schemas.android.com/apk/res/androidtransitionNameguidedstep_background(€ˆ„

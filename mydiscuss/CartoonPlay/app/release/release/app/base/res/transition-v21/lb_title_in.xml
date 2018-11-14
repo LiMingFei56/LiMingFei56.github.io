@@ -1,0 +1,18 @@
+
+Å
+9
+android*http://schemas.android.com/apk/res/android
+1
+lb'http://schemas.android.com/apk/res-auto
+transition"<class3android.support.v17.leanback.transition.SlideKitkat"L
+'http://schemas.android.com/apk/res-autolb_slideEdgetop"(àÅå¯2:00"ô
+*http://schemas.android.com/apk/res/androidinterpolator%@android:anim/decelerate_interpolator"(¡ÇÑ2-
++ÜÄ®$android:anim/decelerate_interpolator*
+    *¬
+πtargets*	
+        *ã
+Çtarget"x
+*http://schemas.android.com/apk/res/androidtargetId@id/browse_title_group"(‹áÑ2
+•Ä†¯id/browse_title_group*
+    <*	
+

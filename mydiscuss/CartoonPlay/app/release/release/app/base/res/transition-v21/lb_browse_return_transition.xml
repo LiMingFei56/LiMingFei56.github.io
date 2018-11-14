@@ -1,0 +1,63 @@
+
+Ö
+9
+android*http://schemas.android.com/apk/res/androidtransitionSet*
+  K*ô
+ëslide"K
+*http://schemas.android.com/apk/res/androidduration350"(˜ƒ„2:0Ş"Ÿ
+*http://schemas.android.com/apk/res/androidinterpolator(@android:interpolator/fast_out_linear_in"(Á‚„20
+.€°'android:interpolator/fast_out_linear_in"{
+*http://schemas.android.com/apk/res/android	slideEdge@integer/slideEdgeStart"(°ˆ„2 
+£€¤øinteger/slideEdgeStart*
+      2*×
+Îtargets*
+          *
+„target"z
+*http://schemas.android.com/apk/res/androidtargetId@id/browse_headers_root"(Ü‡„2 
+¤€ øid/browse_headers_root
+*
+          ?*x
+ptarget"f
+*http://schemas.android.com/apk/res/androidtargetId@id/title_orb"(Ü‡„2
+Ù øid/title_orb
+*
+      5*
+  *
+  
+*ô
+ëslide"K
+*http://schemas.android.com/apk/res/androidduration350"(˜ƒ„2:0Ş"Ÿ
+*http://schemas.android.com/apk/res/androidinterpolator(@android:interpolator/fast_out_linear_in"(Á‚„20
+.€°'android:interpolator/fast_out_linear_in"w
+*http://schemas.android.com/apk/res/android	slideEdge@integer/slideEdgeEnd"(°ˆ„2
+¢€¤øinteger/slideEdgeEnd*
+      0*Û
+Òtargets*
+          *
+†target"|
+*http://schemas.android.com/apk/res/android	excludeId@+id/browse_headers_root" (Áˆ„2 
+¤€ øid/browse_headers_root 
+*
+           A*z
+rtarget"h
+*http://schemas.android.com/apk/res/android	excludeId@+id/title_orb"!(Áˆ„2
+Ù øid/title_orb!
+*
+      !7*
+  "*
+  #
+*é
+àfade"K
+*http://schemas.android.com/apk/res/androidduration350"$(˜ƒ„2:0Ş"Ÿ
+*http://schemas.android.com/apk/res/androidinterpolator(@android:interpolator/fast_out_linear_in"$(Á‚„20
+.€°'android:interpolator/fast_out_linear_in*
+      &*Ê
+Átargets*
+          '*
+†target"|
+*http://schemas.android.com/apk/res/android	excludeId@+id/browse_headers_root"((Áˆ„2 
+¤€ øid/browse_headers_root(
+*
+      (A'*
+  )$*	
+*	

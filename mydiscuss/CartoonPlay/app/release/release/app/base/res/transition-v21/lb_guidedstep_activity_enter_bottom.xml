@@ -1,0 +1,12 @@
+
+÷
+9
+android*http://schemas.android.com/apk/res/android
+2
+app'http://schemas.android.com/apk/res-auto
+transition"Bclass9android.support.v17.leanback.transition.FadeAndShortSlide"O
+'http://schemas.android.com/apk/res-autolb_slideEdgebottom"(ˆŒø2:0P"Â
+*http://schemas.android.com/apk/res/androidduration;@integer/lb_guidedstep_activity_background_fade_duration_ms"(˜ƒ„2D
+B€¤ø:integer/lb_guidedstep_activity_background_fade_duration_ms"Ÿ
+*http://schemas.android.com/apk/res/androidinterpolator(@android:interpolator/fast_out_linear_in"(Á‚„20
+.€°'android:interpolator/fast_out_linear_in

@@ -1,0 +1,48 @@
+
+’
+9
+android*http://schemas.android.com/apk/res/android=android.support.v17.leanback.widget.GuidedActionItemContainer"bstyle$?attr/guidedActionItemContainerStyle"2/
+-Ì€Œø#attr/guidedActionItemContainerStyle*
+
+    2*¯
+¦6android.support.v17.leanback.widget.CheckableImageView"bstyle$?attr/guidedActionItemCheckmarkStyle"2/
+-Ê€Œø#attr/guidedActionItemCheckmarkStyle"‡
+*http://schemas.android.com/apk/res/androidid!@+id/guidedactions_item_checkmark"(Ğ„2)
+'İ€ øid/guidedactions_item_checkmark*
+
+    ,*í
+ä	ImageView"Xstyle?attr/guidedActionItemIconStyle"2*
+(Ï€Œøattr/guidedActionItemIconStyle"}
+*http://schemas.android.com/apk/res/androidid@+id/guidedactions_item_icon"(Ğ„2$
+"á€ øid/guidedactions_item_icon*
+
+    ,*Æ
+½>android.support.v17.leanback.widget.NonOverlappingLinearLayout"^style"?attr/guidedActionItemContentStyle"!2-
++Í€Œø!attr/guidedActionItemContentStyle"ƒ
+*http://schemas.android.com/apk/res/androidid@+id/guidedactions_item_content"!(Ğ„2'
+%ß€ øid/guidedactions_item_content*
+
+
+        #4* 
+—8android.support.v17.leanback.widget.GuidedActionEditText"Zstyle ?attr/guidedActionItemTitleStyle"%2+
+)Ğ€Œøattr/guidedActionItemTitleStyle"
+*http://schemas.android.com/apk/res/androidid@+id/guidedactions_item_title"%(Ğ„2%
+#â€ øid/guidedactions_item_title%*
+
+
+        '7*¹
+°8android.support.v17.leanback.widget.GuidedActionEditText"fstyle&?attr/guidedActionItemDescriptionStyle")21
+/Î€Œø%attr/guidedActionItemDescriptionStyle"‹
+*http://schemas.android.com/apk/res/androidid#@+id/guidedactions_item_description")(Ğ„2+
+)à€ ø!id/guidedactions_item_description)*
+
+    +=!*
+
+    -E*ú
+ñ	ImageView"^style"?attr/guidedActionItemChevronStyle"/2-
++Ë€Œø!attr/guidedActionItemChevronStyle"ƒ
+*http://schemas.android.com/apk/res/androidid@+id/guidedactions_item_chevron"/(Ğ„2'
+%Ş€ øid/guidedactions_item_chevron/*
+
+
+2,

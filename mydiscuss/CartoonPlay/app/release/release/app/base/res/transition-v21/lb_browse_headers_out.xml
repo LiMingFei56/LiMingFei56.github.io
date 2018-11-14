@@ -1,0 +1,36 @@
+
+í
+9
+android*http://schemas.android.com/apk/res/androidtransitionSet"¨
+*http://schemas.android.com/apk/res/androidduration.@integer/lb_browse_headers_transition_duration"(˜ƒ„27
+5‚€¤ø-integer/lb_browse_headers_transition_duration*
+    G*¹
+°changeBounds"Ÿ
+*http://schemas.android.com/apk/res/androidinterpolator(@android:interpolator/fast_out_linear_in"(Á‚„20
+.€°'android:interpolator/fast_out_linear_in*
+    T*¢
+™changeTransform"Ÿ
+*http://schemas.android.com/apk/res/androidinterpolator(@android:interpolator/fast_out_linear_in"(Á‚„20
+.€°'android:interpolator/fast_out_linear_in*	
+        V*Á
+¸targets*
+            *‚
+ztarget"p
+*http://schemas.android.com/apk/res/androidtargetId@id/container_list"(Ü‡„2
+°€ øid/container_list*	
+        <*
+    *
+    *¸
+¯fade"Ÿ
+*http://schemas.android.com/apk/res/androidinterpolator(@android:interpolator/fast_out_linear_in"(Á‚„20
+.€°'android:interpolator/fast_out_linear_in"¤
+*http://schemas.android.com/apk/res/android
+startDelay+@integer/lb_browse_headers_transition_delay"(â‡„24
+2€¤ø*integer/lb_browse_headers_transition_delay"^
+*http://schemas.android.com/apk/res/androidtransitionVisibilityModemode_in"(üˆ„2:8*
+    J*’
+‰fade"Ÿ
+*http://schemas.android.com/apk/res/androidinterpolator(@android:interpolator/fast_out_linear_in"(Á‚„20
+.€°'android:interpolator/fast_out_linear_in"_
+*http://schemas.android.com/apk/res/androidtransitionVisibilityModemode_out"(üˆ„2:8*	
+I

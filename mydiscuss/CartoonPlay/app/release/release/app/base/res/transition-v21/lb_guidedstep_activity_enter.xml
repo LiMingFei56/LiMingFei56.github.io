@@ -1,0 +1,95 @@
+
+¿
+9
+android*http://schemas.android.com/apk/res/androidtransitionSet*
+  K*é
+àfade"Â
+*http://schemas.android.com/apk/res/androidduration;@integer/lb_guidedstep_activity_background_fade_duration_ms"(˜ƒ„2D
+B€¤ø:integer/lb_guidedstep_activity_background_fade_duration_ms"Ÿ
+*http://schemas.android.com/apk/res/androidinterpolator(@android:interpolator/fast_out_linear_in"(Á‚„20
+.€°'android:interpolator/fast_out_linear_in*	
+        U*Ğ
+Çtargets*
+            *‘
+ˆtarget"~
+*http://schemas.android.com/apk/res/androidtargetId@id/guidedstep_background"(Ü‡„2"
+ ë€ øid/guidedstep_background*	
+        C*
+  *
+  	*Ê
+Áslide"K
+*http://schemas.android.com/apk/res/androidduration350"(˜ƒ„2:0Ş"Ÿ
+*http://schemas.android.com/apk/res/androidinterpolator(@android:interpolator/fast_out_linear_in"(Á‚„20
+.€°'android:interpolator/fast_out_linear_in"{
+*http://schemas.android.com/apk/res/android	slideEdge@integer/slideEdgeStart"(°ˆ„2 
+£€¤øinteger/slideEdgeStart*	
+        2*«
+¢targets*
+            *€
+xtarget"n
+*http://schemas.android.com/apk/res/androidtargetId@id/guidance_icon"(Ü‡„2
+Ø€ øid/guidance_icon*
+            ;*‚
+ztarget"p
+*http://schemas.android.com/apk/res/androidtargetId@id/guidance_title" (Ü‡„2
+Ù€ øid/guidance_title *
+             <*
+„target"z
+*http://schemas.android.com/apk/res/androidtargetId@id/guidance_breadcrumb"!(Ü‡„2 
+Õ€ øid/guidance_breadcrumb!*
+            !A*
+†target"|
+*http://schemas.android.com/apk/res/androidtargetId@id/guidance_description""(Ü‡„2!
+×€ øid/guidance_description"*	
+        "B*
+  #*
+  $
+*‡
+şslide"K
+*http://schemas.android.com/apk/res/androidduration350"%(˜ƒ„2:0Ş"Ÿ
+*http://schemas.android.com/apk/res/androidinterpolator(@android:interpolator/fast_out_linear_in"%(Á‚„20
+.€°'android:interpolator/fast_out_linear_in"w
+*http://schemas.android.com/apk/res/android	slideEdge@integer/slideEdgeEnd"%(°ˆ„2
+¢€¤øinteger/slideEdgeEnd*	
+        (0*ì
+ãtargets*
+            )*œ
+“target"ˆ
+*http://schemas.android.com/apk/res/androidtargetId@id/action_fragment_background"*(Ü‡„2'
+%Š€ øid/action_fragment_background**
+            *H*¢
+™target"
+*http://schemas.android.com/apk/res/androidtargetId!@id/guidedactions_list_background"+(Ü‡„2*
+(å€ ø id/guidedactions_list_background+*
+            +K*‘
+ˆtarget"~
+*http://schemas.android.com/apk/res/androidtargetId@id/guidedactions_content",(Ü‡„2"
+ Û€ øid/guidedactions_content,*
+            ,C*‹
+‚target"x
+*http://schemas.android.com/apk/res/androidtargetId@id/guidedactions_list"-(Ü‡„2
+ã€ øid/guidedactions_list-*
+            -@*”
+‹target"€
+*http://schemas.android.com/apk/res/androidtargetId@id/guidedactions_sub_list".(Ü‡„2#
+!é€ øid/guidedactions_sub_list.*
+            .D*ª
+¡target"–
+*http://schemas.android.com/apk/res/androidtargetId%@id/guidedactions_sub_list_background"/(Ü‡„2.
+,ê€ ø$id/guidedactions_sub_list_background/*
+            /O*¤
+›target"
+*http://schemas.android.com/apk/res/androidtargetId"@id/guidedactions_list_background2"0(Ü‡„2+
+)æ€ ø!id/guidedactions_list_background20*
+            0L*”
+‹target"€
+*http://schemas.android.com/apk/res/androidtargetId@id/guidedactions_content2"1(Ü‡„2#
+!Ü€ øid/guidedactions_content21*
+            1D*
+„target"z
+*http://schemas.android.com/apk/res/androidtargetId@id/guidedactions_list2"2(Ü‡„2 
+ä€ øid/guidedactions_list22*	
+        2A)*
+  3%*	
+4
+

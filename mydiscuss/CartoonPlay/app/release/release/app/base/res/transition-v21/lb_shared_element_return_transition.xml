@@ -1,0 +1,26 @@
+
+»	
+9
+android*http://schemas.android.com/apk/res/androidtransitionSet*
+  K*ü
+ófade"I
+*http://schemas.android.com/apk/res/androidduration75"(˜ƒ„2:0K"Ÿ
+*http://schemas.android.com/apk/res/androidinterpolator(@android:interpolator/linear_out_slow_in"(Á‚„20
+.Ž€°'android:interpolator/linear_out_slow_in*
+  *“
+ŠchangeBounds"K
+*http://schemas.android.com/apk/res/androidduration325"(˜ƒ„2:0Å"Ÿ
+*http://schemas.android.com/apk/res/androidinterpolator(@android:interpolator/linear_out_slow_in"(Á‚„20
+.Ž€°'android:interpolator/linear_out_slow_in*
+  *
+  *‰
+€changeTransform"K
+*http://schemas.android.com/apk/res/androidduration325"(˜ƒ„2:0Å"Ÿ
+*http://schemas.android.com/apk/res/androidinterpolator(@android:interpolator/linear_out_slow_in"(Á‚„20
+.Ž€°'android:interpolator/linear_out_slow_in*
+  *Ž
+…changeImageTransform"K
+*http://schemas.android.com/apk/res/androidduration325"(˜ƒ„2:0Å"Ÿ
+*http://schemas.android.com/apk/res/androidinterpolator(@android:interpolator/linear_out_slow_in"(Á‚„20
+.Ž€°'android:interpolator/linear_out_slow_in*	
+

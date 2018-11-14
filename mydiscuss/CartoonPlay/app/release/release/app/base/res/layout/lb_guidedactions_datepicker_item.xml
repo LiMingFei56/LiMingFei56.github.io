@@ -1,0 +1,30 @@
+
+¬
+9
+android*http://schemas.android.com/apk/res/android=android.support.v17.leanback.widget.GuidedActionItemContainer"bstyle$?attr/guidedActionItemContainerStyle"2/
+-Ì€Œø#attr/guidedActionItemContainerStyle*
+
+    2*í
+ä	ImageView"Xstyle?attr/guidedActionItemIconStyle"2*
+(Ï€Œøattr/guidedActionItemIconStyle"}
+*http://schemas.android.com/apk/res/androidid@+id/guidedactions_item_icon"(Ğ„2$
+"á€ øid/guidedactions_item_icon*
+
+    ,*°
+§TextView"Zstyle ?attr/guidedActionItemTitleStyle"2+
+)Ğ€Œøattr/guidedActionItemTitleStyle"
+*http://schemas.android.com/apk/res/androidid@+id/guidedactions_item_title"(Ğ„2%
+#â€ øid/guidedactions_item_title"\
+*http://schemas.android.com/apk/res/androidlayout_gravitycenter_vertical"(³„2:8"`
+*http://schemas.android.com/apk/res/androidlayout_widthwrap_content"(ô„2:0şÿÿÿÿÿÿÿÿ*
+
+     3*ì
+ã5android.support.v17.leanback.widget.picker.DatePicker"‡
+*http://schemas.android.com/apk/res/androidid!@+id/guidedactions_activator_item""(Ğ„2)
+'Ú€ øid/guidedactions_activator_item"[
+*http://schemas.android.com/apk/res/androidimportantForAccessibilityyes""(ª‡„2:0"a
+*http://schemas.android.com/apk/res/androidlayout_heightwrap_content""(õ„2:0şÿÿÿÿÿÿÿÿ"`
+*http://schemas.android.com/apk/res/androidlayout_widthwrap_content""(ô„2:0şÿÿÿÿÿÿÿÿ"*
+
+
+&/

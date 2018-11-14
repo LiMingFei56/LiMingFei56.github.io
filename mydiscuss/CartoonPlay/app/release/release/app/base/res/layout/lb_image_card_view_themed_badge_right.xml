@@ -1,0 +1,12 @@
+
+û
+9
+android*http://schemas.android.com/apk/res/android	ImageView"Tstyle?attr/imageCardViewBadgeStyle"2(
+&ó€Œøattr/imageCardViewBadgeStyle"e
+*http://schemas.android.com/apk/res/androidid@+id/extra_badge"(Ğ„2
+Í€ øid/extra_badge"w
+*http://schemas.android.com/apk/res/androidlayout_alignBottom@+id/content_text"(Šƒ„2
+´€ øid/content_text"X
+*http://schemas.android.com/apk/res/androidlayout_alignParentEndtrue"(¼‡„2:@"¢
+*http://schemas.android.com/apk/res/androidlayout_marginStart&@dimen/lb_basic_card_info_badge_margin"(µ‡„2/
+-–€”ø%dimen/lb_basic_card_info_badge_margin

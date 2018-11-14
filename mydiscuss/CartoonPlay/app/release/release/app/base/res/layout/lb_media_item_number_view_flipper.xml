@@ -1,0 +1,43 @@
+
+›
+9
+android*http://schemas.android.com/apk/res/androidmerge"a
+*http://schemas.android.com/apk/res/androidlayout_heightmatch_parent"(õ„2:0ÿÿÿÿÿÿÿÿÿ"`
+*http://schemas.android.com/apk/res/androidlayout_widthmatch_parent"(ô„2:0ÿÿÿÿÿÿÿÿÿ*
+
+    ,*Ò
+ÉTextView"^style"?attr/playbackMediaItemNumberStyle"2-
++¥Œø!attr/playbackMediaItemNumberStyle"]
+*http://schemas.android.com/apk/res/androidid@+id/initial"(Ğ„2
+÷€ ø
+id/initial*
+    *é
+à	ImageView"S
+*http://schemas.android.com/apk/res/androidadjustViewBoundstrue"(‚„2:@"[
+*http://schemas.android.com/apk/res/androidid@+id/paused"(Ğ„2
+º ø	id/paused"\
+*http://schemas.android.com/apk/res/androidlayout_gravitycenter_vertical"(³„2:8"“
+*http://schemas.android.com/apk/res/androidlayout_height!@dimen/lb_playback_play_icon_size"(õ„2*
+(Ê”ø dimen/lb_playback_play_icon_size"’
+*http://schemas.android.com/apk/res/androidlayout_width!@dimen/lb_playback_play_icon_size"(ô„2*
+(Ê”ø dimen/lb_playback_play_icon_size"P
+*http://schemas.android.com/apk/res/android	scaleTypefitStart"(‚„2:0"w
+*http://schemas.android.com/apk/res/androidsrc@drawable/lb_ic_play_fit"(™‚„2!
+—€˜ødrawable/lb_ic_play_fit"M
+*http://schemas.android.com/apk/res/android
+visibilitygone"(Ü„2:0*
+    #*•
+Œ7android.support.v17.leanback.widget.MediaNowPlayingView"]
+*http://schemas.android.com/apk/res/androidid@+id/playing"$(Ğ„2
+À ø
+id/playing"\
+*http://schemas.android.com/apk/res/androidlayout_gravitycenter_vertical"$(³„2:8"¡
+*http://schemas.android.com/apk/res/androidlayout_height(@dimen/lb_playback_now_playing_view_size"$(õ„21
+/È”ø'dimen/lb_playback_now_playing_view_size" 
+*http://schemas.android.com/apk/res/androidlayout_width(@dimen/lb_playback_now_playing_view_size"$(ô„21
+/È”ø'dimen/lb_playback_now_playing_view_size"M
+*http://schemas.android.com/apk/res/android
+visibilitygone"$(Ü„2:0$*
+
+
+)'
