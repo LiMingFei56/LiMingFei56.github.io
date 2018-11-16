@@ -1,40 +1,0 @@
-
-¹
-
-9
-android*http://schemas.android.com/apk/res/androidripple"…
-*http://schemas.android.com/apk/res/androidcolor@color/lb_control_button_color"(¥ƒ„2'
-%‰€øcolor/lb_control_button_color*
-
-    4*Ï
-Æitem"e
-*http://schemas.android.com/apk/res/androidid@android:id/mask"(Ğ„2
-®€ˆandroid:id/mask*	
-        (*´
-«selector"O
-*http://schemas.android.com/apk/res/androidconstantSizetrue"(–ƒ„2:@*
-            /*£
-šitem"P
-*http://schemas.android.com/apk/res/androidstate_focusedtrue"(œ„2:@*
-                /*
-„shape"H
-*http://schemas.android.com/apk/res/androidshapeoval"(šƒ„2:0*
-
-                    -*
-                    G*`
-Xsolid"O
-*http://schemas.android.com/apk/res/androidcolor#000000"(¥ƒ„2:P€€€ø*
-
-                    5*Ô
-Ësize" 
-*http://schemas.android.com/apk/res/androidheight+@dimen/lb_control_button_secondary_diameter"(Õ‚„24
-2Á€”ø*dimen/lb_control_button_secondary_diameter"Ÿ
-*http://schemas.android.com/apk/res/androidwidth+@dimen/lb_control_button_secondary_diameter"(Ù‚„24
-2Á€”ø*dimen/lb_control_button_secondary_diameter*
-                V*
-             *	
-        !*
-    "*
-
-
-#

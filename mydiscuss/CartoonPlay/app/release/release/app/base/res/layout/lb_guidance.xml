@@ -1,45 +1,0 @@
-
-†
-9
-android*http://schemas.android.com/apk/res/androidFrameLayout"a
-*http://schemas.android.com/apk/res/androidlayout_heightmatch_parent"(õ„2:0ÿÿÿÿÿÿÿÿÿ"`
-*http://schemas.android.com/apk/res/androidlayout_widthmatch_parent"(ô„2:0ÿÿÿÿÿÿÿÿÿ*
-
-    )*Ú	
-Ñ	Aandroid.support.v17.leanback.widget.GuidanceStylingRelativeLayout"Rstyle?attr/guidanceContainerStyle"2'
-%½€Œøattr/guidanceContainerStyle"s
-*http://schemas.android.com/apk/res/androidid@+id/guidance_container"(Ğ„2
-Ö€ øid/guidance_container*
-
-
-        .*É
-À	ImageView"Hstyle?attr/guidanceIconStyle"2"
- À€Œøattr/guidanceIconStyle"i
-*http://schemas.android.com/apk/res/androidid@+id/guidance_icon"(Ğ„2
-Ø€ øid/guidance_icon*
-
-
-        /*à
-×TextView"Tstyle?attr/guidanceBreadcrumbStyle"2(
-&¼€Œøattr/guidanceBreadcrumbStyle"u
-*http://schemas.android.com/apk/res/androidid@+id/guidance_breadcrumb"(Ğ„2 
-Õ€ øid/guidance_breadcrumb*
-
-
-        !3*Ì
-ÃTextView"Jstyle?attr/guidanceTitleStyle"#2#
-!Á€Œøattr/guidanceTitleStyle"k
-*http://schemas.android.com/apk/res/androidid@+id/guidance_title"#(Ğ„2
-Ù€ øid/guidance_title#*
-
-
-        %.*ä
-ÛTextView"Vstyle?attr/guidanceDescriptionStyle"'2)
-'¾€Œøattr/guidanceDescriptionStyle"w
-*http://schemas.android.com/apk/res/androidid@+id/guidance_description"'(Ğ„2!
-×€ øid/guidance_description'*
-
-    )4*
-
-
-+H

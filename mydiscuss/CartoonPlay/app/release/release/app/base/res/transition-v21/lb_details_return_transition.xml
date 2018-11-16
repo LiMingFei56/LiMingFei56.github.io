@@ -1,67 +1,0 @@
-
-«
-9
-android*http://schemas.android.com/apk/res/androidtransitionSet*
-  K*Û	
-Ò	
-transition"Cclass:android.support.v17.leanback.transition.SlideNoPropagation"K
-*http://schemas.android.com/apk/res/androidduration350"(˜ƒ„2:0Ş"Ÿ
-*http://schemas.android.com/apk/res/androidinterpolator(@android:interpolator/fast_out_linear_in"(Á‚„20
-.€°'android:interpolator/fast_out_linear_in"N
-*http://schemas.android.com/apk/res/android	slideEdgebottom"(°ˆ„2:0P*
-      !*¡
-˜targets*
-          *}
-utarget"k
-*http://schemas.android.com/apk/res/android	excludeId@id/title_badge"(Áˆ„2
-Ø øid/title_badge
-*
-          8*{
-starget"i
-*http://schemas.android.com/apk/res/android	excludeId@id/title_text"(Áˆ„2
-Ú øid/title_text
-*
-          7*y
-qtarget"g
-*http://schemas.android.com/apk/res/android	excludeId@id/title_orb"(Áˆ„2
-Ù øid/title_orb
-*
-          6*—
-target"ƒ
-*http://schemas.android.com/apk/res/android	excludeId@id/details_background_view"(Áˆ„2$
-"½€ øid/details_background_view
-*
-          D*
-ytarget"o
-*http://schemas.android.com/apk/res/android	excludeId@id/video_surface"(Áˆ„2
-ß øid/video_surface
-*
-      :*
-  *
-    *
-  *ƒ
-ú
-transition"Cclass:android.support.v17.leanback.transition.ParallaxTransition"K
-*http://schemas.android.com/apk/res/androidduration350" (˜ƒ„2:0Ş*
-      !*»
-²targets*
-          "*€
-xtarget"n
-*http://schemas.android.com/apk/res/androidtargetId@id/details_frame"#(Ü‡„2
-¿€ øid/details_frame#
-*
-      #9"*
-  $ *
-  %*¹
-°fade"K
-*http://schemas.android.com/apk/res/androidduration350"&(˜ƒ„2:0Ş*
-      '*¼
-³targets*
-          (*
-ytarget"o
-*http://schemas.android.com/apk/res/android	excludeId@id/video_surface")(Áˆ„2
-ß øid/video_surface)
-*
-      ):(*
-  *&*	
-+	

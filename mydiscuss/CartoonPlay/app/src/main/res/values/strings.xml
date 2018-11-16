@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">CartoonPlay</string>
+
+    <string name="item_main_grid_img_cd">icon</string>
 </resources>

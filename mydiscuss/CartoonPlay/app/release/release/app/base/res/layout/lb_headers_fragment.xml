@@ -1,36 +1,0 @@
-
-¾
-9
-android*http://schemas.android.com/apk/res/androidRelativeLayout"
-*http://schemas.android.com/apk/res/android	elevation@dimen/lb_browse_headers_z"(Àˆ„2#
-!¬€”ødimen/lb_browse_headers_z"u
-*http://schemas.android.com/apk/res/androidid@+id/browse_headers_root"(Ğ„2 
-¤€ øid/browse_headers_root"a
-*http://schemas.android.com/apk/res/androidlayout_heightmatch_parent"(õ„2:0ÿÿÿÿÿÿÿÿÿ"Œ
-*http://schemas.android.com/apk/res/androidlayout_width@dimen/lb_browse_headers_width"(ô„2'
-%«€”ødimen/lb_browse_headers_width"”
-*http://schemas.android.com/apk/res/android
-paddingEnd#@dimen/lb_browse_header_padding_end"(´‡„2,
-*¦€”ø"dimen/lb_browse_header_padding_end"R
-*http://schemas.android.com/apk/res/androidtransitionGrouptrue"(ˆ„2:@*
-    *ö
-í4android.support.v17.leanback.widget.VerticalGridView"Vstyle?attr/headersVerticalGridStyle"2)
-'ğ€Œøattr/headersVerticalGridStyle"k
-*http://schemas.android.com/apk/res/androidid@+id/browse_headers"(Ğ„2
-¢€ øid/browse_headers"a
-*http://schemas.android.com/apk/res/androidlayout_heightmatch_parent"(õ„2:0ÿÿÿÿÿÿÿÿÿ"Œ
-*http://schemas.android.com/apk/res/androidlayout_width@dimen/lb_browse_headers_width"(ô„2'
-%«€”ødimen/lb_browse_headers_width*
-    0*ö
-íView"
-*http://schemas.android.com/apk/res/android
-background!@drawable/lb_headers_right_fading"(Ô„2*
-(ˆ€˜ø drawable/lb_headers_right_fading"i
-*http://schemas.android.com/apk/res/androidid@+id/fade_out_edge"(Ğ„2
-Î€ øid/fade_out_edge"X
-*http://schemas.android.com/apk/res/androidlayout_alignParentEndtrue"(¼‡„2:@"a
-*http://schemas.android.com/apk/res/androidlayout_heightmatch_parent"(õ„2:0ÿÿÿÿÿÿÿÿÿ"š
-*http://schemas.android.com/apk/res/androidlayout_width%@dimen/lb_browse_header_fading_length"(ô„2.
-,¤€”ø$dimen/lb_browse_header_fading_length*
-    $@*	
-%

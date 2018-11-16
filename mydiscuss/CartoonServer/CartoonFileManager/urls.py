@@ -3,5 +3,5 @@ from . import views
 
 urlpatterns = [
     url(r'path', views.path, name='path'),
-    url(r'streamVideo', views.stream_video, name='stream_video'),
+    url(r'video', views.video, name='video'),
 ]

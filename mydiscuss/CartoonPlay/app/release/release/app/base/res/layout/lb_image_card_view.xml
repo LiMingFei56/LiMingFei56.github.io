@@ -1,22 +1,0 @@
-
-‘
-9
-android*http://schemas.android.com/apk/res/android
-1
-lb'http://schemas.android.com/apk/res-automerge*
-
-    8*Ï
-Æ	ImageView"Tstyle?attr/imageCardViewImageStyle"2(
-&õ€Œøattr/imageCardViewImageStyle"c
-*http://schemas.android.com/apk/res/androidid@+id/main_image"(Ğ„2
-£ øid/main_image*
-
-    0*›
-’@android.support.v17.leanback.widget.NonOverlappingRelativeLayout"Zstyle ?attr/imageCardViewInfoAreaStyle"2+
-)ö€Œøattr/imageCardViewInfoAreaStyle"c
-*http://schemas.android.com/apk/res/androidid@+id/info_field"(Ğ„2
-ö€ øid/info_field*
-    1*
-
-
-G

@@ -25,14 +25,24 @@ def getRootPath():
 def path(request):
     global rootpath
     rootpath = getRootPath()
-    requestPathStr = request.GET.get('path', rootpath)
+    requestPathStr = request.GET.get('path', '/')
+    print('requestPathStr: ' + requestPathStr)
     if (requestPathStr[0] != '/'):
         requestPathStr = '/' + requestPathStr
+
+    print('requestPathStr: ' + requestPathStr)
     requestPath = rootpath + requestPathStr
 
-    childFileList = []
+    print('requestPath: ' + requestPath)
+
+    childFileListName = []
     if(os.path.exists(requestPath) or os.path.isdir(requestPath)):
-        childFileList = list(filter(lambda x: x[0] != '.', os.listdir(requestPath)))
+        print(os.listdir(requestPath))
+        childFileListName = list(filter(lambda x: x[0] != '.', os.listdir(requestPath)))
+    print(childFileListName)
+    childFileList = []
+    for item in childFileListName:
+        childFileList.append({"name": item, "parentDir": requestPathStr, "isVedio": os.path.isfile(requestPath + "/" + item)})
 
     return HttpResponse(json.dumps(childFileList), content_type='application/json')
 
@@ -66,13 +76,14 @@ class RangeFileWrapper(object):
             self.remaining -= len(data)
             return data
 
-def stream_video(request):
+def video(request):
     global rootpath
     rootpath = getRootPath()
-    requestPathStr = request.GET.get('path', rootpath)
+    requestPathStr = request.GET.get('path', '/')
     if (requestPathStr[0] != '/'):
         requestPathStr = '/' + requestPathStr
-    path = '/Users/lmf/Downloads/小猪佩琪/S101 Muddy Puddles.mp4'
+    path = rootpath + requestPathStr
+    print(path)
 
     range_header = request.META.get('HTTP_RANGE', '').strip()
     range_re = re.compile(r'bytes\s*=\s*(\d+)\s*-\s*(\d*)', re.I)
@@ -80,7 +91,6 @@ def stream_video(request):
     size = os.path.getsize(path)
     content_type, encoding = mimetypes.guess_type(path)
     content_type = content_type or 'application/octet-stream'
-    print(range_header)
     if range_match:
         first_byte, last_byte = range_match.groups()
         first_byte = int(first_byte) if first_byte else 0
@@ -93,7 +103,14 @@ def stream_video(request):
         resp['Content-Range'] = 'bytes %s-%s/%s' % (first_byte, last_byte, size)
     else:
         # 不是以视频流方式的获取时，以生成器方式返回整个文件，节省内存
-        resp = StreamingHttpResponse(FileWrapper(open(path, 'rb')), content_type=content_type)
-        resp['Content-Length'] = str(size)
+#        resp = StreamingHttpResponse(FileWrapper(open(path, 'rb')), content_type=content_type)
+#        resp['Content-Length'] = str(size)
+        print('abcsadfasdf')
+        f = open(path,"rb") 
+        response = HttpResponse()
+        response.write(f.read())
+        response['Content-Type'] ='audio/mp3'
+        response['Content-Length'] =os.path.getsize(path)
+        return response
     resp['Accept-Ranges'] = 'bytes'
     return resp
