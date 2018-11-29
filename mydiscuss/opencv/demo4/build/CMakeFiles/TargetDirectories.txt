@@ -1,3 +1,0 @@
-/Users/lmf/git/LiMingFei56.github.io/mydiscuss/opencv/demo4/build/CMakeFiles/rebuild_cache.dir
-/Users/lmf/git/LiMingFei56.github.io/mydiscuss/opencv/demo4/build/CMakeFiles/edit_cache.dir
-/Users/lmf/git/LiMingFei56.github.io/mydiscuss/opencv/demo4/build/CMakeFiles/Chapter4_Phototool.dir
