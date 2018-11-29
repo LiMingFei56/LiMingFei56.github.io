@@ -78,7 +78,7 @@ class PlayActivity: Activity() {
         val currDir = dirData[position]
         val path = if (currDir.parentDir[currDir.parentDir.count() - 1] != '/') "${currDir.parentDir}/${currDir.name}" else "${currDir.parentDir}${currDir.name}"
         val pathEncode = URLEncoder.encode(path, "UTF-8")
-        val httpUrl = "http://192.168.2.183:8856/CartoonFileManager/video?path=$pathEncode"
+        val httpUrl = "${BuildConfig.baseUrl}/CartoonFileManager/video?path=$pathEncode"
         val title = currDir.name
         if (isFirst) {
             myJzvdStd.setUp(httpUrl, title, JzvdStd.SCREEN_WINDOW_NORMAL)
