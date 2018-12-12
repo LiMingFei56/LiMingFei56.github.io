@@ -18,6 +18,7 @@ Debugging
 
 ### Content
 * [Quick Start](./debugging/quick-start)
+* [Crash Log](./debugging/crashlog)
 
 
 Apple Decuments [Debugging](https://developer.apple.com/library/content/documentation/DeveloperTools/Conceptual/debugging_with_xcode/chapters/about_debugging_w_xcode.html#//apple_ref/doc/uid/TP40015022-CH10-SW1)
