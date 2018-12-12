@@ -12,6 +12,7 @@ permalink: /tools/
 * [Build](/tools/build)
 * [Vim](/tools/vim)
 * [Qt](/tools/qt)
+* [JNI](/tools/jni)
 
 ### Literature
 * [Markdown](/tools/literature/markdown)
