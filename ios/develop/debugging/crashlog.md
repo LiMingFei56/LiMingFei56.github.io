@@ -121,3 +121,5 @@ symbol address = stach address - slide;
 
 
 atos -arch \<architecture\> -o \<binary filename\> -l \<load address\> \<stack address 1\> \<stack address 2\> ...
+
+dwarfdump --lookup 0x100287938 --arch arm64 APP_BUNDLE_NAME.app.dSYM
