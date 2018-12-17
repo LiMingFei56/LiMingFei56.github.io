@@ -69,7 +69,7 @@ symbol address = stach address - slide;
 
     获取ELF(运行时映射文件), 查看segment _TEXT 这个段是代码段
 
-    otool -l AppName.app/AppName // .app文件同dSYM文件获取, 只是在product目录下
+    otool -l AppName.app/AppName // .app文件同dSYM文件获取, 只是在product目录下, 还要对应UUID下
 
     segname __TEXT  
     vmaddr 0x0000000100000000  
@@ -102,3 +102,22 @@ symbol address = stach address - slide;
 
     dwarfdump --arch arm64 --lookup 0x00123 MedicalRecordsFolder.app.dSYM/  // 就可以定位代码了
 
+地址说明:
+
+    * Stack Address               Crash File, Exception Backtrace
+    * Load  Address               Crash File, Exception Backtrace
+    * dSYM(Symbol File)UUID       Crash File, Binary Images(See "Verifying Your Symbols File")
+    * Binary Architecture(Compiled for) Crash File, Binary Images
+    * Slide Value                 dSym File(See "Getting the Slide Value")
+    * Symbol Offset               Crash File, Exception Backtrace
+    * File Address                Derived: file address = stack address - load address + slide
+                                  or     : file address = symbol offset + slide
+
+    Crash文件
+    12  便民通                              0x00000001006e1090 0x10063c000 + 675984
+    Stack Address（栈地址）         0x00000001006e1090
+    Load Address（首地址）          0x10063c000
+    Symbol Offset（偏移量）         675984
+
+
+atos -arch \<architecture\> -o \<binary filename\> -l \<load address\> \<stack address 1\> \<stack address 2\> ...
