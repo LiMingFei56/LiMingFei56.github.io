@@ -101,6 +101,13 @@ symbol address = stach address - slide;
     stack address 在crash log 中已经找到了
 
     dwarfdump --arch arm64 --lookup 0x00123 MedicalRecordsFolder.app.dSYM/  // 就可以定位代码了
+    --lookup 是symbol address
+
+    slide + stack address - load address = symbol address
+
+    slide 为otool -l -arch arm64 dSMY
+    0x10003c000 - 0x100f7bfff MedicalRecordsFolder arm64  <b5ae3570a013386688c7007ee2e73978> /var/.../MedicalRecordsFolder
+    load address 为 0x10003c000
 
 地址说明:
 
