@@ -68,6 +68,7 @@ symbol address = stach address - slide;
     slide = (运行时)load address - (链接时)load address;
 
     获取ELF(运行时映射文件), 查看segment _TEXT 这个段是代码段
+
     otool -l AppName.app/AppName // .app文件同dSYM文件获取, 只是在product目录下
 
     segname __TEXT  
@@ -77,25 +78,27 @@ symbol address = stach address - slide;
     filesize 49152
 
 没有 ASLR机制时：
+
     加载时 装载器会将此 ELF 文件的 前 49152 （offset 0 ，filesize 49152）个字节（因为 offset 0 ，filesize 49152）映射到 进程空间以  0x0000000100000000 开始的一块虚拟内存空间里. 
 
 有ASLR 机制时：
+
     加载时 装载器会将此 ELF 文件的 前 49152 （offset 0 ，filesize 49152）个字节（因为 offset 0 ，filesize 49152）映射到 进程空间以  0x0000000100000000 （+slide）开始的一块虚拟内存空间里. 
 
-所以 ： 如果没有 ASLR 机制，那么运行时的内存布局 就和  Load command 中指定的布局一致，也就意味着stack address和 symbol address 一致有 ASLR 的情况也不复杂，只是 加了一个 随意的偏移量 slide 
+    所以 ： 如果没有 ASLR 机制，那么运行时的内存布局 就和  Load command 中指定的布局一致，也就意味着stack address和 symbol address 一致有 ASLR 的情况也不复杂，只是 加了一个 随意的偏移量 slide 
 
 
-binary image:
-Binary Images:
-0x10003c000 - 0x100f7bfff MedicalRecordsFolder arm64  <b5ae3570a013386688c7007ee2e73978> /var/.../MedicalRecordsFolder
-0x12007c000 - 0x1200a3fff dyld arm64  <628da833271c3f9bb8d44c34060f55e0> /usr/lib/dyld
-    {虚拟地址空间区块}   {映射文件}     {uuid}                              {映射文件路径}
+    binary image:
+    Binary Images:
+    0x10003c000 - 0x100f7bfff MedicalRecordsFolder arm64  <b5ae3570a013386688c7007ee2e73978> /var/.../MedicalRecordsFolder
+    0x12007c000 - 0x1200a3fff dyld arm64  <628da833271c3f9bb8d44c34060f55e0> /usr/lib/dyld
+        {虚拟地址空间区块}   {映射文件}     {uuid}                              {映射文件路径}
 
-0x10003c000 - 0x100f7bfff 起始地址为0x10003c000
-vmaddr 0x0000000100000000 实际地址为0x0000000100000000
-slide =  0x10003c000 - 0x100000000 = 0x3c000;
-symbol address = stack address - slide;
-stack address 在crash log 中已经找到了
+    0x10003c000 - 0x100f7bfff 起始地址为0x10003c000
+    vmaddr 0x0000000100000000 实际地址为0x0000000100000000
+    slide =  0x10003c000 - 0x100000000 = 0x3c000;
+    symbol address = stack address - slide;
+    stack address 在crash log 中已经找到了
 
-    warfdump --arch arm64 --lookup 0x00123 MedicalRecordsFolder.app.dSYM/  // 就可以定位代码了
+    dwarfdump --arch arm64 --lookup 0x00123 MedicalRecordsFolder.app.dSYM/  // 就可以定位代码了
 
