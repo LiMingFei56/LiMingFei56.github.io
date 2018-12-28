@@ -6,4 +6,6 @@ layout: page
 permalink: /other
 ---
 
+* [收藏](./other/collect)
+
 * [2018-09-20 如何赚被动收入的方法](./other/2018092001)
