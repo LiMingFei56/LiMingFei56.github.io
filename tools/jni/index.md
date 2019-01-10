@@ -10,4 +10,4 @@ permalink: /tools/jni
 
 * [Introduction](./jni/introduction)
 * [Design](./jni/design)
-
+* [JNI Types and Data Structures](./jni/data)
