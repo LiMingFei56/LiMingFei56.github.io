@@ -41,6 +41,7 @@ permalink: /tools/jni/design
 * 库L静态加载后, 禁止再动态加载
 * 当库L所在的Class loader被垃圾回收, 那么当库L实现"JNI_OnUnload_L"时会被执行
 * 当库L实现"JNI_OnUnLoad_L"和"JNI_OnUnLoad"时, "JNI_OnUnLoad"会被忽略
+* 如果操作系统不支持动态链接, 那么需要把静态库和VM预链接, 那么VM完成System.loadLibrary调用而不实际加载库
 * RegisterNatives() 注册类相关的本地方法, 是静态链接
 
 #### Resolving Native Method Names
