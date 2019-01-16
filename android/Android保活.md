@@ -57,6 +57,6 @@ b. 网络回包可唤醒机器
 3. 进程相互唤醒
 4. JobSheduler
 5. 多种广播, Alerm等
-
+6. /system/app  android:persistent="true"
 
 
