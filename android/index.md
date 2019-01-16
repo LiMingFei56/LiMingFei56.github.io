@@ -23,6 +23,7 @@ Android
 <h3 id="System">System</h3>
 * [Apk动态加载机制的研究](./apk_dynamic_name)
 * [Uri-Scheme介绍和使用](./url_scheme)
+* [Android保活](./protect_process)
 
 <h3 id="IDE">IDE</h3>
 * [指定编译出包的名字](./output_apk_name) 
