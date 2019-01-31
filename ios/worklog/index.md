@@ -15,3 +15,6 @@ permalink: /ios/worklog
 
 1. [Cocoapos](./worklog/cocoapos)
 2. [User Notifications](./worklog/user-notification)
+
+## xcode
+* [管理Provisioning](./worklong/provisioning)
