@@ -1,1 +1,0 @@
-Kotlin可以编译成javascript代码.
