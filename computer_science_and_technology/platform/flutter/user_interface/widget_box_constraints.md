@@ -1,6 +1,6 @@
 ---
 layout: page
-permalink: /technology-home/platform/flutter/user-interface/widget-box-constraints
+permalink: ./technology-home/platform/flutter/user-interface/widget-box-constraints
 ---
 
 ## Box constraints

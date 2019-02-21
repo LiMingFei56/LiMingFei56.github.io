@@ -1,6 +1,6 @@
 ---
 layout: page
-permalink: /technology-home/platform/flutter/user-interface/
+permalink: ./technology-home/platform/flutter/user-interface/
 ---
 
 ## User Interface

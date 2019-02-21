@@ -1,6 +1,6 @@
 ---
 layout: page
-permalink: /technology-home/platform/flutter/
+permalink: ./technology-home/platform/flutter/
 ---
 
 ## Flutter

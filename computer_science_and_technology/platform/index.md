@@ -1,6 +1,6 @@
 ---
 layout: page
-permalink: /technology-home/platform/
+permalink: ./technology-home/platform/
 ---
 
 ## 平台

@@ -1,6 +1,6 @@
 ---
 layout: page
-permalink: /technology-home/platform/flutter/user-interface/widget-navigation
+permalink: ./technology-home/platform/flutter/user-interface/widget-navigation
 ---
 
 ## Navigation
