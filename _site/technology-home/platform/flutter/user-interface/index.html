@@ -10,7 +10,7 @@
   <meta name="description" content="记录学习的笔记和工作中遇到的问题">
 
   <link rel="stylesheet" href="/assets/main.css">
-  <link rel="canonical" href="http://localhost:4000/">
+  <link rel="canonical" href="http://localhost:4000/technology-home/platform/flutter/user-interface/">
   <link rel="alternate" type="application/rss+xml" title="李鸣飞的博客" href="/feed.xml">
   
   
@@ -74,12 +74,82 @@
   </header>
 
   <div class="post-content">
-    <p>李鸣飞的博客,记录一些学习笔记和工作中遇到的问题.</p>
+    <h2 id="user-interface">User Interface</h2>
 
+<h3 id="1-introduction">1. Introduction</h3>
+<p>Dart入口main函数，flutter需要调用runApp(widget)函数来呈现界面。</p>
+
+<h4 id="11-declarative-ui-and-imperative-ui">1.1. Declarative UI And Imperative UI</h4>
+<p>Android和IOS使用命令式的UI，构建一个View，然后对它set一些状态。如果用户点击了什么行为，那么会<code class="highlighter-rouge">findViewById</code>后处理这个行为。</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>// Imperative style
+b.setColor(red)
+b.clearChildren()
+ViewC c3 = new ViewC(...)
+b.add(c3)
+</code></pre></div></div>
+
+<p>Flutter是声名式UI，视图配置是不变的，Widget只是描述界面的蓝图。如果用户点击了什么行为，那么会修改State的状态，最后调用setState()
+使的视图重新构建。构建新的Widget实例，而不修改旧的。使用<code class="highlighter-rouge">RanderObjects</code>管理传统UI对象的许多职责（如维护布局状态）。build函数中返回新的Widget</p>
+
+<h3 id="2-widget">2. Widget</h3>
+
+<h4 id="21-widget结构">2.1. Widget结构</h4>
+<p>Widget是描述和配置界面是怎么渲染的，Widget最重要的是<code class="highlighter-rouge">build</code>函数，它使用其它Widget来描述自身。这样就构建成一个Widget Tree。
+Framework会按顺序构建WidgetTree，直到最后遇到<code class="highlighter-rouge">RenderObject</code>Widget，它计算并描述了Widget的几何形状。</p>
+
+<h4 id="22-widget实现">2.2. Widget实现</h4>
+<p>Widget都是不可变的，都会重建每一帧，区分是是否管理状态。
+StatelessWidget - build 无状态，不可改变，也就是不能改变显示的内容
+StatefulWidget - createState - State（可以保存状态信息） - build 通过调用setState方法来改变状态，会重新调用build函数。</p>
+
+<h4 id="23-widget种类">2.3. Widget种类</h4>
+<p>Basic</p>
+
+<p>Material Components: <code class="highlighter-rouge">MaterialApp</code></p>
 <ul>
-  <li><a href="./technology-home">计算机科学与技术</a></li>
-  <li><a href="./post-home">日志</a></li>
+  <li>需要<code class="highlighter-rouge">pubspec.yaml</code>中配置<code class="highlighter-rouge">uses-material-design: true</code></li>
+  <li>
+    <p>import ‘package:flutter/material.dart’;</p>
+
+    <p>name: my_app
+flutter:
+uses-material-design: true</p>
+  </li>
 </ul>
+
+<p>Cupertino Components</p>
+
+<h4 id="24-widget生命周期">2.4. Widget生命周期</h4>
+<p>详情见<a href="./widget-lifecycle">Widget Lifecycle</a></p>
+
+<h4 id="25-widget-key">2.5. Widget Key</h4>
+<p>Widget重建时，framework通过<code class="highlighter-rouge">runtimeType</code>和widget在树中的顺序来对新和旧的Widget进行匹配，识别出从旧状
+态到新状态所需的最小更改。</p>
+
+<p>可以使用key来进行匹配，framework要求相同的Widget需要<code class="highlighter-rouge">key</code>和<code class="highlighter-rouge">runtimeType</code>相同。</p>
+
+<p>当构建相同类型的Widget的许多实例时，key就非常有用。在List中，不管第一条当前是否显示，默认都会匹配。但是用了key就
+可以有针对性的匹配。</p>
+
+<p>Global Key
+在全局唯一标识Widget，需要全局唯一标识符，而key只需要兄弟中唯一。</p>
+
+<h3 id="3-layout">3. Layout</h3>
+<p>Layout Widget都具有下面一项:</p>
+<ul>
+  <li><code class="highlighter-rouge">child</code>属性，只有一个孩子，Center和Container</li>
+  <li><code class="highlighter-rouge">children</code>属性，有多个孩子，Row、Column、ListView、Stack</li>
+</ul>
+
+<p>处理Widget约束<a href="./widget-box-constraints">详细</a></p>
+
+<h3 id="4-navigation">4. Navigation</h3>
+<p>详细见<a href="./widget-navigation">Navigation</a></p>
+
+<h3 id="5-animations">5. Animations</h3>
+
+<h3 id="6-widget-catalog">6. Widget Catalog</h3>
 
   </div>
 

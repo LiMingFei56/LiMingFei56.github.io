@@ -10,7 +10,7 @@
   <meta name="description" content="记录学习的笔记和工作中遇到的问题">
 
   <link rel="stylesheet" href="/assets/main.css">
-  <link rel="canonical" href="http://localhost:4000/">
+  <link rel="canonical" href="http://localhost:4000/technology-home/platform/flutter/user-interface/widget-navigation">
   <link rel="alternate" type="application/rss+xml" title="李鸣飞的博客" href="/feed.xml">
   
   
@@ -74,12 +74,52 @@
   </header>
 
   <div class="post-content">
-    <p>李鸣飞的博客,记录一些学习笔记和工作中遇到的问题.</p>
-
+    <h2 id="navigation">Navigation</h2>
 <ul>
-  <li><a href="./technology-home">计算机科学与技术</a></li>
-  <li><a href="./post-home">日志</a></li>
+  <li>routes - 屏幕和页面，也就是Activity和UIViewController</li>
+  <li>navigator - 管理routes的栈，主要功能push和pop</li>
 </ul>
+
+<h3 id="1-基本使用">1. 基本使用</h3>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>1. Create two routes
+2. Navigator.push(
+    context,
+        MaterialPageRoute(builder: (context) =&gt; SecondRoute()),
+   );
+3. Navigator.pop(context);
+</code></pre></div></div>
+
+<h3 id="2-命名routes">2. 命名routes</h3>
+<p>如果在多个routes中导航到同一个routes中，就导致代码重复，这时就要用命名routes。
+<code class="highlighter-rouge">Navigator.pushNamed</code></p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>1. Create two screens
+2. Define the routes
+    MaterialApp(
+        // Start the app with the "/" named route. In our case, the app will start
+        // on the FirstScreen Widget
+        initialRoute: '/',
+        routes: {
+            // When we navigate to the "/" route, build the FirstScreen Widget
+            '/': (context) =&gt; FirstScreen(),
+            // When we navigate to the "/second" route, build the SecondScreen Widget
+            '/second': (context) =&gt; SecondScreen(),
+        },
+    );
+3. Navigator.pushNamed(context, '/second');
+</code></pre></div></div>
+
+<h3 id="3-传递数据">3. 传递数据</h3>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>// 返回数据
+1. Navigator.pop(context, 'Yep!');
+2. final result = await Navigator.push(
+        context,
+        MaterialPageRoute(builder: (context) =&gt; SelectionScreen()),
+    );
+</code></pre></div></div>
+
+<p>传递数据到新routes，使用构造函数。</p>
 
   </div>
 

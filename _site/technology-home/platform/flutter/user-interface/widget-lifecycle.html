@@ -10,7 +10,7 @@
   <meta name="description" content="记录学习的笔记和工作中遇到的问题">
 
   <link rel="stylesheet" href="/assets/main.css">
-  <link rel="canonical" href="http://localhost:4000/technology_home">
+  <link rel="canonical" href="http://localhost:4000/technology-home/platform/flutter/user-interface/widget-lifecycle">
   <link rel="alternate" type="application/rss+xml" title="李鸣飞的博客" href="/feed.xml">
   
   
@@ -74,7 +74,70 @@
   </header>
 
   <div class="post-content">
-    <h2 id="计算机科学与技术">计算机科学与技术</h2>
+    <h2 id="widget-lifecycle">Widget Lifecycle</h2>
+
+<h3 id="1-程序入口">1. 程序入口</h3>
+<p>main()函数中调用runApp(Widget)</p>
+
+<h3 id="2-widget构建过程">2. Widget构建过程</h3>
+<p>StatelessWidget - build()</p>
+
+<p>StatefulWidget</p>
+<ul>
+  <li>createState() 构建State对象
+State
+    <ul>
+      <li>initState() 当State对象构建时调用一次</li>
+      <li>dispose() 当State不再需要时调用一次</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="3-widget-lifecycle">3. Widget Lifecycle</h3>
+<p>WidgetsBinding中使用<code class="highlighter-rouge">observer</code>监听Widget状态改变<code class="highlighter-rouge">didChangeAppLifecycleState()</code></p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>1. 实现WidgetsBindingObserver的didChangeAppLifecycleState方法
+2. 添加监听WidgetsBinding.instance.addObserver(this);
+3. 删除监听WidgetsBinding.instance.removeObserver(this);
+</code></pre></div></div>
+
+<ul>
+  <li>inactive - 应用程序处于非活动状态，并且未接收用户输入。此事件仅适用于iOS
+  ，因为在Android上没有可映射的等效事件</li>
+  <li>paused - 该应用程序当前对用户不可见，不响应用户输入，并在后台运行
+  。这相当于Android中的onPause（）</li>
+  <li>resumed - 应用程序可见并响应用户输入。这相当于Android中的onPostResume（）</li>
+  <li>suspending - 应用悬挂。这相当于Android中的onStop;它不会在iOS上触发
+  ，因为在iOS上没有可映射的等效事件</li>
+</ul>
+
+<h3 id="31-inactive">3.1. inactive</h3>
+<p>以下情况会转换到inactive状态</p>
+
+<p>在iOS上，主视图运行在前台无效状态。当电话进来、响应TouchID请求、进入应用切换或
+控制中心、当FlutterAPP使用的UIViewController是用来过渡的。</p>
+
+<p>在Android上，主视图运行在前台无效状态。其他Activity聚焦（如分屏），电话进来，画
+中画应用，系统Dialog，或者其他Window。</p>
+
+<p>处于这种状态的应用，假定可以在任何时间进入<code class="highlighter-rouge">paused</code></p>
+
+<h3 id="32-paused">3.2. paused</h3>
+<p>应用不显示给用户，不响应用户输入，在后台运行</p>
+
+<p>当应用在这个状态时，engine不会回调<code class="highlighter-rouge">Window.onBeginFrame</code>和<code class="highlighter-rouge">Window.onDrawFrame</code></p>
+
+<p>Android应用在这个状态，假定可以在任何时间进入<code class="highlighter-rouge">suspending</code></p>
+
+<h3 id="33-resumed">3.3. resumed</h3>
+<p>应用显示和响应用户</p>
+
+<h3 id="34-suspending">3.4. suspending</h3>
+<p>应用程序悬挂</p>
+
+<p>当应用在这个状态时，engine不会回调<code class="highlighter-rouge">Window.onBeginFrame</code>和<code class="highlighter-rouge">Window.onDrawFrame</code></p>
+
+<p>在iOS上，这个状态当前不使用</p>
 
   </div>
 

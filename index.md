@@ -7,5 +7,5 @@ layout: page
 
 李鸣飞的博客,记录一些学习笔记和工作中遇到的问题.
 
-* [计算机科学与技术](./technology_home)
-* [日志](./post_home)
+* [计算机科学与技术](./technology-home)
+* [日志](./post-home)
