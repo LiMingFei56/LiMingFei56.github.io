@@ -71,5 +71,6 @@ Layout Widget都具有下面一项:
 详细见[Navigation](./widget-navigation)
 
 ### 5. Animations
+详细见[Animation](./widget-animation)
 
 ### 6. Widget Catalog

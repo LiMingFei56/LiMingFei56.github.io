@@ -1,6 +1,6 @@
 ---
 layout: page
-permalink: ./post-home
+permalink: ./post-home/
 ---
 
 ## 日志

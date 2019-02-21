@@ -1,6 +1,6 @@
 ---
 layout: page
-permalink: /technology-home
+permalink: /technology-home/
 ---
 
 ## 计算机科学与技术
