@@ -81,9 +81,11 @@ AnimatedList - 在List和grid中添加、删除元素的动画。[Example](https
 Shared element transition - 一个元素(一般是Image), 从一个页面过渡到另一个页面。[Hero Animations](https://flutter.io/docs/development/ui/animations/hero-animations)
 Staggered animation - 动画组合，延迟，顺序，重叠等。[Staggered Animations](https://flutter.io/docs/development/ui/animations/staggered-animations)
 
+#### 5.3. Tween Animation
+详细见[Animation](./widget-tween-animation)
 
+#### 5.4. Hero Animation
 
-
-详细见[Animation](./widget-animation)
+#### 5.4. Staggered Animation
 
 ### 6. Widget Catalog
