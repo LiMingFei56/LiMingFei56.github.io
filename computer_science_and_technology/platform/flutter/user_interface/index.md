@@ -73,16 +73,16 @@ Layout Widget都具有下面一项:
 ### 5. Animations
 
 #### 5.1. Animations分类
-Tween Animation - 定义起点，终点，时间线，速度曲线。框架会计算中间值
-Physics-based animation - 动画会建模为类似现实世界的物体。如重力， 球等
+* Tween Animation - 定义起点，终点，时间线，速度曲线。框架会计算中间值。
+* Physics-based animation - 动画会建模为类似现实世界的物体。如重力， 球等。
 
 #### 5.2. 常用的动画模式
-AnimatedList - 在List和grid中添加、删除元素的动画。[Example](https://flutter.io/docs/catalog/samples/animated-list)
-Shared element transition - 一个元素(一般是Image), 从一个页面过渡到另一个页面。[Hero Animations](https://flutter.io/docs/development/ui/animations/hero-animations)
-Staggered animation - 动画组合，延迟，顺序，重叠等。[Staggered Animations](https://flutter.io/docs/development/ui/animations/staggered-animations)
+* AnimatedList - 在List和grid中添加、删除元素的动画。[Example](https://flutter.io/docs/catalog/samples/animated-list)
+* Shared element transition - 一个元素(一般是Image), 从一个页面过渡到另一个页面。[Hero Animations](https://flutter.io/docs/development/ui/animations/hero-animations)
+* Staggered animation - 动画组合，延迟，顺序，重叠等。[Staggered Animations](https://flutter.io/docs/development/ui/animations/staggered-animations)
 
-#### 5.3. Tween Animation
-详细见[Animation](./widget-tween-animation)
+#### 5.3. Animation
+详细见[Animation](./widget-animation)
 
 #### 5.4. Hero Animation
 
