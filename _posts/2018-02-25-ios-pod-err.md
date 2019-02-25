@@ -3,7 +3,6 @@ layout: post
 title: Xcode 10.1 pod脚本报错
 categories: [ios]
 tags: [error, xcode]
-date: 
 ---
 
 ## Xcode 10.1 导入项目后pod脚本报错
