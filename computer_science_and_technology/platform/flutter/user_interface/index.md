@@ -83,9 +83,10 @@ Layout Widget都具有下面一项:
 
 #### 5.3. Animation
 详细见[Animation](./widget-animation)
+Hero Animation
+Staggered Animation
 
-#### 5.4. Hero Animation
+### 6. Gestures
+详细见[Gestures](./widget-gestures)
 
-#### 5.4. Staggered Animation
-
-### 6. Widget Catalog
+### 7. Widget Catalog

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-02-25T15:06:20+08:00</updated><id>http://localhost:4000/</id><title type="html">李鸣飞的博客</title><subtitle>记录学习的笔记和工作中遇到的问题</subtitle><entry><title type="html">Xcode 10.1 pod脚本报错</title><link href="http://localhost:4000/ios/2019/02/25/ios-pod-err.html" rel="alternate" type="text/html" title="Xcode 10.1 pod脚本报错" /><published>2019-02-25T00:00:00+08:00</published><updated>2019-02-25T00:00:00+08:00</updated><id>http://localhost:4000/ios/2019/02/25/ios-pod-err</id><content type="html" xml:base="http://localhost:4000/ios/2019/02/25/ios-pod-err.html">&lt;h2 id=&quot;xcode-101-导入项目后pod脚本报错&quot;&gt;Xcode 10.1 导入项目后pod脚本报错&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-02-26T12:29:38+08:00</updated><id>http://localhost:4000/</id><title type="html">李鸣飞的博客</title><subtitle>记录学习的笔记和工作中遇到的问题</subtitle><entry><title type="html">Xcode 10.1 pod脚本报错</title><link href="http://localhost:4000/ios/2019/02/25/ios-pod-err.html" rel="alternate" type="text/html" title="Xcode 10.1 pod脚本报错" /><published>2019-02-25T00:00:00+08:00</published><updated>2019-02-25T00:00:00+08:00</updated><id>http://localhost:4000/ios/2019/02/25/ios-pod-err</id><content type="html" xml:base="http://localhost:4000/ios/2019/02/25/ios-pod-err.html">&lt;h2 id=&quot;xcode-101-导入项目后pod脚本报错&quot;&gt;Xcode 10.1 导入项目后pod脚本报错&lt;/h2&gt;
 
 &lt;p&gt;PhaseScriptExecution [CP]\ Copy\ Pods\ Resources /Users/limingfei/Library/Developer/Xcode/DerivedData/便民通-eeawmrydlmhnifbckoyinnfcfoxf/Build/Intermediates.noindex/便民通.build/Debug-iphoneos/便民通.build/Script-E2F40F4F53FCCF5F895762C4.sh (in target: 便民通)
     cd /Volumes/user/workspace/sd1.8.0
@@ -8,10 +8,16 @@
     Command PhaseScriptExecution failed with a nonzero exit code
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;h3 id=&quot;解决&quot;&gt;解决&lt;/h3&gt;
+&lt;h3 id=&quot;解决1&quot;&gt;解决1&lt;/h3&gt;
 &lt;p&gt;需要清理pod后重新安装&lt;/p&gt;
 
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo gem install cocoapods-deintegrate cocoapods-clean
 pod deintegrate
 pod clean
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;解决2&quot;&gt;解决2&lt;/h3&gt;
+&lt;p&gt;加上执行权限&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;chmod a+x Pods/Target\ Support\ Files/Pods-便民通/Pods-便民通-resources.sh
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name></name></author><category term="error" /><category term="xcode" /><summary type="html">Xcode 10.1 导入项目后pod脚本报错</summary></entry></feed>

@@ -6,11 +6,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Xcode 10.1 pod脚本报错</title>
-  <meta name="description" content="Xcode 10.1 导入项目后pod脚本报错">
+  <title>李鸣飞的博客</title>
+  <meta name="description" content="记录学习的笔记和工作中遇到的问题">
 
   <link rel="stylesheet" href="/assets/main.css">
-  <link rel="canonical" href="http://localhost:4000/ios/2019/02/25/ios-pod-err.html">
+  <link rel="canonical" href="http://localhost:4000/technology-home/platform/flutter/user-interface/widget-gestures">
   <link rel="alternate" type="application/rss+xml" title="李鸣飞的博客" href="/feed.xml">
   
   
@@ -67,46 +67,48 @@
 
     <main class="page-content" aria-label="Content">
       <div class="wrapper">
-        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+        <article class="post">
 
   <header class="post-header">
-    <h1 class="post-title" itemprop="name headline">Xcode 10.1 pod脚本报错</h1>
-    <p class="post-meta">
-      <time datetime="2019-02-25T00:00:00+08:00" itemprop="datePublished">
-        
-        Feb 25, 2019
-      </time>
-      </p>
+    <h1 class="post-title"></h1>
   </header>
 
-  <div class="post-content" itemprop="articleBody">
-    <h2 id="xcode-101-导入项目后pod脚本报错">Xcode 10.1 导入项目后pod脚本报错</h2>
+  <div class="post-content">
+    <h2 id="gestures">Gestures</h2>
+<p><code class="highlighter-rouge">Gestures</code>系统有两层：</p>
+<ol>
+  <li>原始指针事件，描述在屏幕上的位置和移动。</li>
+  <li>第二层就是手势，描述多个原始指针组合成的动作。</li>
+</ol>
 
-<p>PhaseScriptExecution [CP]\ Copy\ Pods\ Resources /Users/limingfei/Library/Developer/Xcode/DerivedData/便民通-eeawmrydlmhnifbckoyinnfcfoxf/Build/Intermediates.noindex/便民通.build/Debug-iphoneos/便民通.build/Script-E2F40F4F53FCCF5F895762C4.sh (in target: 便民通)
-    cd /Volumes/user/workspace/sd1.8.0
-        /bin/sh -c /Users/limingfei/Library/Developer/Xcode/DerivedData/\便\民\通-eeawmrydlmhnifbckoyinnfcfoxf/Build/Intermediates.noindex/\便\民\通.build/Debug-iphoneos/\便\民\通.build/Script-E2F40F4F53FCCF5F895762C4.sh</p>
+<h3 id="1-pointers">1. Pointers</h3>
+<p>pointer4种事件：</p>
+<ul>
+  <li>PointerDownEvent - pointer在特定位置与屏幕接触</li>
+  <li>PointerMoveEvent - pointer在屏幕上从一个位置移动到另一个位置</li>
+  <li>PointerUpEvent - pointer不再与屏幕接触</li>
+  <li>PointerCancelEvent - pointer不再聚焦当前应用</li>
+</ul>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    /Users/limingfei/Library/Developer/Xcode/DerivedData/便民通-eeawmrydlmhnifbckoyinnfcfoxf/Build/Intermediates.noindex/便民通.build/Debug-iphoneos/便民通.build/Script-E2F40F4F53FCCF5F895762C4.sh: line 2: /Volumes/user/workspace/sd1.8.0/Pods/Target Support Files/Pods-便民通/Pods-便民通-resources.sh: Permission denied
-    Command PhaseScriptExecution failed with a nonzero exit code
-</code></pre></div></div>
+<p>pointer工作步骤：</p>
+<ol>
+  <li>pointer down</li>
+  <li>hit test - 找到触发的Widget</li>
+  <li>发当前pointer和之后的一起发给widget</li>
+  <li>从找到的widget冒泡传递事件到最上层</li>
+</ol>
 
-<h3 id="解决1">解决1</h3>
-<p>需要清理pod后重新安装</p>
+<p>如果点击时间短，测试后不会传递，点击持续一段时间会传递。子widget往父widget传递</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo gem install cocoapods-deintegrate cocoapods-clean
-pod deintegrate
-pod clean
-</code></pre></div></div>
+<p>pointer监听：</p>
+<ol>
+  <li>listener - widget层监听</li>
+  <li>gesture() - 传递(GestureDetector)</li>
+</ol>
 
-<h3 id="解决2">解决2</h3>
-<p>加上执行权限</p>
-
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>chmod a+x Pods/Target\ Support\ Files/Pods-便民通/Pods-便民通-resources.sh
-</code></pre></div></div>
 
   </div>
 
-  
 </article>
 
       </div>
