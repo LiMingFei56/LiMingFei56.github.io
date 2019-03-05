@@ -27,3 +27,17 @@ Widget是通过父Widget的Build()方法构建的，所以Widget使用的状态�
 
 flutter有机制使得可以对后代提供数据和服务，通过`InheritedWidget`, `InheritedNotifier`, `InheritedModel`等。但是
 这个机制很低层。
+
+#### 1.4. 实现
+* [scoped_model](../package/scoped-model)
+
+### 2. Json
+Json有两种解决方案：
+* 手动序列化 - 使用[dart:convert](../package/convert)，Map<String, dynamic>和String互转。如果太复杂，太多就乏味容易出错
+* 自动序列化（代码生成）- 使用[json_serializable](../package/json-serializable)和`built_value`，根据设置生成模板代码。适用复杂环境
+  
+### 2. Assets and image
+![Assets and images](./assets-and-images)
+
+
+
