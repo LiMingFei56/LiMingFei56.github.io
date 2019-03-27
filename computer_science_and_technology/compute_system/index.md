@@ -65,3 +65,5 @@ permalink: ./technology-home/compute-system/
 * 虚拟存储器 - 独占的使用内存，一致的存储器，虚拟地址空间
 * 文件 - 抽象I/O的读写(UNIX把外部设备也当成文件，这样的模型有很好的一致性，和方便处理)
 
+### 5. 信息
+![信息](./information/)
