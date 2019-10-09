@@ -58,6 +58,17 @@ g   任意寄存器, 内存, 立即数
 ### macOS
 动态链接, as默认使用动态链接
 
-使用otool查看动态链接库
+使用otool查看动态链接库 otool -L xxx.dylib or app
 
 macOS动态库为.dylib, 系统调用 为libSystem.dylib 软链接到/usr/lib/libSystem.B.dylib
+
+
+linux 下头文件一般都在：
+* /usr/include
+* /usr/local/include
+* /usr/lib/gcc-lib/xxx/xxx/include
+
+
+macOS 下头文件和开发库都被Xcode接管了, 所以安装Xcode后才有:
+* /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include
+* /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks
