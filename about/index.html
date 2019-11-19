@@ -31,6 +31,18 @@ layout: base
             <li>{{ skill }}</li>
             {% endfor %}
         </ul>
+        <ul id="libs">
+            <i class="fa fa-file"> 库</i>
+            {% for skill in my.skills.libs %}
+            <li>{{ skill }}</li>
+            {% endfor %}
+        </ul>
+        <ul id="tools">
+            <i class="fa fa-wrench"> 工具</i>
+            {% for skill in my.skills.tools %}
+            <li>{{ skill }}</li>
+            {% endfor %}
+        </ul>
         <ul id="tools">
             <i class="fa fa-wrench"> 工具</i>
             {% for skill in my.skills.tools %}
