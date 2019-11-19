@@ -1,11 +1,10 @@
 --- 
-layout: post 
-title: ios11.2系统flutter使用webview_flutter不能弹出日历     
-description: Flutter使用[webview_flutter](https://github.com/flutter/plugins/tree/master/packages/webview_flutter) \
-	时,跳转不了about:blank
+layout: postcn 
+title: "ios11.2系统flutter使用webview_flutter不能弹出日历"
+description: "Flutter使用webview_flutter时,跳转不了about:blank"
 date: 2019-02-25    
 nav: post     
-stickie: false         
+lang: cn
 category: flutter
 tags: [webview]     
 --- 

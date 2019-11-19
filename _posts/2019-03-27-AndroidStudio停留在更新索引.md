@@ -1,10 +1,10 @@
 --- 
-layout: post 
-title: 导入项目停留在更新索引    
-description: 把项目换了个位置，重新打开卡在Indexing paused due to batch updated
+layout: postcn 
+title: "导入项目停留在更新索引"
+description: "把项目换了个位置，重新打开卡在Indexing paused due to batch updated"
 date: 2019-02-25    
 nav: post     
-stickie: false         
+lang: cn
 category: android        
 tags: [android studio]     
 --- 

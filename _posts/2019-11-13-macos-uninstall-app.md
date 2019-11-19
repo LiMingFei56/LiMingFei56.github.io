@@ -1,10 +1,10 @@
 --- 
-layout: post 
-title: macOS 卸载应用     
-description: macOS 卸载应用
+layout: postcn 
+title: "macOS 卸载应用"
+description: "macOS 卸载应用"
 date: 2019-08-13   
 nav: post     
-stickie: false         
+lang: cn
 category: macOS        
 tags: [app, brew]     
 --- 
