@@ -1,9 +1,8 @@
 ---
 layout: post
 title: "Xcode 10.1 pod脚本报错"
-description: "第一篇博客"
 categories: ios
-tags: [error, xcode]
+tags: [xcode]
 date: 2019-02-25
 ---
 

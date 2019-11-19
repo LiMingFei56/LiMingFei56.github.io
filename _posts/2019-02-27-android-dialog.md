@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Android Dialog自定义大小
-categories: [android]
-tags: [imm]
+title: "Android Dialog自定义大小"
+categories: android
+tags: [view, dialog]
 date: 2019-02-25
 ---
 

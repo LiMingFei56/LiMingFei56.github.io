@@ -1,8 +1,8 @@
 ---
 layout: post
-title: macOS brew换源
-categories: [brew]
-tags: [macos, brew]
+title: "macOS brew换源"
+categories: macos
+tags: [brew]
 date: 2019-08-13
 ---
 

@@ -1,8 +1,8 @@
 ---
 layout: post
-title: macOS 卸载应用
-categories: [brew]
-tags: [macos, brew]
+title: "macOS 卸载应用"
+categories: macos
+tags: [app, brew]
 date: 2019-08-13
 ---
 

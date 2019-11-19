@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Android hideSoftInputFromWindow无效
-categories: [android]
-tags: [imm]
+title: "Android hideSoftInputFromWindow无效"
+categories: android
+tags: [soft_input]
 date: 2019-02-25
 ---
 

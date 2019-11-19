@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Xcode 升级到12报错
-categories: [ios]
-tags: [error, xcode]
+title: "Xcode 升级到12报错"
+categories: ios
+tags: [xcode]
 date: 2019-07-23
 ---
 

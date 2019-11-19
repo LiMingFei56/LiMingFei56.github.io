@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Install Xcode 11.1 Not enough disk space
-categories: [macOS]
-tags: [macOS]
+title: "Install Xcode 11.1 Not enough disk space"
+categories: macOS
+tags: [xcode]
 date: 2019-10-08
 ---
 

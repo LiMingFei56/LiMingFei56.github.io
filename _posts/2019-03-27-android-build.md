@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Indexing paused due to batch updated
-categories: [android]
-tags: [imm]
+title: "AndroidStudio停止在更新索引"
+categories: android
+tags: [android_studio]
 date: 2019-02-25
 ---
 
