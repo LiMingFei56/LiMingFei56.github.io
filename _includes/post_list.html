@@ -34,8 +34,8 @@
             <a href="{{ paginator.next_page_path | prepend: crturl }}">»</a>
         {% endif %}
     {% elsif jsPagiLoaded != true %}
-        <script type="text/javascript" src="{{crturl}}/assets/javascripts/pagination.js"></script>
-        <script type="text/javascript" src="{{crturl}}/assets/javascripts/listAndPagi.js"></script>
+        <script type="text/javascript" src="{{crturl}}assets/javascripts/pagination.js"></script>
+        <script type="text/javascript" src="{{crturl}}assets/javascripts/listAndPagi.js"></script>
         {% assign jsPagiLoaded = true %}
     {% endif %}
 
