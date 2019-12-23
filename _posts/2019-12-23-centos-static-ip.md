@@ -1,8 +1,8 @@
 ---
 layout: post
 title: "Centos 配置静态IP"
-categories: centos
-tags: [ip, net]
+categories: linux
+tags: [centos, net]
 date: 2019-12-23
 excerpt: "Centos 配置静态IP"
 ---
