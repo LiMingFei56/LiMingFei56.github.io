@@ -28,3 +28,5 @@ excerpt: "Centos 配置静态IP"
 ## 静态IP设置后, 需要手动设置DNS
 
   静态IP设置后, DNS就不能自动获取了
+
+
