@@ -16,6 +16,12 @@ excerpt: "android使用老库，32位库支持64位"
 
 目前常用的ABI平台有`arm64-v8a`,`armeabi-v7a`,`armeabi`, 前面两个较新
 
+    java.lang.UnsatisfiedLinkError: dlopen failed: 
+    "/data/app/com.teamsun.community.report-1/lib/arm64/libIDCardengine.so"
+    has text relocations
+
+Android目标版本需要小于等于22
+
 ## 使当前应用支持老库
 
 1. build.gradle 中 defaultConfig 下 
