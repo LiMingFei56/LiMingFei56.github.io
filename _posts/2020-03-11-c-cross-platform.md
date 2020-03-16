@@ -12,7 +12,7 @@ excerpt: "C/C++跨平台编程"
 
 
 ### windows
-需要使用Cygwin
+需要使用Cygwin, Cygwin中脚本文件需要使用dos2unix程序 转换一下
 
 ### 1. 找不到ntohll和htonll函数
 
