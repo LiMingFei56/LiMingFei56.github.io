@@ -8,9 +8,7 @@ excerpt: "Flutter 加解密"
 ---
 
 ## Flutter 加解密及转换
-[crypto 签名](https://pub.flutter-io.cn/packages/crypto)
-[convert 转换工具](https://pub.flutter-io.cn/packages/convert)
-[dart:convert 系统转换工具](https://api.dart.dev/stable/2.7.1/dart-convert/dart-convert-library.html)
+
 
 ### Flutter 签名
 
@@ -26,3 +24,8 @@ MD5:
 
     var digest = md5.convert(List<int>);
     var str = hex.encode(digest.bytes);
+
+### Reference
+[crypto 签名](https://pub.flutter-io.cn/packages/crypto)
+[convert 转换工具](https://pub.flutter-io.cn/packages/convert)
+[dart:convert 系统转换工具](https://api.dart.dev/stable/2.7.1/dart-convert/dart-convert-library.html)

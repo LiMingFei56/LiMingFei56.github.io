@@ -8,8 +8,6 @@ excerpt: "Flutter IO编程"
 ---
 
 ## Flutter IO编程
-[IO DOC](https://api.dart.dev/stable/2.7.1/dart-io/dart-io-library.html)
-[path_provider](https://pub.flutter-io.cn/packages/path_provider)
 
 ### Flutter File编程
 使用`path_previder`库操作本地文件及目录
@@ -64,3 +62,7 @@ ByeeData: 缓冲区操作
 
 
 ** Socket默认字节顺序是大头端 **
+
+### Reference
+[IO DOC](https://api.dart.dev/stable/2.7.1/dart-io/dart-io-library.html)
+[path_provider](https://pub.flutter-io.cn/packages/path_provider)
