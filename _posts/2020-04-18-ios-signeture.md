@@ -21,13 +21,94 @@ excerpt: "iOS 签名打包"
 
 4. 教育(Educational Institutions)
 
+### 证书说明
+ios应用打包需要Certificate 和provision profile文件. 
+
+Certificate - 是用来证明你是谁，用该证书签名的应用， 用来证明这个应用是你的
+provision profile - 是用来描述应用的， 包括证书， appid, deviceid等信息
+p12证书 - 申请 Certificate 时需要上传csr(Certificate Signing Request)证书， csr私钥在本地， csr公钥给苹果生成Certificate证书。
+          这时另一个人想要开发，但没有证书的私钥。所以需要导出p12证书（包括证书和证书私钥）。
+
+证书时效：
+Certificate证书一般是1年有效期， 企业证书是3年有效期
+provision文件都是1年有效期
+
+当证书过期时：
+1. 如果是app store应用并且开发者账号没有欠费， 那么不影响使用。更新应用时需要更新证书。
+2. 如果是企业应用， 那么用户不能安装应用和打开应用， 需要重新用新证书打包再安装（没有源码可以使用重签名方法， 见下）。
+
+
 ### 打包
 
 #### App Stroe上传
 
+见[DISTRIBUTE YOUR APP](https://help.apple.com/xcode/mac/current/#/devac02c5ab8)
+
 #### 企业应用打包
+准备：
+1. 企业p12证书和mobileprovision描述文件
+2. 支持https，有域名的， 端口80的服务器, 用来存放ipa, icon, plist文件
+3. 57x57和512x512的icon
+
+步骤:
+1. Product->Archive
+2. 导出ipa包， 选择enterprise， 填写好ipa和icon文件的地址
+3. 把ipa, icon, plist 放到服务器对应位置
+
+安装:
+
+  <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+  <html>
+  <head>
+      <title>下载界面</title>
+      <meta http-equiv=\"content-type\" content=\"text/html; charset=UTF-8\">
+  </head>
+  <body>
+    <div class="contxt">
+      <a href="itms-services://?action=download-manifest&url=https://www.xxxx.com/ipa/manifest.plist" class="context">下载</a>
+    </div>
+  </body>
+  </html>
+
 
 ### 重签名
+准备：
+1. 新的证书和provision文件
+2. ipa包
+3. entitlements.plist文件
+
+生成entitlements.plist文件:
+
+    1. 直接使用provision文件中的字段替换
+    <?xml version="1.0" encoding="UTF-8"?>
+    <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+    <plist version="1.0">
+    <dict>
+      <key>application-identifier</key>
+      <string>${application-identifier}</string>
+      <key>com.apple.developer.team-identifier</key>
+      <string>${com.apple.developer.team-identifier}</string>
+      <key>get-task-allow</key>
+      <false/>
+      <key>keychain-access-groups</key>
+      <array>
+        <string>${application-identifier}</string>
+      </array>
+    </dict>
+    </plist>
+
+    2. 重新生成
+    security cms -D -i "mobileprovision文件" > "entitlements文件"
+    // 只需要entitlements元素
+    /usr/libexec/PlistBuddy -x -c 'Print:Entitlements'  entitlements_full.plist > entitlements.plist
+
+
+重签名:
+1. unzip *.ipa
+2. rm -rf Payload/*.app/_CodeSignature
+3. cp embedded.mobileprovision Payload/*.app/   // 使用新的provition 替换embedded.mobileprovision
+4. /usr/bin/codesign -f -s "iPhone Distribution: ${cerName}" --entitlements *.plist Payload/*.app // 显示已重复签名  成功
+5. zip -r xxx.ipa Payload
 
 ### 查看证书是否过期
 cer证书
