@@ -24,3 +24,12 @@ excerpt: "Github 加速"
     199.232.69.194 github.global.ssl.fastly.net
 
 3. ipconfig /flushdns 刷新dns
+
+
+### 2. 步骤1没有效果
+配置的域名不全，使用`https://github.com/zzh-blog/GithubSpeedUp.git`，配置hosts之
+后速度可以到100kb/s多。
+
+
+
+
