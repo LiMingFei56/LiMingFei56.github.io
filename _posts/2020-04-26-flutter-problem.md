@@ -40,3 +40,9 @@ excerpt: "Flutter 遇到的问题200426"
 ### 5. device crashes on startup: code signature invalid for "path/to/Flutter.framework/Flutter"
 
 > 同问题2, 在ios 13.4 beta3 修复
+
+### 6. error: module importing failed: invalid pathname
+
+> Xcode 11.4.1 Swift 5.2.2 时报错, 不管编译Flutter 还是 iOS, 甚至直接运行Swift, 
+> 都会出现这个错误, 不清楚什么原因, 不影响使用.
+
