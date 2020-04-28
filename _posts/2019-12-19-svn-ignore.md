@@ -2,7 +2,7 @@
 layout: post
 title: "svn 设置忽略文件"
 categories: git
-tags: [ignore, svn]
+tags: [git]
 date: 2019-12-19
 excerpt: "svn 设备忽略文件"
 ---

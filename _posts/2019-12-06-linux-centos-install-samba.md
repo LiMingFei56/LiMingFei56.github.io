@@ -2,7 +2,7 @@
 layout: post
 title: "Centos 8 安装Samba"
 categories: linux
-tags: [centos, samba]
+tags: [centos]
 date: 2019-12-06
 excerpt: "Centos 8 安装Samba"
 ---

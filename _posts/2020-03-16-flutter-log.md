@@ -2,7 +2,7 @@
 layout: post
 title: "Flutter 日志"
 categories: flutter
-tags: [flutter]
+tags: [log]
 date: 2020-03-16
 excerpt: "Flutter 日志"
 ---

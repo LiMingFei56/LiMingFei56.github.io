@@ -14,7 +14,6 @@ excerpt: "Flutter 遇到的问题200426"
 > 应用ID不合法, 需要换一个有意义的Bundle Identifier
 
 ### 2. error: module importing failed: invalid pathname dyld: Library not loaded: @rpath/Flutter.framework/Flutter
-
 > 使用个人签名运行在iOS13.3.1真机时出现
 
     1. 运行在13.3.1以下的系统的真机
@@ -45,4 +44,12 @@ excerpt: "Flutter 遇到的问题200426"
 
 > Xcode 11.4.1 Swift 5.2.2 时报错, 不管编译Flutter 还是 iOS, 甚至直接运行Swift, 
 > 都会出现这个错误, 不清楚什么原因, 不影响使用.
+
+### 7. Exception: Could not instantiate image codec
+
+> 图片解析失败, 一般为不支持图片格式, 或者下载文件不全. 我这里是因为解压ipa包后
+> 获得App切图, 在Finder中可以查看, 而放到Flutter中和使用GIMP中就打不开.
+>
+> 这是因为Xcode打包图片资源会使用`pngcrush`工具对图片资源进行优化, 解压ipa图片资
+> 源不能支持使用, 需要还原原来格式.
 

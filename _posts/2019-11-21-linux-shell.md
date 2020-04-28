@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Shell脚本执行报错"
-categories: unix
+categories: linux
 tags: [shell]
 date: 2019-11-21
 excerpt: "脚本执行报---- [: 11: y: unexpected operator"

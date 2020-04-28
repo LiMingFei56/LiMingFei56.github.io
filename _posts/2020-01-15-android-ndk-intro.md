@@ -1,8 +1,8 @@
 ---
 layout: post
 title: "NDK介绍"
-categories: ndk
-tags: [android, ndk]
+categories: android
+tags: [ndk]
 date: 2020-01-15
 excerpt: "NDK介绍"
 ---

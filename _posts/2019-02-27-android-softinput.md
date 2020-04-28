@@ -2,7 +2,7 @@
 layout: post
 title: "Android hideSoftInputFromWindow无效"
 categories: android
-tags: [soft_input]
+tags: [view]
 date: 2019-02-25
 excerpt: "隐藏软键盘无效"
 ---

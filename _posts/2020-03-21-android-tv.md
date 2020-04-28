@@ -2,7 +2,7 @@
 layout: post
 title: "Android TV"
 categories: android
-tags: [android]
+tags: [tv]
 date: 2020-03-21
 excerpt: "Android TV"
 ---

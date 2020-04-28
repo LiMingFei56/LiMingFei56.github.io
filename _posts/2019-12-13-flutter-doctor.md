@@ -62,4 +62,8 @@ Exception in thread "main" java.lang.NullPointerException
   brew tap homebrew/cask-versions
   brew cask install homebrew/cask-versions/adoptopenjdk8
 
+## flutter 检查cocoapod没有安装
 
+> 需要安装1.7.5版本
+
+  sudo gem install cocoapods -v 1.7.5

@@ -1,8 +1,8 @@
 ---
 layout: post
 title: "iOS Info.plist说明"
-categories: flutter
-tags: [problem]
+categories: ios
+tags: [plist]
 date: 2020-04-26
 excerpt: "iOS Info.plist说明"
 ---

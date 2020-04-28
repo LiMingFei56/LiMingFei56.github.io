@@ -2,7 +2,7 @@
 layout: post
 title: "Centos 配置静态IP"
 categories: linux
-tags: [centos, net]
+tags: [centos]
 date: 2019-12-23
 excerpt: "Centos 配置静态IP"
 ---

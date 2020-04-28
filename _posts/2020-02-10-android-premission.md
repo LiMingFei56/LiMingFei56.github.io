@@ -2,7 +2,7 @@
 layout: post
 title: "Andorid6.0获取权限"
 categories: android
-tags: [android, premission]
+tags: [premission]
 date: 2020-02-10
 excerpt: "Andorid6.0获取权限"
 ---

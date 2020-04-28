@@ -1,8 +1,8 @@
 ---
 layout: post
 title: "泛型编程"
-categories: program
-tags: [program]
+categories: compute
+tags: [generic]
 date: 2020-03-17
 excerpt: "泛型编程"
 ---

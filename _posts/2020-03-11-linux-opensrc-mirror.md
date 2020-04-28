@@ -1,8 +1,8 @@
 ---
 layout: post
 title: "开源镜像站"
-categories: opensrc
-tags: [mirror]
+categories: linux
+tags: [ses]
 date: 2020-03-11
 excerpt: "开源镜像站"
 ---

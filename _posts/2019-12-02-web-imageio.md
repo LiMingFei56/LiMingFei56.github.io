@@ -1,8 +1,8 @@
 ---
 layout: post
 title: "Web环境ImageIO报错"
-categories: javaweb
-tags: [javaweb, image]
+categories: web
+tags: [imageio]
 date: 2019-12-02
 excerpt: "Web环境ImageIO报错"
 ---

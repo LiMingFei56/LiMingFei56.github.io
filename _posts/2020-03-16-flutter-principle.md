@@ -2,7 +2,7 @@
 layout: post
 title: "Dart 原理"
 categories: flutter
-tags: [flutter]
+tags: [intro]
 date: 2020-03-16
 excerpt: "Dart 原理"
 ---

@@ -2,7 +2,7 @@
 layout: post
 title: "android使用老库，32位库支持64位"
 categories: android
-tags: [android, jni]
+tags: [jni]
 date: 2020-02-10
 excerpt: "android使用老库，32位库支持64位"
 ---

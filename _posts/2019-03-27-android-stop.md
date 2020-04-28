@@ -2,7 +2,7 @@
 layout: post
 title: "AndroidStudio停止在更新索引"
 categories: android
-tags: [android_studio]
+tags: [as]
 date: 2019-02-25
 excerpt: "AS停止在更新索引状态"
 ---

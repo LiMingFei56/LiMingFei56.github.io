@@ -2,7 +2,7 @@
 layout: post
 title: "ios11.2系统flutter使用webview_flutter不能弹出日历"
 categories: flutter
-tags: [webview]
+tags: [view]
 date: 2019-02-25
 excerpt: "Flutter中WebView不能拦截输入框点击事件"
 ---

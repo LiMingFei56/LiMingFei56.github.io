@@ -2,7 +2,7 @@
 layout: post
 title: "Android Studio下载jar包"
 categories: android
-tags: [gradle]
+tags: [make]
 date: 2020-03-11
 excerpt: "Android Studio下载jar包"
 ---

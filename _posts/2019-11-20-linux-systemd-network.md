@@ -1,8 +1,8 @@
 ---
 layout: post
 title: "systemd-networkd"
-categories: unix
-tags: [systemd, network]
+categories: linux
+tags: [systemd]
 date: 2019-11-20
 excerpt: "systemd-networkd 工作方法"
 ---

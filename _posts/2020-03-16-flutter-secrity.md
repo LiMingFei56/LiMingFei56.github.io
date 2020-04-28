@@ -2,7 +2,7 @@
 layout: post
 title: "Flutter 加解密"
 categories: flutter
-tags: [flutter]
+tags: [encode]
 date: 2020-03-16
 excerpt: "Flutter 加解密"
 ---

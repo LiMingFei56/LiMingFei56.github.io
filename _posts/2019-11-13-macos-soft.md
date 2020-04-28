@@ -2,7 +2,7 @@
 layout: post
 title: "macOS 卸载应用"
 categories: macos
-tags: [app, brew]
+tags: [brew]
 date: 2019-11-13
 excerpt: "macOS上应用深度卸载"
 ---

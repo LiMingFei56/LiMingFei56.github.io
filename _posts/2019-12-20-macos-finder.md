@@ -2,7 +2,7 @@
 layout: post
 title: "macOS Finder 设置"
 categories: macos
-tags: [macos, finder]
+tags: [finder]
 date: 2019-12-20
 excerpt: "macOS Finder 设置"
 ---

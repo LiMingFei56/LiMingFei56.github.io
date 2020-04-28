@@ -1,8 +1,8 @@
 ---
 layout: post
 title: "Makefile"
-categories: make
-tags: [unix, make]
+categories: linux
+tags: [make]
 date: 2020-01-15
 excerpt: "Makefile"
 ---

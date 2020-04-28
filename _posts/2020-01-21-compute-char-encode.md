@@ -2,7 +2,7 @@
 layout: post
 title: "字符编码"
 categories: compute
-tags: [compute]
+tags: [encode]
 date: 2020-01-21
 excerpt: "字符编码"
 ---

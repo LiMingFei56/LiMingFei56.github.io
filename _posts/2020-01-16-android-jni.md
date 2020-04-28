@@ -1,8 +1,8 @@
 ---
 layout: post
 title: "Java Jni"
-categories: java
-tags: [android, java, jni]
+categories: android
+tags: [jni]
 date: 2020-01-16
 excerpt: "Java JNI"
 ---

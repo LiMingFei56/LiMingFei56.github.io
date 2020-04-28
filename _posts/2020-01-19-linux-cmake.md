@@ -1,8 +1,8 @@
 ---
 layout: post
 title: "CMake"
-categories: unix
-tags: [unix, build]
+categories: linux
+tags: [make]
 date: 2020-01-19
 excerpt: "CMake"
 ---

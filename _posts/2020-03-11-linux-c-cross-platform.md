@@ -1,8 +1,8 @@
 ---
 layout: post
 title: "C/C++跨平台编程"
-categories: c
-tags: [c]
+categories: linux
+tags: [make]
 date: 2020-03-11
 excerpt: "C/C++跨平台编程"
 ---

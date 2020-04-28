@@ -2,7 +2,7 @@
 layout: post
 title: "Flutter IO编程"
 categories: flutter
-tags: [flutter]
+tags: [io]
 date: 2020-03-16
 excerpt: "Flutter IO编程"
 ---

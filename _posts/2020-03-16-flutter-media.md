@@ -2,7 +2,7 @@
 layout: post
 title: "Flutter 多媒体"
 categories: flutter
-tags: [flutter]
+tags: [media]
 date: 2020-03-16
 excerpt: "Flutter 多媒体"
 ---

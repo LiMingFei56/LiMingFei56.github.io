@@ -2,7 +2,7 @@
 layout: post
 title: "iOS 签名打包"
 categories: ios
-tags: [ios, signature]
+tags: [signature]
 date: 2020-04-18
 excerpt: "iOS 签名打包"
 ---

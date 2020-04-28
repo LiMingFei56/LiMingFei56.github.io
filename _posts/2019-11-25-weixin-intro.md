@@ -1,8 +1,8 @@
 ---
 layout: post
 title: "Weixin开发介绍"
-categories: unix
-tags: [weixin]
+categories: weixin
+tags: [intro]
 date: 2019-11-25
 excerpt: "Weixin开发介绍"
 ---

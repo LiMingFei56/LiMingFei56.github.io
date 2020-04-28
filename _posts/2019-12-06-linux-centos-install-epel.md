@@ -2,7 +2,7 @@
 layout: post
 title: "Centos 8 安装epel源"
 categories: linux
-tags: [centos, epel]
+tags: [centos]
 date: 2019-12-06
 excerpt: "Centos 8 安装epel源"
 ---

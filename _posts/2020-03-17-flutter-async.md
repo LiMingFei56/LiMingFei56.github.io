@@ -2,7 +2,7 @@
 layout: post
 title: "Flutter async"
 categories: flutter
-tags: [flutter]
+tags: [async]
 date: 2020-03-17
 excerpt: "Flutter async"
 ---
