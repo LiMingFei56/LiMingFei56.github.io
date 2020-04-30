@@ -90,6 +90,8 @@ excerpt: "Java html转pdf"
 > 需要遵守严格的html规范(每个标签必须闭合), 样式最好写到Html 标签里
 > XHTML 定义不是必须的, 这样写为了以防万一
 
+> html中`&`转义字符, 需要手动转义
+
     sb.append("<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\">\n");
     sb.append("<html lang=\"zh\" xmlns=\"http://www.w3.org/1999/xhtml\">\n");
 
