@@ -18,8 +18,16 @@ excerpt: "WSL install Desktop"
     wget https://kali.sh/xfce4.sh
     chmod -x xfce4.sh
     sudo ./xfce4.sh
-
     sudo /etc/init.d/xrdp start
+
+    #!/bin/bash
+    echo "[+] Installing XFCE4, this will take a while"
+    apt-get update
+    apt-get dist-upgrade -y --force-yes
+    apt-get --yes --force-yes install kali-desktop-xfce xorg xrdp
+    echo "[+] Configuring XRDP to listen to port 3390 (but not starting the service)..."
+    sed -i 's/port=3389/port=3390/g' /etc/xrdp/xrdp.ini
+
 
 
 ### 2. 使用VcXsrv
