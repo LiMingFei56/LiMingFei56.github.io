@@ -73,3 +73,17 @@ excerpt: "WSL install Desktop"
     start "" /B "C:\bin\pulseaudio-1.1\bin\pulseaudio.exe"
     ubuntu.exe run "if [ -z \"$pidof xfce4-session\"" ]; then export DISPLAY=127.0.0.1:0.0; export PULSE_SERVER=tcp:127.0.0.1; xfce4-session; pkill '(gpg|ssh)-agent'; taskkill.exe /IM pulseaudio.exe /F; taskkill.exe /IM vcxsrc.exe; fi;"
 
+### 3. 安装WSL 2
+
+> 安装WSL 2需要 2004 系统版本, 所以先需要在`下载 Windows 10 光盘映像`工具, 升级
+> 到 2004.
+
+> WSL 是使用SysInit
+
+
+### Reference
+[How to upgrade to Windows 10 version 2004, May 2020 Update](https://pureinfotech.com/upgrade-windows-10-2004/)
+[下载 Windows 10 光盘映像（ISO 文件)](https://www.microsoft.com/zh-cn/software-download/windows10ISO)
+[关于 WSL 2](https://docs.microsoft.com/zh-cn/windows/wsl/wsl2-about?view=sql-server-ver15)
+[WSL 2 的安装说明](https://docs.microsoft.com/zh-cn/windows/wsl/wsl2-install)
+[更新 WSL 2 Linux 内核](https://docs.microsoft.com/zh-cn/windows/wsl/wsl2-kernel)
