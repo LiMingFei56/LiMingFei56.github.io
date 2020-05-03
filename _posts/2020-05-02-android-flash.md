@@ -69,6 +69,8 @@ sudo cp adb fastboot /usr/local/bin
 
 > Magisk 刷不了  就刷Supersu
 
+> 使用钛备份、安卓优化大师、豌豆荚  卸载应用
+
 ### Reference
 [Android Root 教程](https://www.jianshu.com/p/c33b909db895)
 [TWRP](https://twrp.me/Devices/)
