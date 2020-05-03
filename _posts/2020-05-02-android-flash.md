@@ -69,3 +69,5 @@ sudo cp adb fastboot /usr/local/bin
 [Android Root 教程](https://www.jianshu.com/p/c33b909db895)
 [TWRP](https://twrp.me/Devices/)
 [Magisk](https://github.com/topjohnwu/Magisk)
+
+[安卓手机最新Root通用教程](https://www.jianshu.com/p/4bfe5160505d)
