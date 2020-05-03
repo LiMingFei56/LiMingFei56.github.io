@@ -9,6 +9,8 @@ excerpt: "Android 刷机"
 
 ## Android 刷机
 
+*** 刷机前一定做好系统备份， 特别是recovery 刷包， 不然又要刷官方recovery 刷底包， 来回折腾 ***
+
 进入`fastboot`模式方法:
 
     1. 按住音量下键， 插入数据线
@@ -64,6 +66,8 @@ sudo cp adb fastboot /usr/local/bin
 
 > 3. 进入 TWRP 后，选择 Install，选择 Install zip，找到 Magisk .zip 包的位置，选中后右滑确认刷入。
 > 4. 等待刷入完毕，成功后重启手机
+
+> Magisk 刷不了  就刷Supersu
 
 ### Reference
 [Android Root 教程](https://www.jianshu.com/p/c33b909db895)
