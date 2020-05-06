@@ -4,7 +4,7 @@ title: "informix 添加自增字段"
 categories: web
 tags: [db]
 date: 2020-05-05
-excerpt: "informix 添加自增字段""
+excerpt: "informix 添加自增字段"
 ---
 
 ## informix 添加自增字段"

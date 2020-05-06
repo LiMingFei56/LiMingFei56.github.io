@@ -113,27 +113,27 @@ provision文件都是1年有效期
 ### 查看证书是否过期
 cer证书
 
-  unzip -q MyApp.ipa
-  codesign -d --extract-certificates Payload/\*.app
-  openssl x509 -inform DER -in codesign0 -noout -nameopt -oneline -dates
-  codesign -dv --verbose=4 Payload/\*.app
+  unzip -q MyApp.ipa  
+  codesign -d --extract-certificates Payload/\*.app  
+  openssl x509 -inform DER -in codesign0 -noout -nameopt -oneline -dates  
+  codesign -dv --verbose=4 Payload/\*.app  
 
 mobileprovision描述文件
 
-  more Payload/Runner.app/embedded.mobileprovision
+  more Payload/Runner.app/embedded.mobileprovision  
   
 
 ### 操作签名文件
 
 p12文件转成pem文件
-openssl pkcs12 -in xxx.p12 -out xxx.pem -nodes
-openssl pkcs12 -in xxx.p12 -out xxx.pem -nodes -password pass:'xxxpasword'
+openssl pkcs12 -in xxx.p12 -out xxx.pem -nodes  
+openssl pkcs12 -in xxx.p12 -out xxx.pem -nodes -password pass:'xxxpasword'  
 
 查看mobileprovision
-security cms -D -i XXX.mobileprovision
+security cms -D -i XXX.mobileprovision  
 
 查看证书内容
-openssl x509 -in example.pem -noout -text
+openssl x509 -in example.pem -noout -text  
 
 ## Reference
 [Choosing a Membership](https://developer.apple.com/support/compare-memberships/)
