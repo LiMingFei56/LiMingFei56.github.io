@@ -71,6 +71,11 @@ sudo cp adb fastboot /usr/local/bin
 
 > 使用钛备份、安卓优化大师、豌豆荚  卸载应用
 
+#### 3. 恢复原厂系统
+
+> 华为Recovery， 支持下载系统重新安装， 这叫eRecovery。 进入Recovery 是关机状态按住电源+音量上键， 
+> 进入eRecovery是插数据线并且关机状态， 按住电源+音量上键
+
 ### Reference
 [Android Root 教程](https://www.jianshu.com/p/c33b909db895)
 [TWRP](https://twrp.me/Devices/)
