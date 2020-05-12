@@ -3,7 +3,7 @@ layout: post
 title: "FLutter 状态栏"
 categories: flutter
 tags: [UI]
-date: 2020-06-12
+date: 2020-05-12
 excerpt: "Flutter 状态栏"
 ---
 
