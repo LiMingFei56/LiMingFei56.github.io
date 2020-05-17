@@ -22,6 +22,8 @@ excerpt: "Hackintosh 介绍"
 > 选择好硬件后也不能像Windows那样直接安装后就可以用了, 因为苹果系统安装与启动需要检查
 > 硬件平台是否是MAC平台, 所以需要如`Clover`或`OpenCore`来模拟MAC平台.
 
+> 淘宝上使用`Paragon Hard Disk Manager`的软件还原镜像
+
 ### Hackintosh 安装过程
 
 1. 配置Bios
