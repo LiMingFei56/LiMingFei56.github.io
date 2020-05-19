@@ -58,14 +58,21 @@ https://dl.google.com/android/repository/platform-tools-latest-linux.zip
 sudo cp adb fastboot /usr/local/bin
 
 #### 2. 刷Root
+使用之前请备份好官方Recovery
 
 > 1. 刷TWRP, 参照TWRP 下载页
+
+    adb reboot bootloader
+    fastboot flash recovery twrp.img  （7i  需要使用twrp-3.0.0-0-rip.img）
+    fastboot reboot
+
 > 2. 刷入 Magisk，首先把 Magisk 的 .zip 包放到 sd 卡中，然后重启进入 recovery:
 
     adb reboot recovery
 
 > 3. 进入 TWRP 后，选择 Install，选择 Install zip，找到 Magisk .zip 包的位置，选中后右滑确认刷入。
 > 4. 等待刷入完毕，成功后重启手机
+> 5. 手机有可能因为第三方Recovery， 不能进入系统， 需要重新刷回官方Recovery
 
 > Magisk 刷不了  就刷Supersu
 
