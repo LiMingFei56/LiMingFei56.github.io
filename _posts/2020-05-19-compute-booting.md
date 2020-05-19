@@ -15,7 +15,7 @@ excerpt: "计算机引导"
 > BIOS已经过时, Intel决定在2020年前使用UEFI全部替换BIOS.
 
 BIOS启动:
-BIOS->MBR->DPT->VBR->Bootloader->操作系统
+BIOS->MBR->DPT->PBR->Bootloader->操作系统
 
 UEFI
 UEFI->ESP分区->bootloader->操作系统
@@ -108,8 +108,8 @@ BIOS淘汰的原因:
 
 * 硬盘启动:
 
-> MBR主分区中只能有一个激活状态的分区, 这个激活状态的分区的第一个扇区叫作`卷引导
-> 记录(Volume boot record，缩写为VBR)`, 指定操作系统第一个启动程序的位置.
+> MBR主分区中只能有一个激活状态的分区, 这个激活状态的分区的第一个扇区叫作`引导
+> 记录(VBR OR PBR)`, 指定操作系统第一个启动程序的位置.
 >
 > 如果操作系统不在主分区, 或者有多个操作系统, 需要修改主引导记录的机器码, 用来
 > 指向`启动管理器(Boot loader)`, 如Grub, 由用户选择启动哪一个操作系统.
@@ -133,6 +133,21 @@ GPT(全局唯一标识分区表（GUIDPartition Table), 是EFI中定义的新式
 * 硬盘启动
 
 > 保护MBR中指向bootloader程序, 因此必须通过bootloader程序引用操作系统.
+
+### U盘启动
+
+1. USB-HDD: (占用1个扇区, DOS显示C盘)硬盘仿真模式, 模拟硬盘MBR->DPT->PBR->引导
+    , 兼容性好, 但是在只支持USB-ZIP的电脑则无效.
+2. USB-HDD+: (占用1个扇区, DOS显示C盘)增强的USB-HDD模式, 提高了兼容性, 但还是
+    不能用于USB-ZIP
+3. USB-ZIP: (DOS显示A盘), 支持老设备, 新设备支持不好, 大容量支持不好
+4. USB-ZIP+: (占用1个扇区, DOS显示C或A盘)增强USB-ZIP, 支持USB-HDD/USB-ZIP双模式, 
+    兼容性好, 但是老设备有可能以USB-ZIP启动, 出问题.
+5. USB-FDD: 把U盘模拟成软驱, DOS显示A盘
+6. USB-CDROM: 光盘仿真模式, DOS不占盘符, 兼容性高
+7. FBINST: (占用64个扇区), 在MBR的每个扇区都写入引导代码, 并在每个扇区记录扇区号, 
+    这样无论U盘被识别为何种格式, 都可以正常启动
+
 
 
 ## References
