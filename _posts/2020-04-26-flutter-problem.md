@@ -9,6 +9,9 @@ excerpt: "Flutter 遇到的问题200426"
 
 ## Flutter 遇到的问题200426
 
+> vscode 的flutter 插件大多是使用`bash shell`, 开发环境最好使用bash, 不能会有未知问题.
+> 导致vscode中flutter命令一直执行, 不会结束, 或者执行错误.
+
 ### 1. Failed to register bundle identifier. The app identifier "com.example.\*" cannot be registered to your development team because it is not available. Change your bundle identifier to aunique string to try again. (in target 'Runner' from project 'Runner')
 
 > 应用ID不合法, 需要换一个有意义的Bundle Identifier
@@ -52,4 +55,3 @@ excerpt: "Flutter 遇到的问题200426"
 >
 > 这是因为Xcode打包图片资源会使用`pngcrush`工具对图片资源进行优化, 解压ipa图片资
 > 源不能支持使用, 需要还原原来格式.
-
