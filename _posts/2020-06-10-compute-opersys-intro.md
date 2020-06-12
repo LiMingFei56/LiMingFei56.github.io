@@ -55,5 +55,6 @@ excerpt: "操作系统-介绍"
 
 ## Reference
 
+[清华大学公开课-操作系统](https://www.bilibili.com/video/BV1uW411f72n?p=1)
 [清华大学公开课-操作系统](http://open.163.com/newview/movie/free?pid=ME1NSA351&mid=ME1NUD4K4)
 [ucore](https://github.com/kiukotsu/ucore)
