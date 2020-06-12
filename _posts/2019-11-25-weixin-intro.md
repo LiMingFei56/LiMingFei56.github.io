@@ -67,3 +67,5 @@ excerpt: "Weixin开发介绍"
 
 
 ## 微信小程序
+
+需要https, 域名需要ipc备案
