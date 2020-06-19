@@ -129,4 +129,20 @@ Semaphore (信号量) :
 * 互斥
 * 条件同步
 
+多个信号使用, 范围小的在里面, 不然容易死锁
+
+#### 管程
+
+monitors, 一开始使用在语言level, 很多条件变量和很多共享资源, 还有对共享资源操作的  
+一系列函数, 并且有一个Lock.
+
+Lock: 
+    - Lock::Acquire()
+    - Lock::Release()
+
+Condition Variable:
+    - Wait() 释放锁, 睡眠
+    - Signal() 唤醒等待者
+
+### 死锁
 
