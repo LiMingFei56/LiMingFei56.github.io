@@ -50,7 +50,11 @@ excerpt: "Weixin开发介绍"
 
 [微信网页授权](https://developers.weixin.qq.com/doc/offiaccount/OA_Web_Apps/Wechat_webpage_authorization.html)
 
+如果是第三方授权就不需要这步.
 
+
+网页授权分为静默和授权模式: 
+授权模式可以获取用户的额外信息(如昵称), 如果是第三方平台可以通过接口静默获取用户信息  
 
 ### 遇到问题
 
@@ -69,3 +73,10 @@ excerpt: "Weixin开发介绍"
 ## 微信小程序
 
 需要https, 域名需要ipc备案
+
+## 支付
+
+[支付授权目录](https://pay.weixin.qq.com/wiki/doc/api/jsapi.php?chapter=7_3)
+
+支付需要配置授权目录, 就是在哪个url调起的支付请求.
+支付时需要openid, 所以也需要网页授权
