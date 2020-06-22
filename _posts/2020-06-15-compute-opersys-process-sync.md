@@ -129,7 +129,7 @@ Semaphore (信号量) :
 * 互斥
 * 条件同步
 
-多个信号使用, 范围小的在里面, 不然容易死锁
+多个信号使用, 粒度小的在里面, 不然容易死锁
 
 #### 管程
 
@@ -145,4 +145,40 @@ Condition Variable:
     - Signal() 唤醒等待者
 
 ### 死锁
+
+> 多个进程相互持有对方需要的资源锁, 并且等待对方持有的资源, 就造成死锁. 
+
+死锁特征(必要条件)
+1: 互斥
+2: 持有并等待
+3: 无抢占
+4: 循环等待
+
+处理办法(约束从强到弱):
+Deadlock prevention: 打破上面死锁的条件中的一条
+Deadlock Avoidance: 使用安全序列, 进程按这个顺列执行就不会死锁. 需要识别safe和  
+    unsafe(包含deadlock), 银行家算法
+Deadlock Detection: 死锁检测
+Recovery from Deadlock: 出现死锁, 系统可以识别出死锁进程, 按照策略kill进程
+
+### 进程间通信
+
+> IPC(Inter processes communication), 信号(Signal), 管道, 消息队列, 共享内存, 这  
+> 里的信号与Lock中的Semaphore不一样.
+
+通信手段, 需要操作系统支持:
+* 直接通信
+* 间接通信
+* blocking
+* unblocking
+
+进程间通信的类型:
+Signal(信号): 软件中断通知事件处理, 不能传输要交换的任何数据, 需要注册信号和信号  
+    产生时处理的函数.
+管道(Pipe): 一个进程的输出重定向为另一个进程的输入, stdout和stdin都指向一个buf,   
+    buf大小有限, 父进程是shell
+消息队列(Message queues)
+共享内存(Shared memory): 直接通信, 最快方式, 必须同步数据访问
+套接字(socket)
+
 
