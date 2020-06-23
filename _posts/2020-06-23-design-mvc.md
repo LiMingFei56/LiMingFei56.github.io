@@ -98,6 +98,9 @@ MVA: 当收到消息时, 将选择一个适合的Adapter(可以有多个)作为M
 
 ### [MVVM](https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93viewmodel)
 
+
+![mvvm-pattern](../images/mvvm-pattern.png)
+
 * Model - 模型是指表示真实状态内容的域模型（面向对象的方法），还是表示内容的数据  
     访问层（以数据为中心的方法）
 * View - 就像在模型视图控制器（MVC）模式和模型视图呈现者（MVP）模式中一样，视图  
