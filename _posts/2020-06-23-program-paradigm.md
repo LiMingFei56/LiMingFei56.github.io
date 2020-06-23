@@ -64,6 +64,7 @@ excerpt: "编程范式"
 * Partially Applied Functions
 * Currying
 * Closure
+* Lambda: λ演算, 是一个匿名函数
 
 Typed Racket
 
