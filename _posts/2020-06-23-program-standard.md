@@ -16,6 +16,8 @@ K&R C => ANSI C = IOS C
 [History of C](https://en.cppreference.com/w/c/language/history)
 [History of C++](https://en.cppreference.com/w/cpp/language/history)
 
+C: C90 C99 C11 C17
+
 ### Java
 
 [Java (programming language)](https://en.wikipedia.org/wiki/Java_(programming_language))
