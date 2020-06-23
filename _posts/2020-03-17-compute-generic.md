@@ -21,7 +21,7 @@ Generic编程就是不面对特定类型编程, 使得类, 接口, 方法可以�
 3. 因为是类型擦除, 所以有些泛型功能不能实现, 如Map<String, String>[] map, createClass<T>()
 
 ### Variance
-1. 当A≤B时有f(A)≤f(B)成立，则f(⋅)是协变（covariant）的, 是生成者
+1. 当A≤B时有f(A)≤f(B)成立，则f(⋅)是协变（covariant）的, 是生产者
 2. 当A≤B时有f(B)≤f(A)成立，则f(⋅)是逆变（contravariant）的, 是消费者
 3. 当A≤B时上述两个式子均不成立，即f(A)与f(B)相互之间没有继承关系，f(⋅)是不变（invariant）的
 
