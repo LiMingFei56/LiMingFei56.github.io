@@ -35,11 +35,34 @@
 <node CREATED="1592907430703" ID="ID_799976883" MODIFIED="1592907431446" TEXT="IEEE floating point"/>
 </node>
 <node CREATED="1592906314277" ID="ID_320230579" MODIFIED="1592906384569" TEXT="_Bool(C99)"/>
-<node CREATED="1592906315160" ID="ID_1873318472" MODIFIED="1592906378479" TEXT="_Complex, _Imaginary(C99)"/>
-<node CREATED="1592906327896" ID="ID_1558640715" MODIFIED="1592906367593" TEXT="_Alignas(C11)"/>
+<node CREATED="1592906315160" ID="ID_1873318472" MODIFIED="1592906378479" TEXT="_Complex, _Imaginary(C99)">
+<node CREATED="1592967542823" ID="ID_1877101863" MODIFIED="1592967549865" TEXT="Macros for the construction (C11)"/>
+</node>
+<node CREATED="1592906327896" ID="ID_1558640715" MODIFIED="1592967077382" TEXT="Alignment specification(C11)"/>
+<node CREATED="1592967105544" ID="ID_42952524" MODIFIED="1592967110329" TEXT="_Noreturn(C11)"/>
 <node CREATED="1592906342280" ID="ID_1945004030" MODIFIED="1592906372461" TEXT="_Atomic(C11)"/>
 <node CREATED="1592906187509" ID="ID_1392809192" MODIFIED="1592906188499" TEXT="Character">
 <node CREATED="1592906188906" ID="ID_336544943" MODIFIED="1592906208155" TEXT="universal character"/>
+<node CREATED="1592967214374" ID="ID_446049142" MODIFIED="1592967218602" TEXT="Improved Unicode support(C11)">
+<node CREATED="1592967219852" ID="ID_914263678" MODIFIED="1592967230396" TEXT="char16_t/UTF-16"/>
+<node CREATED="1592967235422" ID="ID_1285973023" MODIFIED="1592967241332" TEXT="char32_t/UTF-32"/>
+<node CREATED="1592967263343" ID="ID_937894249" MODIFIED="1592967278589" TEXT="u&quot;Hello world&quot;;/ utf-8"/>
+</node>
+</node>
+<node CREATED="1592967136087" ID="ID_390850652" MODIFIED="1592967136937" TEXT="Type-generic expressions">
+<node CREATED="1592967137704" ID="ID_468048516" MODIFIED="1592967153875">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <pre style="letter-spacing: normal; padding-left: 0; padding-top: 0; text-align: start; font-family: monospace, monospace; text-indent: 0px; background-color: rgb(248, 249, 250); padding-right: 0; color: rgb(0, 0, 0); white-space: pre-wrap; text-transform: none; word-spacing: 0px; font-style: normal; font-size: 14px; font-weight: 400; padding-bottom: 0; line-height: 1.3" charset="utf-8"><span class="cp" style="color: rgb(188, 122, 0)"><font color="rgb(188, 122, 0)">#define cbrt(x) _Generic((x), long double: cbrtl, \</font></span>
+<span class="cp" style="color: rgb(188, 122, 0)"><font color="rgb(188, 122, 0)">                              default: cbrt, \</font></span>
+<span class="cp" style="color: rgb(188, 122, 0)"><font color="rgb(188, 122, 0)">                              float: cbrtf)(</font></span></pre>
+  </body>
+</html>
+</richcontent>
+</node>
 </node>
 </node>
 <node CREATED="1592906019959" ID="ID_1825582392" MODIFIED="1592906023965" TEXT="Enumerated types"/>
@@ -77,8 +100,7 @@
       } [one or more structure variables]
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 <node CREATED="1592907030420" ID="ID_1928109351" MODIFIED="1592907031461" TEXT="Bit Fields"/>
 </node>
@@ -102,12 +124,14 @@
       } [one or more union variables];
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 </node>
 <node CREATED="1592907104070" ID="ID_1220685377" MODIFIED="1592907104847" TEXT="typedef"/>
 <node CREATED="1592907124570" ID="ID_567747531" MODIFIED="1592907125328" TEXT="Type Casting"/>
+<node CREATED="1592967382014" ID="ID_1790144672" MODIFIED="1592967385621" TEXT="Anonymous structures and unions(C11)">
+<node CREATED="1592967397027" ID="ID_1129695353" MODIFIED="1592967404762" TEXT="struct T { int tag; union { float x; int n; }; };"/>
+</node>
 </node>
 </node>
 <node CREATED="1592906097407" ID="ID_38291713" MODIFIED="1592907453165" POSITION="right" TEXT="Variable">
@@ -165,12 +189,14 @@
       return_type function_name(parameter list)
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 <node CREATED="1592906610847" ID="ID_939430898" MODIFIED="1592906613689" TEXT="inline"/>
 <node CREATED="1592907167626" ID="ID_1663590997" MODIFIED="1592907168097" TEXT="Variable Arguments">
 <node CREATED="1592907174890" ID="ID_1837904938" MODIFIED="1592907176009" TEXT="nt func(int, ... )"/>
+</node>
+<node CREATED="1592967507722" ID="ID_682782741" MODIFIED="1592967511080" TEXT="Time">
+<node CREATED="1592967511509" ID="ID_17983998" MODIFIED="1592967516224" TEXT="timespec_get(C11)"/>
 </node>
 </node>
 <node CREATED="1592906629800" ID="ID_1366793734" MODIFIED="1592906630650" POSITION="left" TEXT="Scope Rules">
@@ -202,6 +228,15 @@
 <node CREATED="1592907466874" ID="ID_974017138" MODIFIED="1592907472553" POSITION="left" TEXT="Initializers">
 <node CREATED="1592907473304" ID="ID_32753216" MODIFIED="1592907479344" TEXT="designated initializers(C99)"/>
 <node CREATED="1592907493223" ID="ID_558618914" MODIFIED="1592907497576" TEXT="compound literals(C99)"/>
+</node>
+<node CREATED="1592967181493" ID="ID_325532639" MODIFIED="1592967316800" POSITION="left" TEXT="Multi-threading(C11)">
+<node CREATED="1592967186987" ID="ID_1456018834" MODIFIED="1592967188051" TEXT="_Thread_local"/>
+</node>
+<node CREATED="1592967306338" ID="ID_510051987" MODIFIED="1592967322618" POSITION="left" TEXT="Bounds-checking interfaces(C11)"/>
+<node CREATED="1592967333820" ID="ID_1606618859" MODIFIED="1592967336642" POSITION="left" TEXT="Analyzability features(C11)"/>
+<node CREATED="1592967436712" ID="ID_934897382" MODIFIED="1592967440438" POSITION="left" TEXT="Static assertions(C11)"/>
+<node CREATED="1592967478001" ID="ID_1988605922" MODIFIED="1592967480455" POSITION="left" TEXT="Exit">
+<node CREATED="1592967481116" ID="ID_1340290599" MODIFIED="1592967490599" TEXT="quick_exit(C11)"/>
 </node>
 <node CREATED="1592907545002" ID="ID_1682267485" MODIFIED="1592907547650" POSITION="left" TEXT="Reference">
 <node CREATED="1592907549466" ID="ID_733452287" MODIFIED="1592907550306" TEXT="https://cloud.tencent.com/developer/doc/1023"/>
