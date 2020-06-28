@@ -68,8 +68,7 @@
       for (variablename in object) {}
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 </node>
 </node>
@@ -227,8 +226,7 @@
       };
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 </node>
 <node CREATED="1593316332973" ID="ID_1832962482" MODIFIED="1593316335241" TEXT="ES6">
@@ -263,13 +261,25 @@
       }
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 <node CREATED="1593316528525" ID="ID_882664783" MODIFIED="1593316531815" TEXT="extends"/>
 </node>
 <node CREATED="1593316780080" ID="ID_1287438520" MODIFIED="1593316795732" TEXT="Decorator(&#x5f85;&#x5b9a;)"/>
 </node>
-<node CREATED="1593316568035" ID="ID_1601873948" MODIFIED="1593316570224" POSITION="left" TEXT="Module"/>
+<node CREATED="1593316568035" ID="ID_1601873948" MODIFIED="1593316570224" POSITION="left" TEXT="Module">
+<node CREATED="1593329711079" ID="ID_1991325994" MODIFIED="1593329731320" TEXT="require">
+<node CREATED="1593329782548" ID="ID_1355457208" MODIFIED="1593329787161" TEXT="CommonJS"/>
+</node>
+<node CREATED="1593330276148" ID="ID_25400541" MODIFIED="1593330281608" TEXT="module.exports">
+<node CREATED="1593330282192" ID="ID_860603344" MODIFIED="1593330285095" TEXT="CommonJS"/>
+</node>
+<node CREATED="1593329703712" ID="ID_1447711826" MODIFIED="1593329706953" TEXT="import">
+<node CREATED="1593329789545" ID="ID_1241655393" MODIFIED="1593329794121" TEXT="ES6"/>
+</node>
+<node CREATED="1593329739834" ID="ID_453832149" MODIFIED="1593329742296" TEXT="export">
+<node CREATED="1593329795737" ID="ID_840724040" MODIFIED="1593329797603" TEXT="ES6"/>
+</node>
+</node>
 </node>
 </map>
