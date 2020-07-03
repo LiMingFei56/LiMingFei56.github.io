@@ -88,7 +88,7 @@ Platform也是使用Texture呈现NativeView, Texture使用SurfaceView来呈现
 
 ### Referance
 
-[Platform adaptations](https://flutter.dev/docs/resources/platform-adaptations)
-[Flutter PlatformView: How to create Widgets from Native Views](https://medium.com/flutter-community/flutter-platformview-how-to-create-flutter-widgets-from-native-views-366e378115b6)
-[5分钟彻底搞懂Flutter中PlatFormView与Texture](https://cloud.tencent.com/developer/article/1584477)
-[PlatformView](https://github.com/loosaSH/flutter-PlatformView)
+[Platform adaptations](https://flutter.dev/docs/resources/platform-adaptations)  
+[Flutter PlatformView: How to create Widgets from Native Views](https://medium.com/flutter-community/flutter-platformview-how-to-create-flutter-widgets-from-native-views-366e378115b6)  
+[5分钟彻底搞懂Flutter中PlatFormView与Texture](https://cloud.tencent.com/developer/article/1584477)  
+[PlatformView](https://github.com/loosaSH/flutter-PlatformView)  
