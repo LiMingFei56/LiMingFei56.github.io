@@ -5,6 +5,8 @@
 <node CREATED="1594878899005" ID="ID_292003435" MODIFIED="1594878906661" POSITION="right" TEXT="concepts">
 <node CREATED="1594878907347" ID="ID_1535113733" MODIFIED="1594878920525" TEXT="&#x6240;&#x6709;&#x90fd;&#x662f;&#x5bf9;&#x8c61;, &#x7ee7;&#x627f;&#x81ea;Object"/>
 <node CREATED="1594878955764" ID="ID_1000564342" MODIFIED="1594878990335" TEXT="infer types"/>
+<node CREATED="1594888047999" ID="ID_563737492" MODIFIED="1594888053739" TEXT="type safety"/>
+<node CREATED="1594888061833" ID="ID_1160708008" MODIFIED="1594888066898" TEXT="null safety"/>
 <node CREATED="1594879203715" ID="ID_1434943509" MODIFIED="1594879212976" TEXT="generic type"/>
 <node CREATED="1594879217026" ID="ID_1818267784" MODIFIED="1594879275201" TEXT="top-level functions and variables"/>
 <node CREATED="1594879284140" ID="ID_513653389" MODIFIED="1594879330454" TEXT="not support public, protected, private">
@@ -46,8 +48,7 @@
       const set = {if (list is List&lt;int&gt;) ...list}; // ...and a spread.
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 </node>
 </node>
@@ -112,8 +113,7 @@
       }
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 <node CREATED="1594881525796" ID="ID_501798601" MODIFIED="1594881557021" TEXT="bool isNoble(int atomicNumber) =&gt; {return expr;}"/>
 <node CREATED="1594881663788" ID="ID_57842980" MODIFIED="1594881664536" TEXT="Optional parameters">
@@ -144,8 +144,7 @@
       };
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 </node>
 </node>
@@ -270,8 +269,7 @@
       }
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 </node>
 <node CREATED="1594884292579" ID="ID_1679052671" MODIFIED="1594884293242" TEXT="Class variables and methods">
