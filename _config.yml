@@ -10,7 +10,7 @@ highlighter: rouge
 #     syntax_highlighter: rouge
 
 gems: [jekyll-paginate]
-paginate: 8
+paginate: 10
 paginate_path: "page:num"
 layout: post
 permalink: /:categories/:title
