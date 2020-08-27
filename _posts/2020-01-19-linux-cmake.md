@@ -255,3 +255,7 @@ CMake构建支持Debug, release, minsizerel, relwithdebinfo
 
     ctest [-VV] -D Experimental
     ctest [-VV] -C Debug -D Experimental
+
+### Reference
+[CMake Tutorial](https://cmake.org/cmake/help/v3.18/guide/tutorial/index.html)  
+[CMakeLists.txt 语法介绍与实例演练](https://blog.csdn.net/afei__/article/details/81201039)  

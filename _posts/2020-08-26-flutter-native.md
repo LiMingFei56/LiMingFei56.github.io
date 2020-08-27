@@ -15,7 +15,7 @@ excerpt: "Flutter 调用 C/C++"
     extern "C" __attribute__((visibility("default"))) __attribute__((used))
 
 2. C/C++源码建议写在ios/Classes/native\_add.cpp目录, 因为`CocoaPods`不允许源码在  
-    上层目录, 而`gradle`允许
+    `.podspec`上层目录, 而`gradle`允许
 
 
 ### Reference
