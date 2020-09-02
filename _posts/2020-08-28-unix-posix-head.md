@@ -9,6 +9,9 @@ excerpt: "Posix Head"
 
 ## Posix Head
 
+    $ echo | g++ -v -x c++ -E -
+    $ echo | gcc -v -x c++ -E -
+
 * <aio.h> - 异步IO相关的函数
 * <arpa/inet.h> - IP地址相关的函数
 * <dirent.h> - 顾名思义directory entry
