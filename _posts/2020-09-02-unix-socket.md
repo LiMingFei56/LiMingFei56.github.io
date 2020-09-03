@@ -98,6 +98,10 @@ excerpt: "Unix Socket"
 	toAddr.sin_addr.s_addr = inet_addr("127.0.0.1");
 	toAddr.sin_port = htons(4000);
 
+特殊地址:
+    * `INADDR_ANY` - 表示所以网卡
+    * `INADDR_BROADCAST` - 表示广播地址
+
 ### 网络字节顺序
 网络传输需要注意字节顺序, int发送与接收需要使用对应函数统一字节顺序
 
