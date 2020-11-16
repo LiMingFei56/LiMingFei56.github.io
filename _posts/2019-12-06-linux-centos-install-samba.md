@@ -35,7 +35,18 @@ excerpt: "Centos 8 安装Samba"
 
 ### 3. 配置samba
 
-    见git config
+    [heijunma]
+        comment = heijunma guest share  #共享描述
+        path = /home/heijunma       #共享目录
+        public = yes                #允许guest用户访问
+        writable = yes              #允许在heijunma目录下写入
+        directory mask = 0775       #默认创建目录权限 rwxrwxr_x
+        create mask = 0775          #默认创建文件权限 rwxrwxr_x
+        valid users = heijunma,root  #允许访问该共享的用户
+        write list = heijunma,root  #可写入共享的用户列表
+        browseable = yes             #该指定共享目录可浏览
+        available = yes              #该指定共享资源可使用
+
 
 ### 4. 配置SELinux
 
@@ -52,4 +63,4 @@ excerpt: "Centos 8 安装Samba"
 
     [How to install and configure samba on RHEL 8 / CentOS 8](https://linuxconfig.org/install-samba-on-redhat-8)
     [SAMBA 伺服器](http://linux.vbird.org/linux_server/0370samba.php#server_security)
-
+    [Linux samba的配置和使用](https://blog.csdn.net/weixin_40806910/article/details/81917077)
