@@ -51,9 +51,16 @@ WidgetsBindingObserver.didPopRoute
 // 有新的页面出来
 WidgetsBindingObserver.didPushRoute
 
-// 监听当前页面 换入 换出
-RouteObserver
-RouteAware  
+    // 监听当前页面 换入 换出
+    RouteObserver
+    RouteAware  
+
+    final RouteObserver<PageRoute> routeObserver = RouteObserver<PageRoute>();
+    MaterialApp.navigatorObservers: [routeObserver]
+
+    Page whit RouteAware
+    routeObserver.subscribe(this, ModalRoute.of(context));
+    routeObserver.unsubscribe(this);
 
 
 ### Reference
