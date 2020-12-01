@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "电脑配置"
-categories: computer
+categories: compute
 tags: [computer]
 date: 2020-03-22
 excerpt: "电脑配置"

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Unix Socket"
-categories: unix
+categories: linux
 tags: [socket]
 date: 2020-09-02
 excerpt: "Unix Socket"

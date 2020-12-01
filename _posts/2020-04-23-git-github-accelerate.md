@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Github 加速"
-categories: git
+categories: tools
 tags: [git]
 date: 2020-04-23
 excerpt: "Github 加速"

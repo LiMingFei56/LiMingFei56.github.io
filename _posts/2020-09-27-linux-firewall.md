@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Linux Firewall"
-categories: unix
+categories: linux
 tags: [secrity]
 date: 2020-09-27
 excerpt: "Linux Firewall"

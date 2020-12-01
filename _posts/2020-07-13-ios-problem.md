@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Xcode优化问题"
-categories: iOS
+categories: ios
 tags: [xcode]
 date: 2020-07-13
 excerpt: "Xcode优化问题"

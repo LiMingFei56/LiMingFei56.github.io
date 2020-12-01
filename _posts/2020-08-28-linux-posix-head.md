@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Posix Head"
-categories: unix
+categories: linux
 tags: [posix]
 date: 2020-08-28
 excerpt: "Posix Head"

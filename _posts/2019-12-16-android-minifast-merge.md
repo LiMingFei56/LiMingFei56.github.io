@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Android Studio Minifast.xml Merge"
-categories: android-studio
+categories: tools
 tags: [minifast]
 date: 2019-12-16
 excerpt: "合并Minifast"

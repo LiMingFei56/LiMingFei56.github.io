@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "操作系统-介绍"
-categories: computer
+categories: compute
 tags: [opersys]
 date: 2020-06-10
 excerpt: "操作系统-介绍"

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Linux systemd"
-categories: unix
+categories: linux
 tags: [unix]
 date: 
 excerpt: "Linux systemd"

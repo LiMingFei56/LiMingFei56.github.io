@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "持续集成"
-categories: computer
+categories: compute
 tags: [ci]
 date: 2020-07-02
 excerpt: "持续集成"

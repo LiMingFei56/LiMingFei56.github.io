@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "连接协议"
-categories: computer
+categories: compute
 tags: [connection]
 date: 2020-06-08
 excerpt: "连接协议"

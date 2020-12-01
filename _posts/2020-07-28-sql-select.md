@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Sql 查询"
-categories: sql
+categories: db
 tags: [sql]
 date: 2020-07-28
 excerpt: "Sql 查询"

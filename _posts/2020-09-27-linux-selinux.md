@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Linux SELinux"
-categories: unix
+categories: linux
 tags: [secript]
 date: 2020-09-27
 excerpt: "Linux SELinux"

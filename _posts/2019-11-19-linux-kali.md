@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Kali linux 安装"
-categories: unix
+categories: linux
 tags: [install]
 date: 2019-11-19
 excerpt: "在RaspberryPi上安装KaliLinux"

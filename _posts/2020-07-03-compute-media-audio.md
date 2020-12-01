@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "音频原理"
-categories: computer
+categories: compute
 tags: [media]
 date: 2020-07-03
 excerpt: "音频原理"

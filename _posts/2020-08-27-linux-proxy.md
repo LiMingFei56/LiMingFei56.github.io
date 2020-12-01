@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Unix proxy config"
-categories: unix
+categories: linux
 tags: [proxy]
 date: 2020-08-27
 excerpt: "Unix proxy config"
