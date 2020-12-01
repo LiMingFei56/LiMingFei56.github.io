@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Vim Script Developer"
-categories: vim
+categories: tools
 tags: [vim]
 date: 2020-09-18
 excerpt: "Vim Script Developer"
