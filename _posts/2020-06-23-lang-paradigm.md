@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "编程范式"
-categories: program
+categories: lang
 tags: [paradigm]
 date: 2020-06-23
 excerpt: "编程范式"

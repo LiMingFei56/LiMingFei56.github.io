@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "C语言指针"
-categories: program
+categories: lang
 tags: [c]
 date: 2020-07-08
 excerpt: "C语言指针"

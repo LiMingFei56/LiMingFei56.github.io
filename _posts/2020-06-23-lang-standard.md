@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "语言标准"
-categories: program
+categories: lang
 tags: [source]
 date: 2020-06-23
 excerpt: "语言标准"
