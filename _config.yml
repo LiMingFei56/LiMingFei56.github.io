@@ -1,51 +1,31 @@
-# highlighter: pygments
-highlighter: rouge
+title: jekyll-rtd-theme
+description: Just another documentation theme compatible with GitHub Pages
 
-# markdown: redcarpet
-# redcarpet:
-#   extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "tables", "with_toc_data"]
-# markdown: kramdown
-# kramdown:
-#     input: GFM
-#     syntax_highlighter: rouge
+theme: null
 
-gems: [jekyll-paginate]
-paginate: 10
-paginate_path: "page:num"
-layout: post
-permalink: /:categories/:title
-excerpt_separator: "[-----]"
+# debug:
+#   compress: true
+#   dist: false
+#   shortcodes: true
 
-# mode: dev
-mode: product
-url: https://LiMingFei56.github.io/
-devurl: http://localhost:4000/
-name: Trinity Blood 
-title: Trinity Blood | Dust to dust, soil to soil, ash to ash
-description: "Trinity Blood "
+readme_index:
+  with_frontmatter: true
 
-my:
-    displayName: 李鸣飞
-    realName: MingFei Li
-    realName_cn: 李鸣飞
-    jobTitle: "全栈"
-    contact:
-        qq: 757563349@qq.com
-        email: 757563349@gmail.com
-        address:
-            country: China
-            state: Hubei
-            city: Wuhan
-    skills:
-        frontend: ["HTML | Markdown", "CSS | SASS", "JS | jQuery", "Bootstrap"]
-        backend: ["C/C++", "Python", "Shell", "SQL", "JavaWeb"]
-        mobile: ["Android", "iOS", "Flutter"]
-        libs: ["OpenCV"]
-        tools: ["NeoVim", "Git | Github", "Linux"]
+plugins:
+  - jemoji
+  - jekyll-avatar
+  - jekyll-mentions
 
-defaults:
-  - scope:
-        path: ""
-        type: "posts"
-    values:
-        excerpt: "{{ page.content }} | slice: 0 300"
+exclude:
+  - Makefile
+  - CNAME
+  - LICENSE
+  - update.sh
+  - Gemfile
+  - Gemfile.lock
+  - requirements.txt
+  - node_modules
+  - package.json
+  - package-lock.json
+  - webpack.config.js
+  - jekyll-rtd-theme.gemspec
