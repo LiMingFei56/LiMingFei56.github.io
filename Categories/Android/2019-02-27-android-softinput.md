@@ -1,11 +1,4 @@
----
-layout: post
-title: "Android hideSoftInputFromWindow无效"
-categories: android
-tags: [view]
-date: 2019-02-25
-excerpt: "隐藏软键盘无效"
----
+source: `{{ page.path }}`
 
 ## Android hideSoftInputFromWindow无效
 
