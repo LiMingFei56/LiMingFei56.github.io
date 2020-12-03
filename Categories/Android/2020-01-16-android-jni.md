@@ -1,13 +1,5 @@
----
-layout: post
-title: "Java Jni"
-categories: android
-tags: [jni]
-date: 2020-01-16
-excerpt: "Java JNI"
----
-
 ## JNI
+source: `{{ page.path }}`
 
 Java Native Interface(JNI), 使Java可用调用C, C++, Assembly. 这是一个规范, 不依赖
 Java VM具体实现.

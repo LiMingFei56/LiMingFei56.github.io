@@ -1,13 +1,5 @@
----
-layout: post
-title: "Android 刷机"
-categories: android
-tags: [flash]
-date: 2020-05-02
-excerpt: "Android 刷机"
----
-
 ## Android 刷机
+source: `{{ page.path }}`
 
 *** 刷机前一定做好系统备份， 特别是recovery 刷包， 不然又要刷官方recovery 刷底包， 来回折腾 ***
 

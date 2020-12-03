@@ -1,13 +1,6 @@
----
-layout: post
-title: "Kotlin Jar包下载失败"
-categories: android
-tags: [build]
-date: 2020-03-11
-excerpt: "Kotlin Jar包下载失败"
----
-
 ## Android Studio下载jar包
+source: `{{ page.path }}`
+
 Android Studio下载kotlin-compiler-embeddable 非常慢， 时间长了还会报read time out
 
 所以需要自行下载后， 把jar放到正确的位置.

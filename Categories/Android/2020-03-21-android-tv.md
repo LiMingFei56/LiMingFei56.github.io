@@ -1,13 +1,5 @@
----
-layout: post
-title: "Android TV"
-categories: android
-tags: [tv]
-date: 2020-03-21
-excerpt: "Android TV"
----
-
 ## Android TV
+source: `{{ page.path }}`
 
 ### 准备工作
 

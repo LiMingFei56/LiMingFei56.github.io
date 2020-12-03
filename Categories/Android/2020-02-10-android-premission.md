@@ -1,13 +1,6 @@
----
-layout: post
-title: "Andorid6.0获取权限"
-categories: android
-tags: [premission]
-date: 2020-02-10
-excerpt: "Andorid6.0获取权限"
----
-
 ## Andorid6.0获取权限
+source: `{{ page.path }}`
+
 系统6.0后需要动态获取权限
 
 1. 判断系统版本 Build.VERSION.SDK_INT >= 23

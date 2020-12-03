@@ -1,13 +1,6 @@
----
-layout: post
-title: "Android Studio Minifast.xml Merge"
-categories: tools
-tags: [minifast]
-date: 2019-12-16
-excerpt: "合并Minifast"
----
-
 ## 合并Minifast
+source: `{{ page.path }}`
+
 官方文档
 [Merge multiple manifest files](https://developer.android.google.cn//studio/build/manifest-merge.html)
 

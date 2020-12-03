@@ -1,13 +1,6 @@
----
-layout: post
-title: "android使用老库，32位库支持64位"
-categories: android
-tags: [jni]
-date: 2020-02-10
-excerpt: "android使用老库，32位库支持64位"
----
-
 ## android使用老库，32位库支持64位
+source: `{{ page.path }}`
+
 如果第三方库蛮老（使用旧版本的NDK编译）， 那么在新系统上会报错
 
     java.lang.UnsatisfiedLinkError: dlopen failed: 

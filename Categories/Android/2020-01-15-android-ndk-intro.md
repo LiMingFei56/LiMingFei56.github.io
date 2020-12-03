@@ -1,13 +1,6 @@
----
-layout: post
-title: "NDK介绍"
-categories: android
-tags: [ndk]
-date: 2020-01-15
-excerpt: "NDK介绍"
----
-
 ## NDK介绍
+source: `{{ page.path }}`
+
 Native Development Kit(NDK) 使用CMake或ndk-build构建出在Android设备上运行的C\C++库
 
 * 使用POSIX可以实现代码跨平台(ios 和 android, flutter不支持posix)

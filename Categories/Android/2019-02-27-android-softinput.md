@@ -1,8 +1,6 @@
 # Android hideSoftInputFromWindow无效
 source: `{{ page.path }}`
 
-## Android hideSoftInputFromWindow无效
-
     InputMethodManager imm = (InputMethodManager) contextWeakReference.get().getSystemService(Context.INPUT_METHOD_SERVICE);
     imm.hideSoftInputFromWindow(queryEdit.getWindowToken(), 0);
     // 不能隐藏软键盘

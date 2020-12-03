@@ -1,13 +1,5 @@
----
-layout: post
-title: "Android SRE技术"
-categories: android
-tags: [sre]
-date: 2020-06-12
-excerpt: "Android SRE技术"
----
-
 ## Android SRE技术
+source: `{{ page.path }}`
 
 https://www.jianshu.com/p/87ce6f565d37
 Android JNI(一)——NDK与JNI基础
