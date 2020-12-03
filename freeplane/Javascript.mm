@@ -1,0 +1,370 @@
+<map version="freeplane 1.8.0">
+<!--To view this file, download free mind mapping software Freeplane from http://freeplane.sourceforge.net -->
+<node TEXT="Javascript" FOLDED="false" ID="ID_1531235298" CREATED="1597307227829" MODIFIED="1597307239357" STYLE="oval">
+<font SIZE="18"/>
+<hook NAME="MapStyle">
+    <properties edgeColorConfiguration="#808080ff,#ff0000ff,#0000ffff,#00ff00ff,#ff00ffff,#00ffffff,#7c0000ff,#00007cff,#007c00ff,#7c007cff,#007c7cff,#7c7c00ff" fit_to_viewport="false"/>
+
+<map_styles>
+<stylenode LOCALIZED_TEXT="styles.root_node" STYLE="oval" UNIFORM_SHAPE="true" VGAP_QUANTITY="24.0 pt">
+<font SIZE="24"/>
+<stylenode LOCALIZED_TEXT="styles.predefined" POSITION="right" STYLE="bubble">
+<stylenode LOCALIZED_TEXT="default" ICON_SIZE="12.0 pt" COLOR="#000000" STYLE="fork">
+<font NAME="SansSerif" SIZE="10" BOLD="false" ITALIC="false"/>
+</stylenode>
+<stylenode LOCALIZED_TEXT="defaultstyle.details"/>
+<stylenode LOCALIZED_TEXT="defaultstyle.attributes">
+<font SIZE="9"/>
+</stylenode>
+<stylenode LOCALIZED_TEXT="defaultstyle.note" COLOR="#000000" BACKGROUND_COLOR="#ffffff" TEXT_ALIGN="LEFT"/>
+<stylenode LOCALIZED_TEXT="defaultstyle.floating">
+<edge STYLE="hide_edge"/>
+<cloud COLOR="#f0f0f0" SHAPE="ROUND_RECT"/>
+</stylenode>
+</stylenode>
+<stylenode LOCALIZED_TEXT="styles.user-defined" POSITION="right" STYLE="bubble">
+<stylenode LOCALIZED_TEXT="styles.topic" COLOR="#18898b" STYLE="fork">
+<font NAME="Liberation Sans" SIZE="10" BOLD="true"/>
+</stylenode>
+<stylenode LOCALIZED_TEXT="styles.subtopic" COLOR="#cc3300" STYLE="fork">
+<font NAME="Liberation Sans" SIZE="10" BOLD="true"/>
+</stylenode>
+<stylenode LOCALIZED_TEXT="styles.subsubtopic" COLOR="#669900">
+<font NAME="Liberation Sans" SIZE="10" BOLD="true"/>
+</stylenode>
+<stylenode LOCALIZED_TEXT="styles.important">
+<icon BUILTIN="yes"/>
+</stylenode>
+</stylenode>
+<stylenode LOCALIZED_TEXT="styles.AutomaticLayout" POSITION="right" STYLE="bubble">
+<stylenode LOCALIZED_TEXT="AutomaticLayout.level.root" COLOR="#000000" STYLE="oval" SHAPE_HORIZONTAL_MARGIN="10.0 pt" SHAPE_VERTICAL_MARGIN="10.0 pt">
+<font SIZE="18"/>
+</stylenode>
+<stylenode LOCALIZED_TEXT="AutomaticLayout.level,1" COLOR="#0033ff">
+<font SIZE="16"/>
+</stylenode>
+<stylenode LOCALIZED_TEXT="AutomaticLayout.level,2" COLOR="#00b439">
+<font SIZE="14"/>
+</stylenode>
+<stylenode LOCALIZED_TEXT="AutomaticLayout.level,3" COLOR="#990000">
+<font SIZE="12"/>
+</stylenode>
+<stylenode LOCALIZED_TEXT="AutomaticLayout.level,4" COLOR="#111111">
+<font SIZE="10"/>
+</stylenode>
+<stylenode LOCALIZED_TEXT="AutomaticLayout.level,5"/>
+<stylenode LOCALIZED_TEXT="AutomaticLayout.level,6"/>
+<stylenode LOCALIZED_TEXT="AutomaticLayout.level,7"/>
+<stylenode LOCALIZED_TEXT="AutomaticLayout.level,8"/>
+<stylenode LOCALIZED_TEXT="AutomaticLayout.level,9"/>
+<stylenode LOCALIZED_TEXT="AutomaticLayout.level,10"/>
+<stylenode LOCALIZED_TEXT="AutomaticLayout.level,11"/>
+</stylenode>
+</stylenode>
+</map_styles>
+</hook>
+<hook NAME="AutomaticEdgeColor" COUNTER="16" RULE="ON_BRANCH_CREATION"/>
+<node TEXT="Top object" FOLDED="true" POSITION="left" ID="ID_209138648" CREATED="1593313618576" MODIFIED="1597307410207">
+<edge COLOR="#ff0000"/>
+<node TEXT="window" ID="ID_311324823" CREATED="1593313623258" MODIFIED="1593313625538"/>
+<node TEXT="global" ID="ID_968465675" CREATED="1593313628306" MODIFIED="1593313640978"/>
+<node TEXT="globalThis" FOLDED="true" ID="ID_311661926" CREATED="1593313676963" MODIFIED="1593313681643">
+<node TEXT="不统一" FOLDED="true" ID="ID_429170407" CREATED="1593313683600" MODIFIED="1593313689612">
+<node TEXT="B-window, node和web worker没有window" ID="ID_1103255723" CREATED="1593313690148" MODIFIED="1593313723182"/>
+<node TEXT="B, ww-self指向顶层对象, node中没有self" ID="ID_590719430" CREATED="1593313725228" MODIFIED="1593313750053"/>
+<node TEXT="node-global, 其他环境不支持" ID="ID_1898641535" CREATED="1593313752964" MODIFIED="1593313771367"/>
+</node>
+<node TEXT="使用this" FOLDED="true" ID="ID_642409039" CREATED="1593313795406" MODIFIED="1593313838808">
+<node TEXT="https://es6.ruanyifeng.com/#docs/let" ID="ID_130774494" CREATED="1593313832753" MODIFIED="1593313833992"/>
+</node>
+<node TEXT="ES2020引入globalThis" ID="ID_1655013295" CREATED="1593313839499" MODIFIED="1593313851232"/>
+</node>
+</node>
+<node TEXT="Error handling" FOLDED="true" POSITION="left" ID="ID_399738118" CREATED="1593310844812" MODIFIED="1597307410213">
+<edge COLOR="#0000ff"/>
+<node TEXT="try...catch...finally" ID="ID_63293748" CREATED="1593310855644" MODIFIED="1593310856557"/>
+<node TEXT="throw" ID="ID_1871088143" CREATED="1593310869369" MODIFIED="1593310869758"/>
+<node TEXT="onerror" ID="ID_359447696" CREATED="1593310991002" MODIFIED="1593310994162"/>
+</node>
+<node TEXT="Debug" FOLDED="true" POSITION="left" ID="ID_528602927" CREATED="1593311802976" MODIFIED="1597307410216">
+<edge COLOR="#00ff00"/>
+<node TEXT="print log" ID="ID_1915336415" CREATED="1593311867984" MODIFIED="1593311872247"/>
+</node>
+<node TEXT="model" FOLDED="true" POSITION="left" ID="ID_22868751" CREATED="1593314579616" MODIFIED="1597307410218">
+<edge COLOR="#ff00ff"/>
+<node TEXT="&apos;use strict&apos;" ID="ID_785139143" CREATED="1593314582634" MODIFIED="1593314583657"/>
+</node>
+<node TEXT="meta programming" FOLDED="true" POSITION="left" ID="ID_1297901666" CREATED="1593315637383" MODIFIED="1597307410220">
+<edge COLOR="#00ffff"/>
+<node TEXT="proxy(6.0)" FOLDED="true" ID="ID_888258728" CREATED="1593315639059" MODIFIED="1593315661485">
+<node TEXT="https://es6.ruanyifeng.com/#docs/proxy" ID="ID_1071503996" CREATED="1593315738470" MODIFIED="1593315740007"/>
+</node>
+<node TEXT="Reflect(6.0)" FOLDED="true" ID="ID_36702447" CREATED="1593315754487" MODIFIED="1593315757608">
+<node TEXT="https://es6.ruanyifeng.com/#docs/reflect" ID="ID_834194219" CREATED="1593315760550" MODIFIED="1593315761136"/>
+</node>
+</node>
+<node TEXT="async" FOLDED="true" POSITION="left" ID="ID_851344086" CREATED="1593315786635" MODIFIED="1597307410221">
+<edge COLOR="#7c0000"/>
+<node TEXT="Promise(6.0)" ID="ID_698488099" CREATED="1593315790158" MODIFIED="1593315810177"/>
+<node TEXT="Generator(6.0)" ID="ID_1006022471" CREATED="1593316020336" MODIFIED="1593316024703"/>
+<node TEXT="Async function(6.0)" ID="ID_1930632913" CREATED="1593316174997" MODIFIED="1593316189508"/>
+<node TEXT="async iterator(6.0)" FOLDED="true" ID="ID_519383882" CREATED="1593316638121" MODIFIED="1593316657715">
+<node TEXT="asyncIterator" ID="ID_631537736" CREATED="1593316665986" MODIFIED="1593316667019"/>
+<node TEXT="for await...of" ID="ID_1632467541" CREATED="1593316674997" MODIFIED="1593316685011"/>
+<node TEXT="async + generator" ID="ID_59721898" CREATED="1593316704590" MODIFIED="1593316710356"/>
+<node TEXT="yield*" ID="ID_1622278840" CREATED="1593316726883" MODIFIED="1593316735061"/>
+</node>
+</node>
+<node TEXT="Class(6.0)" FOLDED="true" POSITION="left" ID="ID_400274485" CREATED="1593316229168" MODIFIED="1597307410224">
+<edge COLOR="#00007c"/>
+<node TEXT="ES5" FOLDED="true" ID="ID_173180339" CREATED="1593316235559" MODIFIED="1593316255567">
+<node ID="ID_1312226006" CREATED="1593316257526" MODIFIED="1593316330391"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      function Point(x, y) {
+    </p>
+    <p>
+      &#160;&#160;&#160;&#160;this.x = x;
+    </p>
+    <p>
+      &#160;&#160;&#160;&#160;this.y = y;
+    </p>
+    <p>
+      }
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      Point.prototype.toString = function (){
+    </p>
+    <p>
+      &#160;&#160;&#160;&#160;return '(' + this.x + ', ' + this.y + ')';
+    </p>
+    <p>
+      };
+    </p>
+  </body>
+</html>
+</richcontent>
+</node>
+</node>
+<node TEXT="ES6" FOLDED="true" ID="ID_1832962482" CREATED="1593316332973" MODIFIED="1593316335241">
+<node ID="ID_252261030" CREATED="1593316342678" MODIFIED="1593316394106"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      class Point {
+    </p>
+    <p>
+      &#160;&#160;&#160;&#160;constructor (x, y) {
+    </p>
+    <p>
+      &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;this.x = x;
+    </p>
+    <p>
+      &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;this.y = y;
+    </p>
+    <p>
+      &#160;&#160;&#160;&#160;}
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      &#160;&#160;&#160;&#160;toString() {}
+    </p>
+    <p>
+      }
+    </p>
+  </body>
+</html>
+</richcontent>
+</node>
+<node TEXT="extends" ID="ID_882664783" CREATED="1593316528525" MODIFIED="1593316531815"/>
+</node>
+<node TEXT="Decorator(待定)" ID="ID_1287438520" CREATED="1593316780080" MODIFIED="1593316795732"/>
+</node>
+<node TEXT="Module" FOLDED="true" POSITION="left" ID="ID_1601873948" CREATED="1593316568035" MODIFIED="1597307410226">
+<edge COLOR="#007c00"/>
+<node TEXT="require" FOLDED="true" ID="ID_1991325994" CREATED="1593329711079" MODIFIED="1593329731320">
+<node TEXT="CommonJS" ID="ID_1355457208" CREATED="1593329782548" MODIFIED="1593329787161"/>
+</node>
+<node TEXT="module.exports" FOLDED="true" ID="ID_25400541" CREATED="1593330276148" MODIFIED="1593330281608">
+<node TEXT="CommonJS" ID="ID_860603344" CREATED="1593330282192" MODIFIED="1593330285095"/>
+</node>
+<node TEXT="import" FOLDED="true" ID="ID_1447711826" CREATED="1593329703712" MODIFIED="1593329706953">
+<node TEXT="ES6" ID="ID_1241655393" CREATED="1593329789545" MODIFIED="1593329794121"/>
+</node>
+<node TEXT="export" FOLDED="true" ID="ID_453832149" CREATED="1593329739834" MODIFIED="1593329742296">
+<node TEXT="ES6" ID="ID_840724040" CREATED="1593329795737" MODIFIED="1593329797603"/>
+</node>
+</node>
+<node TEXT="Type" FOLDED="true" POSITION="right" ID="ID_211611716" CREATED="1593310310466" MODIFIED="1597307425972">
+<edge COLOR="#7c007c"/>
+<node TEXT="Number" ID="ID_1867258431" CREATED="1593310312896" MODIFIED="1593310315131"/>
+<node TEXT="String" ID="ID_1583833086" CREATED="1593310315484" MODIFIED="1593310316900"/>
+<node TEXT="Boolean" ID="ID_1671442136" CREATED="1593310329536" MODIFIED="1593310334459"/>
+<node TEXT="Null" ID="ID_1346948013" CREATED="1593310334806" MODIFIED="1593310343107"/>
+<node TEXT="undefined" ID="ID_316394739" CREATED="1593310343438" MODIFIED="1593310346764"/>
+<node TEXT="void" ID="ID_720651883" CREATED="1593310349719" MODIFIED="1593310350980"/>
+<node TEXT="object" ID="ID_274524850" CREATED="1593310351292" MODIFIED="1593310352916"/>
+<node TEXT="Symbol(6.0)" ID="ID_1456350732" CREATED="1593315492783" MODIFIED="1593315499048"/>
+</node>
+<node TEXT="Variable Scope" FOLDED="true" POSITION="right" ID="ID_1539369411" CREATED="1593308922567" MODIFIED="1597307425980">
+<edge COLOR="#007c7c"/>
+<node TEXT="Global" ID="ID_1289386249" CREATED="1593308935083" MODIFIED="1593308939389"/>
+<node TEXT="Local" FOLDED="true" ID="ID_1722745415" CREATED="1593308939829" MODIFIED="1593312935950">
+<node TEXT="var" FOLDED="true" ID="ID_1740027715" CREATED="1593312878746" MODIFIED="1593312944070">
+<node TEXT="Variable promotion" ID="ID_729003662" CREATED="1593313008074" MODIFIED="1593313008775"/>
+</node>
+</node>
+<node TEXT="Block(6)" FOLDED="true" ID="ID_1055358439" CREATED="1593312936909" MODIFIED="1593313221917">
+<node TEXT="let(6)" FOLDED="true" ID="ID_523871384" CREATED="1593312939702" MODIFIED="1593313230046">
+<node TEXT="Not Variable promotion" ID="ID_1425001075" CREATED="1593313012542" MODIFIED="1593313015256"/>
+<node TEXT="Temporary dead zone" ID="ID_499677381" CREATED="1593313064615" MODIFIED="1593313157821"/>
+<node TEXT="不允许重复声明" ID="ID_384300611" CREATED="1593313159315" MODIFIED="1593313171581"/>
+</node>
+<node TEXT="const" ID="ID_1108490810" CREATED="1593313531768" MODIFIED="1593313559216"/>
+</node>
+</node>
+<node TEXT="Operator" FOLDED="true" POSITION="right" ID="ID_1053796705" CREATED="1593308972462" MODIFIED="1597307425984">
+<edge COLOR="#7c7c00"/>
+<node TEXT="Arithmetic Operators" ID="ID_1727045323" CREATED="1593308982707" MODIFIED="1593308984590"/>
+<node TEXT="Comparison Operators" ID="ID_1550911806" CREATED="1593308984960" MODIFIED="1593308991678"/>
+<node TEXT="Logical (or Relational) Operators" ID="ID_1417933045" CREATED="1593308992482" MODIFIED="1593308998302"/>
+<node TEXT="Assignment Operators" ID="ID_118227645" CREATED="1593309003262" MODIFIED="1593309004342"/>
+<node TEXT="Conditional (or ternary) Operators" ID="ID_502292752" CREATED="1593309010056" MODIFIED="1593309010687"/>
+<node TEXT="...(2018)" FOLDED="true" ID="ID_1050047117" CREATED="1593315227737" MODIFIED="1593315237392">
+<node TEXT="array" ID="ID_1793999302" CREATED="1593315237921" MODIFIED="1593315247289"/>
+<node TEXT="object destructuring" ID="ID_65230865" CREATED="1593315247571" MODIFIED="1593315266465"/>
+</node>
+<node TEXT="optional chaining operator(2020)" FOLDED="true" ID="ID_1556615573" CREATED="1593315300149" MODIFIED="1593315308034">
+<node TEXT="?." ID="ID_394724351" CREATED="1593315308571" MODIFIED="1593315311474"/>
+</node>
+<node TEXT="Nullish Coalescing Operator(2020)" FOLDED="true" ID="ID_1544504189" CREATED="1593315325629" MODIFIED="1593315412836">
+<node TEXT="??" ID="ID_1244836922" CREATED="1593315413967" MODIFIED="1593315415702"/>
+</node>
+<node TEXT="typeof" ID="ID_1547642195" CREATED="1593316405755" MODIFIED="1593316407579"/>
+</node>
+<node TEXT="Controller" FOLDED="true" POSITION="right" ID="ID_1758830230" CREATED="1593309150021" MODIFIED="1597307425985">
+<edge COLOR="#ff0000"/>
+<node TEXT="if...else..." ID="ID_411665721" CREATED="1593309154876" MODIFIED="1593309161539"/>
+<node TEXT="switch" FOLDED="true" ID="ID_796967492" CREATED="1593309164892" MODIFIED="1593309175108">
+<node TEXT="fall through" ID="ID_57068544" CREATED="1593309448870" MODIFIED="1593309450741"/>
+</node>
+<node TEXT="break" ID="ID_103282066" CREATED="1593309562631" MODIFIED="1593309564329"/>
+<node TEXT="continue" ID="ID_735488991" CREATED="1593309574442" MODIFIED="1593309577435"/>
+</node>
+<node TEXT="loop" FOLDED="true" POSITION="right" ID="ID_732384699" CREATED="1593309473775" MODIFIED="1597307425986">
+<edge COLOR="#0000ff"/>
+<node TEXT="while" ID="ID_842551161" CREATED="1593309476426" MODIFIED="1593309477830"/>
+<node TEXT="do.while" ID="ID_1821258582" CREATED="1593309483133" MODIFIED="1593309486751"/>
+<node TEXT="for" ID="ID_823362091" CREATED="1593309506745" MODIFIED="1593309507664"/>
+<node TEXT="for...in" FOLDED="true" ID="ID_1205639294" CREATED="1593309525615" MODIFIED="1593309528440">
+<node ID="ID_1913110415" CREATED="1593309529764" MODIFIED="1593309549679"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      for (variablename in object) {}
+    </p>
+  </body>
+</html>
+</richcontent>
+</node>
+</node>
+</node>
+<node TEXT="Function" FOLDED="true" POSITION="right" ID="ID_1658972790" CREATED="1593310286621" MODIFIED="1597307425988">
+<edge COLOR="#00ff00"/>
+<node TEXT="不能在Block中声明(5)" ID="ID_1231300642" CREATED="1593313352209" MODIFIED="1593313426620"/>
+<node TEXT="可以在Block中声明函数(6), 除ES6.0游览器" ID="ID_626783685" CREATED="1593313427002" MODIFIED="1593313508574"/>
+<node TEXT="Default parameter(6.0)" FOLDED="true" ID="ID_1442621221" CREATED="1593314382846" MODIFIED="1593314386227">
+<node TEXT="Destructuring assignment" ID="ID_1080920134" CREATED="1593314436652" MODIFIED="1593314478414"/>
+</node>
+<node TEXT="length(6.0)" ID="ID_995429571" CREATED="1593314514888" MODIFIED="1593314651318"/>
+<node TEXT="rest(6.0)" ID="ID_1130142734" CREATED="1593314546145" MODIFIED="1593314650064"/>
+<node TEXT="arrow function(6.0)" ID="ID_644083449" CREATED="1593314641715" MODIFIED="1593314648601"/>
+<node TEXT="Tail Call(6.0)" ID="ID_223487156" CREATED="1593314713637" MODIFIED="1593314717541"/>
+</node>
+<node TEXT="Object" FOLDED="true" POSITION="right" ID="ID_1888276534" CREATED="1593310385008" MODIFIED="1597307425989">
+<edge COLOR="#ff00ff"/>
+<node TEXT="new" ID="ID_1178608022" CREATED="1593310403638" MODIFIED="1593310404974"/>
+<node TEXT="Constructor" FOLDED="true" ID="ID_1957349557" CREATED="1593310425383" MODIFIED="1593310426183">
+<node TEXT="function book (title, author) {this.title = title; this.author = author;}" ID="ID_502193719" CREATED="1593310501709" MODIFIED="1593310544109"/>
+</node>
+<node TEXT="with" ID="ID_1251106854" CREATED="1593310546718" MODIFIED="1593310547741"/>
+<node TEXT="Concise representation(6.0)" ID="ID_1934948738" CREATED="1593314808936" MODIFIED="1593314881911"/>
+<node TEXT="Property expression(6.0)" ID="ID_1037704484" CREATED="1593315009209" MODIFIED="1593315012751"/>
+<node TEXT="Descriptor enumeration(6.0)" ID="ID_918208613" CREATED="1593315061862" MODIFIED="1593315178281"/>
+<node TEXT="Iterator" ID="ID_1994139714" CREATED="1593315095029" MODIFIED="1593315149965"/>
+<node TEXT="super" ID="ID_1602870700" CREATED="1593315192762" MODIFIED="1593315194439"/>
+<node TEXT="new function(6.0)" FOLDED="true" ID="ID_961068945" CREATED="1593315445082" MODIFIED="1593315450495">
+<node TEXT="https://es6.ruanyifeng.com/#docs/object-methods" ID="ID_363675330" CREATED="1593315450783" MODIFIED="1593315451439"/>
+</node>
+<node TEXT="getter setter(6.0)" ID="ID_710919282" CREATED="1593315565555" MODIFIED="1593315581066"/>
+</node>
+<node TEXT="build in Object" FOLDED="true" POSITION="right" ID="ID_625551014" CREATED="1593310605897" MODIFIED="1597307425991">
+<edge COLOR="#00ffff"/>
+<node TEXT="Number" FOLDED="true" ID="ID_206925377" CREATED="1593310620536" MODIFIED="1593310623487">
+<node TEXT="https://www.tutorialspoint.com/javascript/javascript_number_object.htm" ID="ID_1434923395" CREATED="1593310631352" MODIFIED="1593310632553"/>
+<node TEXT="new function(6.0)" FOLDED="true" ID="ID_1453034368" CREATED="1593314325186" MODIFIED="1593314331778">
+<node TEXT="https://es6.ruanyifeng.com/#docs/number" ID="ID_1088580245" CREATED="1593314332035" MODIFIED="1593314332770"/>
+</node>
+</node>
+<node TEXT="Boolean" FOLDED="true" ID="ID_1436854943" CREATED="1593310643167" MODIFIED="1593310643897">
+<node TEXT="https://www.tutorialspoint.com/javascript/javascript_boolean_object.htm" ID="ID_1122070822" CREATED="1593310644624" MODIFIED="1593310648232"/>
+</node>
+<node TEXT="Strings" FOLDED="true" ID="ID_1968793595" CREATED="1593310657906" MODIFIED="1593310658217">
+<node TEXT="https://www.tutorialspoint.com/javascript/javascript_strings_object.htm" ID="ID_456724834" CREATED="1593310661870" MODIFIED="1593310662688"/>
+<node TEXT="Unicode(6.0)" ID="ID_403833078" CREATED="1593313984192" MODIFIED="1593313989260"/>
+<node TEXT="for...of(6.0)" ID="ID_99467780" CREATED="1593313999663" MODIFIED="1593314053990"/>
+<node TEXT="JSON.stringify()(6.0)" ID="ID_10776038" CREATED="1593314054308" MODIFIED="1593314059415"/>
+<node TEXT="Template string(6.0)" ID="ID_189109248" CREATED="1593314059812" MODIFIED="1593314092449"/>
+<node TEXT="tagged template(6.0)" ID="ID_1769324225" CREATED="1593314143390" MODIFIED="1593314146827"/>
+<node TEXT="new function(6.0)" FOLDED="true" ID="ID_134592118" CREATED="1593314243942" MODIFIED="1593314252399">
+<node TEXT="https://es6.ruanyifeng.com/#docs/string-methods" ID="ID_740230047" CREATED="1593314253144" MODIFIED="1593314253878"/>
+</node>
+</node>
+<node TEXT="Arrays" FOLDED="true" ID="ID_644761825" CREATED="1593310676811" MODIFIED="1593310677120">
+<node TEXT="https://www.tutorialspoint.com/javascript/javascript_arrays_object.htm" ID="ID_1530560883" CREATED="1593310679961" MODIFIED="1593310680705"/>
+<node TEXT="Destructuring assignment(6.0)" ID="ID_646891542" CREATED="1593313941277" MODIFIED="1593313947467"/>
+<node TEXT="new function(6.0)" FOLDED="true" ID="ID_1049317797" CREATED="1593314758416" MODIFIED="1593314763246">
+<node TEXT="https://es6.ruanyifeng.com/#docs/array" ID="ID_387212148" CREATED="1593314763525" MODIFIED="1593314764078"/>
+</node>
+</node>
+<node TEXT="Date" FOLDED="true" ID="ID_25166332" CREATED="1593310689900" MODIFIED="1593310690217">
+<node TEXT="https://www.tutorialspoint.com/javascript/javascript_date_object.htm" ID="ID_1073322368" CREATED="1593310693136" MODIFIED="1593310693857"/>
+</node>
+<node TEXT="Math" FOLDED="true" ID="ID_315279047" CREATED="1593310705273" MODIFIED="1593310705577">
+<node TEXT="https://www.tutorialspoint.com/javascript/javascript_math_object.htm" ID="ID_1833326668" CREATED="1593310708186" MODIFIED="1593310708810"/>
+</node>
+<node TEXT="RegExp" FOLDED="true" ID="ID_328250085" CREATED="1593310716838" MODIFIED="1593310756506">
+<node TEXT="https://www.tutorialspoint.com/javascript/javascript_regexp_object.htm" ID="ID_425442942" CREATED="1593310720299" MODIFIED="1593310721026"/>
+<node TEXT="new function(6.0)" FOLDED="true" ID="ID_1304147018" CREATED="1593314260229" MODIFIED="1593314267303">
+<node TEXT="https://es6.ruanyifeng.com/#docs/regex" ID="ID_590426425" CREATED="1593314267764" MODIFIED="1593314275015"/>
+</node>
+</node>
+<node TEXT="DOM" FOLDED="true" ID="ID_899502648" CREATED="1593310753388" MODIFIED="1593310754562">
+<node TEXT="https://www.tutorialspoint.com/javascript/javascript_html_dom.htm" ID="ID_1471093147" CREATED="1593310755059" MODIFIED="1593310761762"/>
+</node>
+<node TEXT="Set WeakSet Map WeakMap(6.0)" ID="ID_1340930409" CREATED="1593315597707" MODIFIED="1593315615663"/>
+<node TEXT="Iterator 与 for...of(6.0)" ID="ID_1486301628" CREATED="1593315971909" MODIFIED="1593315987591"/>
+<node TEXT="ArrayBuffer(6.0)" FOLDED="true" ID="ID_659873446" CREATED="1593316754245" MODIFIED="1593316758661">
+<node TEXT="https://es6.ruanyifeng.com/#docs/arraybuffer" ID="ID_168827753" CREATED="1593316761271" MODIFIED="1593316762102"/>
+</node>
+</node>
+</node>
+</map>
