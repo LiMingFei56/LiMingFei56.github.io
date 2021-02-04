@@ -18,6 +18,21 @@ source: `{{ page.path }}`
 > 如果请求头包含下划线, 那么会忽略这个请求头.
 > 需要使用`underscores_in_headers on;` 来打开 (http | service标签下)
 
+### 超时
+
+    // http service local
+    keepalive_timeout 600s;
+    client_body_timeout 600s;
+    send_timeout 600s;
+    proxy_connect_timeout 600s;
+    proxy_read_timeout 600s;
+    proxy_send_timeout 600s;
+
+### 缓冲区
+
+    proxy_buffers 16 16k;  
+    proxy_buffer_size 16k;
+
 ### 问题
 
 1. no resolver defined to resolve xxx.xxx
