@@ -1,3 +1,0 @@
-# Security
-
-source: `{{ page.path }}`

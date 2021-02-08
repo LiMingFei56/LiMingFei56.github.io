@@ -1,3 +1,0 @@
-# Media
-
-source: `{{ page.path }}`

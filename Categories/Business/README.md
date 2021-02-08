@@ -1,3 +1,0 @@
-# Business
-
-source: `{{ page.path }}`

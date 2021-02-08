@@ -1,3 +1,0 @@
-# Weixin
-
-source: `{{ page.path }}`

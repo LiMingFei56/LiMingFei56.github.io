@@ -1,3 +1,0 @@
-# Tools
-
-source: `{{ page.path }}`

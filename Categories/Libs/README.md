@@ -1,3 +1,0 @@
-# Libs
-
-source: `{{ page.path }}`

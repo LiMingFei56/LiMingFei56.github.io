@@ -1,3 +1,0 @@
-# Web
-
-source: `{{ page.path }}`

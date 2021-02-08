@@ -1,3 +1,0 @@
-# Net
-
-source: `{{ page.path }}`

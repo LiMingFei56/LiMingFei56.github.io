@@ -1,3 +1,0 @@
-# Projects
-
-source: `{{ page.path }}`

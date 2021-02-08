@@ -1,3 +1,0 @@
-# Lang
-
-source: `{{ page.path }}`

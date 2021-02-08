@@ -1,3 +1,0 @@
-# Flutter
-
-source: `{{ page.path }}`

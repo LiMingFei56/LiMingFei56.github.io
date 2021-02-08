@@ -1,3 +1,0 @@
-# Compute
-
-source: `{{ page.path }}`
