@@ -17,7 +17,7 @@ date: 2020-04-23
 2. 修改hosts文件
 
     windows: "C:\Windows\System32\drivers\etc\hosts"
-    linux/macos: "/etc/hosts"
+    linux/macOS: "/etc/hosts"
 
     140.82.114.3 github.com
     199.232.69.194 github.global.ssl.fastly.net

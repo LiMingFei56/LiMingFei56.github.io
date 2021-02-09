@@ -1,12 +1,12 @@
 ---
 layout: post
-title: "MacOS Finder 设置"
-categories: macos
-tags: [macos]
+title: "macOS Finder 设置"
+categories: macOS
+tags: [macOS]
 date: 2019-12-20
 ---
 
-## MacOS Finder 设置
+## macOS Finder 设置
 
 ### 1. 显示隐藏文件
 

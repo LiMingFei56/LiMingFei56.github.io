@@ -47,7 +47,7 @@ summary: Raspberry pi 安装 Kali Linux
 ## 6. 扩展分区
 烧录后分区只站了sdcard一部分, 所以需要扩展分区.
 	
-	1. macos使用Gparted工具扩展
+	1. macOS使用Gparted工具扩展
   2. 使用raspi-config
 
 

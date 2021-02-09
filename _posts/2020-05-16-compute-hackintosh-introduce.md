@@ -1,8 +1,8 @@
 ---
 layout: post
 title: "macOS Hackintosh"
-categories: macos
-tags: [macos]
+categories: macOS
+tags: [macOS]
 date: 2020-05-16
 ---
 

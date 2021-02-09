@@ -1,14 +1,14 @@
 ---
 layout: post
-title: "MacOS 卸载应用"
-categories: macos
-tags: [macos]
+title: "macOS 卸载应用"
+categories: macOS
+tags: [macOS]
 date: 2019-11-13
-excerpt: "MacOS 卸载应用"
-summary: MacOS 卸载应用
+excerpt: "macOS 卸载应用"
+summary: macOS 卸载应用
 ---
 
-## MacOS 卸载应用
+## macOS 卸载应用
 
     /Applications
     /Library/Application\ Support

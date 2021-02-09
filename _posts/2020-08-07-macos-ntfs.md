@@ -1,8 +1,8 @@
 ---
 layout: post
 title: "macOS NTFS和ext格式"
-categories: macos
-tags: [macos]
+categories: macOS
+tags: [macOS]
 date: 2020-08-07
 ---
 

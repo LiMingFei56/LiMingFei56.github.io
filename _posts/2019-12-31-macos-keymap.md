@@ -1,8 +1,8 @@
 ---
 layout: post
 title: "macOS 键盘映射"
-categories: macos
-tags: [macos]
+categories: macOS
+tags: [macOS]
 date: 2019-12-31
 ---
 

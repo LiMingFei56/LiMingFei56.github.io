@@ -1,13 +1,13 @@
 ---
 layout: post
-title: "MacOS brew换源"
-categories: macos
-tags: [macos]
+title: "macOS brew换源"
+categories: macOS
+tags: [macOS]
 date: 2019-08-13
-excerpt: "MacOS brew换源"
+excerpt: "macOS brew换源"
 ---
 
-## MacOS brew换源
+## macOS brew换源
 
 ### 换源
 

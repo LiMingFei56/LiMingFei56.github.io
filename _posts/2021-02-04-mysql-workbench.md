@@ -19,10 +19,10 @@ date: 2021-02-04
     ModuleNotFoundError: No module named 'encodings'  
     Current thread 0x000000010de87e00 (most recent call first): zsh: abort      
 
-    cd /Applications/MySQLWorkbench.app/Contents/MacOS
+    cd /Applications/MySQLWorkbench.app/Contents/macOS
     ./MySQLWorkbench -verbose
 
-> macos 老版本把`Python.framework`放在/Library/Frameworks目录中, 而新版本放在
+> macOS 老版本把`Python.framework`放在/Library/Frameworks目录中, 而新版本放在
 > /System/Library/Frameworks目录中, 但这个新目录中的Python版本为2.7. MySqlWorkbench
 > 需要3.7
 

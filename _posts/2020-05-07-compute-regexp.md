@@ -1,8 +1,8 @@
 ---
 layout: post
 title: "Compute RegExp"
-categories: computer
-tags: [computer]
+categories: compute
+tags: [compute]
 date: 2020-05-07
 ---
 
