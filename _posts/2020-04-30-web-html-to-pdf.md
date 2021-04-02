@@ -6,7 +6,9 @@ tags: [java]
 date: 2020-04-30
 ---
 
-## Java html转pdf
+## Java itext
+
+### html转pdf
 
 ### 1. 代码
 
@@ -98,3 +100,13 @@ date: 2020-04-30
     sb.append("<p>你好</p>");
     sb.append("</body>\n");
     sb.append("</html>\n");
+
+### PNG 转 PDF
+
+你没有真正将png转换为pdf,但创建了一个带有png的pdf.
+    Document document = new Document(PageSize.A4, 20, 20, 20, 20);
+    PdfWriter.getInstance(document, new FileOutputStream("C:/test.pdf"));
+    document.open();
+    Image image = Image.getInstance(getClass().getResource("/logo.png"));
+    document.add(image);
+    document.close();

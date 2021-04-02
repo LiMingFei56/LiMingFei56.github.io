@@ -26,6 +26,10 @@ date: 2020-05-07
 
     %s/\([a-z]*\)\(.\{2,3\}\),/\1\=${\1},/g
 
+### 取最后一个空格
+
+    %s/\s\+\(\S*\)$/\".toUpperCase(),\"\1/g
+
 ### Reference
 [Regular Expressions](https://pubs.opengroup.org/onlinepubs/9699919799/basedefs/V1_chap09.html#tag_09_03)
 [Extended Regular Expressions](http://pubs.opengroup.org/onlinepubs/9699919799/basedefs/V1_chap09.html#tag_09_04_03)
