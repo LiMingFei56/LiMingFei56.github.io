@@ -22,25 +22,25 @@ WidgetsBindingObserver中还包含其他与本地平台状态有关的回调
 
 #### 2. Widget State 生命周期
 
-initState()
-didChangeDependencies()
-build()
-render tree
-didUpdateWidget()
-build()
-
-deactivate()
-dispose()
+>initState()
+>didChangeDependencies()
+>build()
+>render tree
+>didUpdateWidget()
+>build()
+>
+>deactivate()
+>dispose()
 
 #### 3. 页面帧回调
 
-SchedulerBinding 实现
+> SchedulerBinding 实现 WidgetsBindingObserver
 
-// 单次Frame绘制回调, 回调后该回调方法会删除
-WidgetsBinding.instance.addPostFrameCallback
+> // 单次Frame绘制回调, 回调后该回调方法会删除
+> idgetsBinding.instance.addPostFrameCallback
 
-// 实时Frame绘制回调
-WidgetsBinding.instance.addPersistentFrameCallback
+> // 实时Frame绘制回调
+> WidgetsBinding.instance.addPersistentFrameCallback
 
 #### 4. 页面监听
 

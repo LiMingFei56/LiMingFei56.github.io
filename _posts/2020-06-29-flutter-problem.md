@@ -16,4 +16,9 @@ flutter开发者说: 有可能是ARM skia运行在x86平台上导致的.
 
 临时解决方案: futtler run `--enable-software-rendering`
 
+##     error: Unexpected duplicate tasks: 1) Target 'flutter_dong_scan' (project 'Pods') has copy command from
+
+[Build Fails](https://github.com/AmolGangadhare/flutter_barcode_scanner/issues/37)  
+
+
 ### Reference
