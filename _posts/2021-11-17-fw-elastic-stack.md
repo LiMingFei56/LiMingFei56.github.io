@@ -37,15 +37,14 @@ Filebeat + kafka + Logstash + Elasticsearch + Kibana
 
 		# 配置
 		vim /etc/elasticsearch/elasticsearch.yml
-		cluster.name: myes
-		node.name: master
-		node.master: true
-		node.data: false
-		network.host: 0.0.0.0
-		path.data: /var/lib/elasticsearch
-		path.logs: /var/log/elasticsearch
-		http.port: 9200
-		discovery.zen.ping.unicast.hosts: ["192.168.113.107", "192.168.113.108","192.168.113.109"]
+		cluster.name: eolog-es                 # 集群名称
+		node.name: eolog-es-m                  # 节点名称
+		path.data: /var/lib/elasticsearch      # 数据保存路径
+		path.logs: /var/log/elasticsearch      # 日志保存路径
+		network.host: 0.0.0.0                  # 默认监听本地所有ip地址
+		http.port: 9200                        # 端口
+		discovery.seed_hosts: ["172.17.10.31"] # 集群列表
+		cluster.initial_master_nodes: ["eolog-es-m"] # 节点名称
 
 #### problem1: failed; error='Not enough space'
 
@@ -72,9 +71,15 @@ Filebeat + kafka + Logstash + Elasticsearch + Kibana
 		sudo systemctl start kibana.service
 		sudo systemctl stop kibana.service
 
-#### 汉化
+		# 配置
 		vim /etc/kibana/kibana.yml
-		i18n.locale: "zh-CN"
+		server.port: 5601                    # 端口
+		server.host: "172.17.10.31"          # 地址
+		server.publicBaseUrl: "http://172.17.10.31:5601" # 访问地址
+		server.maxPayload: 1048576          # 最大负载
+		server.name: "eolog-kibana"         # 服务名称
+		kibana.index: ".kibana"             # 索引名
+		i18n.locale: "zh-CN"                # 汉化
 
 ### logstash
 
@@ -91,6 +96,39 @@ Filebeat + kafka + Logstash + Elasticsearch + Kibana
 
 		# 启动
 		nohup /usr/share/logstash/bin/logstash --path.settings /etc/logstash/ -f /etc/logstash/conf.d/kafka_os_into_es.conf &
+
+#### 配置文件
+
+> logstash/conf.d/ 目录下的文件, 运行时会合并成一个, 所以需要处理冲突
+
+1. 过滤不需要的日志
+
+		filter {
+				if ([message]=~ "^Retrieved hosts from InstanceDiscovery: 0") {
+						drop{}
+				}
+		}
+
+2. 分发到不同索引
+
+		output {
+			 if [type] == "infolog" {
+				 elasticsearch {
+						hosts => ["test:9200"]
+						index => "infolog-%{+YYYY.MM.dd}"
+				}
+			 } else if [type] == "errlog" {
+				 elasticsearch {
+						hosts => ["test:9200"]
+						index => "errlog-%{+YYYY.MM.dd}"
+				}
+			 }
+
+		}
+
+#### grok
+
+		/usr/share/logstash/vendor/bundle/jruby/2.5.0/gems/logstash-patterns-core-4.3.1/patterns/ecs-v1/grok-patterns 
 
 ### zookeeper
 
@@ -127,7 +165,7 @@ Filebeat + kafka + Logstash + Elasticsearch + Kibana
 		# 安装
 		tar -xvf kafka_2.11-2.1.1.tgz  -C /usr/local/
 		mv /usr/local/kafka_2.11-2.1.1/ /usr/local/kafka
-		mkdir /usr/local/kafka logs
+		mkdir /usr/local/kafka/logs
 
 		#重点修改以下几项
 		vim /usr/local/kafka/config/server.properties
@@ -139,9 +177,11 @@ Filebeat + kafka + Logstash + Elasticsearch + Kibana
 		log.segment.bytes=1073741824                        #partition中每个segment数据文件的大小          zookeeper.connect=192.168.113.101:2181,192.168.113.102:2181,192.168.113.103:2181   #zookeeper所在的地址      
 		auto.create.topics.enable=true                      #设置是否自动创建topic
 		delete.topic.enable=true                            #Kafka提供了删除topic的功能，但是默认并不会直接将topic数据物理删除。如果要从物理上删除（即删除topic后，数据文件也会一同删除），就需要设置此配置项为true
+		zookeeper.connect=172.17.10.31:2181
+		zookeeper.connection.timeout.ms=18000
 
 		# 启动
-		nohup /usr/local/kafka/bin/kafka-server-start.sh /usr/local/kafka/config/server.properties &
+		nohup /usr/local/kafka/bin/kafka-server-start.sh /usr/local/kafka/config/server.properties >/dev/null 2>&1 &
 		jps #查看进程
 
 		# 常用命令
@@ -161,6 +201,9 @@ Filebeat + kafka + Logstash + Elasticsearch + Kibana
 		/usr/local/kafka/bin/kafka-console-consumer.sh --bootstrap-server 172.17.10.34:9092 --topic eologorder --from-beginning
 
 
+### 删除旧日志
+[Remove or delete old data from elastic search](https://stackoverflow.com/questions/34170025/remove-or-delete-old-data-from-elastic-search)
+[Delete old data from an Index](https://discuss.elastic.co/t/delete-old-data-from-an-index/92412)
 
 
 ### Reference
