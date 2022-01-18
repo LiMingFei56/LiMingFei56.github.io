@@ -57,6 +57,15 @@ Filebeat + kafka + Logstash + Elasticsearch + Kibana
 
 		curl -H "Content-Type: application/json" -XPOST 'http://192.168.32.137:9200/system-syslog-20181129/system-syslog' -d '{"first_name":"yuan","last_name":"mu","age":88,"about":"I love to wo qu","interests":["sport","huangya"]}'
 
+#### 跨域问题
+
+> No 'Access-Control-Allow-Origin' header is present on the requested resource. 
+
+	elastichsearch.yml	
+	#allow origin
+	http.cors.enabled: true
+	http.cors.allow-or
+
 ### kibana
 
 #### install 
