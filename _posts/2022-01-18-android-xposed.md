@@ -16,3 +16,6 @@ date: 2022-01-18
 [Development tutorial](https://github.com/rovo89/XposedBridge/wiki/Development-tutorial)  
 [Xposed Framework Hub](https://www.xda-developers.com/xposed-framework-hub/)  
 [Develop your first XPOSED MODULE](https://medium.com/@meetvora1994/develop-your-first-xposed-module-386c7b0335a2)  
+[android mock location](https://blog.csdn.net/dangxw_/article/details/18604425)  
+[android studio 使用Mocklocation虚拟定位总结](https://blog.csdn.net/breakpoints_/article/details/103644164)  
+[Android中Xposed框架篇---修改系统位置信息实现自身隐藏功能实例](https://www.jb51.net/article/96351.htm)  

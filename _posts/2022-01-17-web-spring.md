@@ -6,7 +6,7 @@ tags: [web]
 date: 2022-01-17
 ---
 
-## Web spring boot + webflux + gradle + kotlin
+## Web spring boot + webflux + gradle + kotlin + postman
 
 
 ### Reference
@@ -15,3 +15,5 @@ date: 2022-01-17
 [Spring Boot](https://spring.io/projects/spring-boot)  
 [Building web applications with Spring Boot and Kotlin](https://spring.io/guides/tutorials/spring-boot-kotlin/)   
 [Get started with Kotlin](https://kotlinlang.org/docs/getting-started.html)  
+[Postman Learning Center](https://learning.postman.com/docs/getting-started/introduction/)  
+[Spring initializr](https://start.spring.io/)  
