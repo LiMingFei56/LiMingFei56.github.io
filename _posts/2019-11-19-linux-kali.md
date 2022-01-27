@@ -78,4 +78,4 @@ systemctl start systemd-networkd 开启网络管理服务
 
 
 ### Reference
-
+[HOW-TO:Install Kodi on Raspberry Pi](https://kodi.wiki/view/HOW-TO:Install_Kodi_on_Raspberry_Pi)  
