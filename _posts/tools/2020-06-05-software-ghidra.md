@@ -39,3 +39,4 @@ Install openjdk for java 11, left as exercise for the reader
     gradle prepDev
     cd
     unzip ghidra/build/dist/ghidra_9.1_DEV_*_linux64.zip
+

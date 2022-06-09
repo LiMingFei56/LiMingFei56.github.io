@@ -105,6 +105,9 @@ date: 2022-02-09
 ### c++filt
 ### objdump
 
+#### 目录替换
+
+	 sudo find ./ -type f -exec sed -i 's/mysqli_query($con, $con, /mysqli_query($con, /gI' {} \;
 
 ### Reference
 
