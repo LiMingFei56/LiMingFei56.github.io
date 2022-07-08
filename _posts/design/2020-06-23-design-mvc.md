@@ -1,8 +1,8 @@
 ---
 layout: post
 title: "Lang MVC系统设计模式"
-categories: lang
-tags: [lang]
+categories: design
+tags: [design]
 date: 2020-06-23
 ---
 

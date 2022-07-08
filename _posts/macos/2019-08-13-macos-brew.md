@@ -12,18 +12,23 @@ excerpt: "macOS brew换源"
 ### 换源
 
     # 替换brew.git:
-    $ cd "$(brew --repo)"
+    cd "$(brew --repo)"
     # 中国科大:
-    $ git remote set-url origin https://mirrors.ustc.edu.cn/brew.git
+    git remote set-url origin https://mirrors.ustc.edu.cn/brew.git
     # 清华大学:
-    $ git remote set-url origin https://mirrors.tuna.tsinghua.edu.cn/git/homebrew/brew.git
+    git remote set-url origin https://mirrors.tuna.tsinghua.edu.cn/git/homebrew/brew.git
 
     # 替换homebrew-core.git:
-    $ cd "$(brew --repo)/Library/Taps/homebrew/homebrew-core"
+    cd "$(brew --repo)/Library/Taps/homebrew/homebrew-core"
     # 中国科大:
-    $ git remote set-url origin https://mirrors.ustc.edu.cn/homebrew-core.git
+    git remote set-url origin https://mirrors.ustc.edu.cn/homebrew-core.git
     # 清华大学:
     $ git remote set-url origin https://mirrors.tuna.tsinghua.edu.cn/git/homebrew/homebrew-core.git
+
+    # 替换homebrew-cask.git 镜像
+    # 中科大镜像
+    cd "$(brew --repo)/Library/Taps/homebrew/homebrew-cask"
+    git remote set-url origin https://mirrors.ustc.edu.cn/homebrew-cask.git
 
     # 替换homebrew-bottles:
     # 中国科大:
@@ -46,6 +51,9 @@ excerpt: "macOS brew换源"
     $ cd "$(brew --repo)/Library/Taps/homebrew/homebrew-core"
     $ git remote set-url origin https://github.com/Homebrew/homebrew-core.git
 
+    # 重置homebrew-cask.git
+    cd "$(brew --repo)/Library/Taps/homebrew/homebrew-cask"
+    git remote set-url origin https://github.com/Homebrew/homebrew-cask.git 
 
 ### Reference
-
+[Homebrew切换为国内镜像源](http://t.zoukankan.com/anly95-p-14728311.html)  
