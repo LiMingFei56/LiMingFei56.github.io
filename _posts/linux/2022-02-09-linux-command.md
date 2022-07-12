@@ -104,6 +104,9 @@ date: 2022-02-09
 ### strip
 ### c++filt
 ### objdump
+### sips
+
+    sips -s format png IMG_20220706_0007.pdf --out 2.png
 
 #### 目录替换
 
