@@ -126,3 +126,4 @@ MVA: 当收到消息时, 将选择一个适合的Adapter(可以有多个)作为M
 
 [Understanding The Difference Between MVC, MVP and MVVM Design Patterns](https://www.linkedin.com/pulse/understanding-difference-between-mvc-mvp-mvvm-design-rishabh-software)
 [Understanding Model-View-Controller](https://stefanoborini.com/book-modelviewcontroller/)
+[MVC vs MVP vs MVVM architecture in Android](https://blog.mindorks.com/mvc-mvp-mvvm-architecture-in-android)  

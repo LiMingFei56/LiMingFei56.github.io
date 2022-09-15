@@ -55,4 +55,17 @@ date: 2020-04-26
 > 这是因为Xcode打包图片资源会使用`pngcrush`工具对图片资源进行优化, 解压ipa图片资
 > 源不能支持使用, 需要还原原来格式.
 
+### 8. Flutter Engine crashes due to 'Failed to setup Skia Gr context
+
+flutter 在 android 4.1 4.2 上运行报错`Failed to setup Skia Gr context`
+
+[Engine crashes due to 'Failed to setup Skia Gr context' #51447](https://github.com/flutter/flutter/issues/51447)
+
+flutter开发者说: 有可能是ARM skia运行在x86平台上导致的.
+
+临时解决方案: futtler run `--enable-software-rendering`
+
+### 9. error: Unexpected duplicate tasks: 1) Target 'flutter_dong_scan' (project 'Pods') has copy command from
+
+[Build Fails](https://github.com/AmolGangadhare/flutter_barcode_scanner/issues/37)  
 ### Reference

@@ -1,6 +1,5 @@
 ---
-layout: post
-title: "macOS arm 安装kali linux"
+layout: post title: "macOS arm 安装kali linux"
 categories: linux
 tags: [linux]
 date: 2022-03-21
@@ -47,6 +46,10 @@ mysql-apt-config: 是x86的, 其他是arm的  从[debian](https://www.debian.org
 	# 如果有问题可以重新初始化mysqld, Failed to initialize DD Storage Engine.
 	mysqld -remove MySQL
 	sudo mysqld --initialize-insecure
+
+### Install oh-my-zsh
+
+    sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 	
 
 ### Reference

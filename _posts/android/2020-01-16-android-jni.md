@@ -69,7 +69,9 @@ lib_name: 会根据平台不一样, 转换不同的库名称, 如Solaris(pkg_Cls
   * 静态注册
   * 动态注册
 
-#### 2.1 静态注册
+#### 2.1 动态注册
+> 在调用 System.loadLibrary 加载库文件时，系统回调 JNI_OnLoad() 函数。
+> 可以在 JNI_OnLoad 中做一些初始化操作，可以用 RegisterNatives 方法注册 Java native 方法。
 使用RegisterNatives(), 静态注册本地方法
 
     static JNINativeMethod gMethods[] = {
@@ -89,7 +91,7 @@ lib_name: 会根据平台不一样, 转换不同的库名称, 如Solaris(pkg_Cls
         return JNI_TRUE;
     }
 
-#### 2.2 动态注册
+#### 2.2 静态注册
 会根据Java方法签名来匹配本地方法, 1. VM匹配不带参数的方法签名; 2. VM匹配带参数的
 签名; 只有当本地方法重载时, 才使用匹配带参数的签名. 可以使用`javah`生成符合规定的
 方法.

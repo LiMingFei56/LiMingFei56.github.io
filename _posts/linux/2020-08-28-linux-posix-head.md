@@ -26,6 +26,29 @@ date: 2020-08-28
 * <unistd.h> - 提供系统调用接口，基本都是要进入的内核态的操作。
 * <wchar.h> - 标准C99已经把这个放在C标准库里。
 
+### <pthread.h>
 
+> 线程库, 如果是linux系统, 编译时需要添加链接选项, 不然会报找不到pthread函数
+
+    -lpthread -pthread
+    add_compile_options(-pthread)
+    SET(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -pthread")
+
+### Multiply defined
+
+> 需要添加`-fcommon` 编译选项
+
+  [Compile old C code (on Linux) that throws errors (Multiply defined) with modern gcc? [closed]](https://stackoverflow.com/questions/66512831/compile-old-c-code-on-linux-that-throws-errors-multiply-defined-with-modern)
+
+### <time.h>
+
+> 定时器, macintosh中没有定时器, 可以使用线程实现
+
+    timer_create
+    timer_getoverrun
+    timer_gettime
+    timer_settime
+    timer_delete
+    
 ### Reference
 
