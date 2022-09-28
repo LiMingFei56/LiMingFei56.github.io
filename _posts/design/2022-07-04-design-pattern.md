@@ -51,6 +51,20 @@ date: 2022-07-04
 
 #### 单例模式(Singleton Pattern)
 
+    * Hungry man pattern singleton
+    * Lazy man mode simple interest
+        A: Thread-unsafe lazy mode
+        B: Thread-safe lazy mode
+
+一、饿汉式
+二、懒汉式
+三、懒汉式+synchronized同步
+四、Double-Check式(注意有坑)
+五、Volatile + Double-Check式（最终版）
+六、Holder式
+七、枚举式
+八、防止反射/反序列化攻击单例类
+
 #### 建造者模式(Builder Pattern)
 
 #### 原型模式(Prototype Pattern)

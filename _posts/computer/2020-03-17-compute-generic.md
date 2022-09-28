@@ -19,6 +19,16 @@ Generic编程就是不面对特定类型编程, 使得类, 接口, 方法可以�
 1. 使用泛型比使用Object更安全, 编译阶段会检查所有插入类型是否匹配, 而且不用强制类型转换, 避免出错
 2. 使得泛型使得代码更清晰, 代码里清楚的显示了处理类型
 3. 因为是类型擦除, 所以有些泛型功能不能实现, 如Map<String, String>[] map, createClass<T>()
+4. Java数组是协变的(Variance);
+
+> 协变和逆变是研究泛型继承的关系:
+> 如ClassB 是ClassA 的子类
+    
+    // 可以写成
+    ClassA a = new ClassB();
+    // 那么ClassB[] 是 ClassA[] 的子类吗
+    ClassA[] aarr = new ClassB[10]; // 可以, 数组是协变的
+    // 那么ArrayList<ClassB> 是 ArrayList<ClassA>的子类吗
 
 ### Variance
 1. 当A≤B时有f(A)≤f(B)成立，则f(⋅)是协变（covariant）的, 是生产者
@@ -61,6 +71,59 @@ Dart 使用 declaration-site variance
 逆变(contravariant), 用<? super E>表示, 定义下界, 一般用于消费者. 
 add时因不知道E的上界, 所以只能添加E及E的子类型,
 get时因不知道E的上界, 所以唯一确定的是Object, 那么读取一定需要强制转换
+
+
+### 说明
+
+    ClassA[] aarr = new ClassA[10];
+    ClassB[] barr = new ClassB[10];
+    aarr = barr; // OK
+
+    // 协变
+    ArrayList<ClassA> alist1 = new ArrayList<>();
+    ArrayList<? extends ClassA> alist2 = new ArrayList<>();
+    ArrayList<ClassB> blist = new ArrayList<>();
+    alist1 = blist; // Error 不变
+    alist2 = blist; // OK 设置协变就行
+    alist1.addAll(blist); // OK  因为public boolean addAll(Collection<? extends E> c)
+
+    ClassA a1 = alist1.get(0); // OK
+    ClassA a2 = alist2.get(0); // OK
+    ClassB b1 = alist2.get(0); // Error 因为不知道子类到底是哪个
+
+    alist1.add(new ClassB()); // OK 当成ClassA
+    alist1.add(new ClassA()); // Ok
+    alist2.add(new ClassA()); // Error 不知道子类到底是哪个, 所以不能add 和 set
+    alist2.add(new ClassB()); // Error 不知道子类到底是哪个, 所以不能add 和 set
+
+    // 逆变
+    ArrayList<ClassB> blist1 = new ArrayList<ClassA>(); // Error, 因为不变
+    ArrayList<? super ClassB> blist3 = new ArrayList<ClassA>(); // OK, 逆变
+    ArrayList<? super ClassB> blist4 = new ArrayList<ClassB>(); // OK
+
+    a1 = blist3.get(0); // error, 因为不确定是哪个父亲类
+    b1 = blist3.get(0); // error, 因为不确定是哪个父亲类
+
+    a1 = blist4.get(0); // error, 因为不确定是哪个父亲类
+    b1 = blist4.get(0); // error, 因为不确定是哪个父亲类
+
+    blist3.add(a1);// error, 因为不确定是哪个父亲类
+    blist4.add(a1);
+
+    blist3.add(b1); // ok
+    blist4.add(b1); // ok
+    blist4.add(new ClassC()); // ok
+
+> 不变可以传E和E的子类, 当E处理
+
+> 协变使ArrayList<? extends ClassA> alist = new ArrayList<ClassB>(), 因为不知道最终的对象ArrayList<ClassB>, 
+> 还是ArrayList<ClassC>, 所以不能添加对象(禁止get set函数), 可以get, 获取ClassA安全.
+> 因为只能当ArrayList<ClassA>使用, 因此叫生产者, ClassA a = alist.get(0);
+
+> 逆变使ArrayList<? super ClassC> blist = new ArrayList<ClassA>(), 因为不知道最终的对象是ArrayList<ClassA>,
+> 还是ArrayList<ClassB>, 所以不能get对象, 添加对象可以添加ClassC和CLassC的子类(全当ClassC处理).
+> 因为只能当ArrayList<ClassC>add 和 set, 所以叫消费者
+
 
 
 ### Reference

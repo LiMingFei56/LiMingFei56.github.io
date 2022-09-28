@@ -14,7 +14,6 @@ date: 2020-04-26
 ### 1. Failed to register bundle identifier. The app identifier "com.example.\*" cannot be registered to your development team because it is not available. Change your bundle identifier to aunique string to try again. (in target 'Runner' from project 'Runner')
 
 > 应用ID不合法, 需要换一个有意义的Bundle Identifier
-
 ### 2. error: module importing failed: invalid pathname dyld: Library not loaded: @rpath/Flutter.framework/Flutter
 > 使用个人签名运行在iOS13.3.1真机时出现
 
@@ -68,4 +67,32 @@ flutter开发者说: 有可能是ARM skia运行在x86平台上导致的.
 ### 9. error: Unexpected duplicate tasks: 1) Target 'flutter_dong_scan' (project 'Pods') has copy command from
 
 [Build Fails](https://github.com/AmolGangadhare/flutter_barcode_scanner/issues/37)  
+
+### 10. 无法访问maven.google.com
+
+	flutter\packages\flutter_tools\lib\src\http_host_validator.dart
+	将https://maven.google.com/ 修改为https://dl.google.com/dl/android/maven2/
+	删除flutter/bin/cache目录
+
+### 11. 无法访问google.bintray.com
+
+    [compile error, bad gateway](https://github.com/flutter/flutter/issues/94400)  
+
+    build.gradle中
+    注释jcenter()
+    添加mavenCentral()
+
+    插件中也需要这么修改, 或者更新插件到最新版本.
+    project/.dart-tool/package_config.json 
+
+### 12. flutter import Error: Error when reading '../../../../development/flutter/
+
+    project/.dart-tool/package_config.json中配置了插件的路径
+    一般是丢失了插件路径, 重新配置插件
+    flutter clean
+    flutter pub cache clean
+    flutter pub get
+
+    
+
 ### Reference
