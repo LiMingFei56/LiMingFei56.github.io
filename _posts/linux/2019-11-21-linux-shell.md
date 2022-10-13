@@ -4,8 +4,6 @@ title: "Linux kali 脚本报告报 -- [: 11: y: unexpected operator"
 categories: linux
 tags: [linux]
 date: 2019-11-21
-excerpt: "Linux kali 脚本报告报 -- [: 11: y: unexpected operator"
-summary: Linux kali 脚本报告报 -- [: 11: y: unexpected operator
 ---
 
 ## Linux kali 脚本报告报 -- [: 11: y: unexpected operator

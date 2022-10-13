@@ -1,5 +1,6 @@
 ---
-layout: post title: "macOS arm 安装kali linux"
+layout: post 
+title: "macOS arm 安装kali linux"
 categories: linux
 tags: [linux]
 date: 2022-03-21

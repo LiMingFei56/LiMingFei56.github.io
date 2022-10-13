@@ -99,6 +99,8 @@ date: 2022-09-21
     throw Exception("Hi There!") // 抛出异常, 是一个表达式, 返回Nothing Type
 
 > try-catch 可以是表达式, 可以返回值, finally块不会影响返回值
+> 如果代码正常, 那么返回try块最后的表达式
+> 否则返回catch块最后的表达式
 
     try {
         // some code

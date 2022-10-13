@@ -1,9 +1,10 @@
 ---
 layout: post
 title: Android Source Code
-categories: lang
-tags: [lang]
-date: 2022-09-23 ---
+categories: aosp
+tags: [aosp]
+date: 2022-09-23 
+---
 
 ## Android Open Source Project
 
@@ -77,11 +78,38 @@ Cupcake     1.5   API      级别  3，NDK  1
 > 下面使用ubuntu18.04
 
     sudo apt-get install git-core gnupg flex bison build-essential zip curl zlib1g-dev gcc-multilib g++-multilib libc6-dev-i386 libncurses5 lib32ncurses5-dev x11proto-core-dev libx11-dev lib32z1-dev libgl1-mesa-dev libxml2-utils xsltproc unzip fontconfig
+    apt-get install git gnupg flex bison gperf build-essential zip curl libc6-dev libncurses5-dev:i386 x11proto-core-dev libx11-dev:i386 libreadline6-dev:i386  libgl1-mesa-dev g++-multilib tofrodos python-markdown libxml2-utils xsltproc zlib1g-dev:i386 dpkg-dev
+    apt-get install libx11-dev:i386 libreadline6-dev:i386 libgl1-mesa-dev g++-multilib
+    apt-get install -y git flex bison gperf build-essential libncurses5-dev:i386      
+    apt-get install tofrodos python-markdown libxml2-utils xsltproc zlib1g-dev:i386   
+    apt-get install git-core gnupg flex bison gperf build-essential                   
+    apt-get install zip curl zlib1g-dev gcc-multilib g++-multilib                     
+    apt-get install libc6-dev-i386                                                    
+    apt-get install lib32ncurses5-dev x11proto-core-dev libx11-dev                    
+    apt-get install libgl1-mesa-dev libxml2-utils xsltproc unzip m4                   
+    apt-get install lib32z-dev ccache                                                 
+    apt-get install libssl-dev                                                          
+    apt-get install ccache
 
     sudo apt-get install sysstat
 
     // 默认情况下，每次构建的输出都会存储在相应源代码树的 out/ 子目录下, 可以设置输出目录
     export OUT_DIR=out_mytarget
+
+    // 安装jdk
+    sudo apt install openjdk-8*  // openjdk
+
+    // 14.04
+    sudo apt-add-repository ppa:webupd8team/java
+    sudo apt-get update
+    sudo apt-get install oracle-java8-installer
+
+    // 18.04 https://www.liquidweb.com/kb/install-oracle-java-ubuntu-18-04/
+    // 18.04 https://www.oracle.com/java/technologies/javase/javase8-archive-downloads.html
+    // 18.04 jdk 6 https://www.oracle.com/java/technologies/downloads/archive/
+    bin文件加执行权限, 用`.`执行
+
+    4.4.4 需要make3.82 oracle-jdk6
 
     // 安装repo
     sudo apt-get update
@@ -96,10 +124,137 @@ Cupcake     1.5   API      级别  3，NDK  1
     // 修改repo
     #!/usr/bin/env python => #!/usr/bin/env python3
 
+    // 设置编译环境
+    source ./build/envsetup.sh
+    . ./build/envsetup.sh
 
+    // 编译 android 7.0 前使用gmake, Android 层面变得缓慢、容易出错、无法扩展且难以测试
+    make -j# // 编译整个系统
+    m mm mmm mma // make的封装, 编译模块
+
+    // 编译 android 7.0 及以后 使用Soong
 
 
 > Andorid 8.0 后可以使用android-llvm 和 NDK编译, 之前使用GCC 4.9
+
+### 支持旧版本
+
+#### 构建最近的旧版本 Android 版本 8.0（Oreo 或 O）– 5.0（Lollipop 或 L）, 使用Dockerfile
+
+The Dockerfile in this directory sets up an Ubuntu Trusty image ready to build a variety of Android branches (>= Lollipop). It‘s particulary useful to build older branches that required 14.04 if you’ve upgraded to something newer.
+
+First, build the image:
+
+    # Copy your host gitconfig, or create a stripped down version
+    $ cp ~/.gitconfig gitconfig
+    $ docker build --build-arg userid=$(id -u) --build-arg groupid=$(id -g) --build-arg username=$(id -un) -t android-build-trusty .
+
+Then you can start up new instances with:
+
+    $ docker run -it --rm -v $ANDROID_BUILD_TOP:/src android-build-trusty
+    > cd /src; source build/envsetup.sh
+    > lunch aosp_arm-eng
+    > m -j50
+
+#### 构建真正的旧版本（<= 4.4 KitKat）
+
+    高于Android 4.1.x (Jelly Bean) 使用 GNU make (gmake) 3.82 
+    Android 4.0.x（冰淇淋三明治）及更低版本 使用 GNU make (gmake) 3.81(3.82不能构建)
+
+    3.82: http://ftp.gnu.org/gnu/make/make-3.82.tar.bz2
+    3.81: http://ftp.gnu.org/gnu/make/make-3.81.tar.bz2
+
+编译源码:
+
+    ./configure
+    sh build.sh
+
+问题解决:
+
+1. undefined reference to `__alloca'
+
+    // 修改glob.c 
+    # if _GNU_GLOB_INTERFACE_VERSION == GLOB_INTERFACE_VERSION
+    to
+    # if _GNU_GLOB_INTERFACE_VERSION >= GLOB_INTERFACE_VERSION
+
+### 使用指定分支
+
+    repo init --depth=1 下载时只下载最近版本的代码，只保留最近的commit版本
+    repo init android-4.4.4_r1
+    repo sync -c -j8
+    repo sync -c -f --no-tags --no-clone-bundle -j`nproc`
+
+    // 回滚
+    repo sync -d
+    repo forall -c 'git reset --hard'    # Remove all working directory (and staged) changes.
+    repo forall -c 'git clean -f -d'     # Clean untracked files
+
+## 问题
+
+### dalvik/CleanSpec.mk:47: *** missing separator.  Stop
+    
+    Please execute make operation in the new shell window, not in the same shell after configuring the model.
+
+### Gun Make Segmentation fault (core dumped)
+
+[GNU make 3.82 run time error on Ubuntu-20.04: Segmentation fault (core dumped)](https://stackoverflow.com/questions/73434446/gnu-make-3-82-run-time-error-on-ubuntu-20-04-segmentation-fault-core-dumped)  
+[sailfishos](https://github.com/sailfishos/make)  
+
+    gnu: make: Fix compatibility with glibc 2.27
+
+    /* Similarly for lstat.  */ #if !defined(lstat) && !defined(WINDOWS32) || defined(VMS) # ifndef VMS
+    #  ifndef HAVE_SYS_STAT_H
+    int lstat (const char *path, struct stat *sbuf);
+    #  endif
+    # else
+        /* We are done with the fake lstat.  Go back to the real lstat */
+    #   ifdef lstat
+    #     undef lstat
+    #   endif
+    # endif
+    # define local_lstat lstat
+    #elif defined(WINDOWS32)
+    /* Windows doesn't support lstat().  */
+    # define local_lstat local_stat
+    #else
+    static int
+    local_lstat (const char *path, struct stat *buf)
+    {
+      int e;
+      EINTRLOOP (e, lstat (path, buf));
+      return e;
+    }
+    #endif
+
+    void
+    dir_setup_glob (glob_t *gl)
+    {
+      gl->gl_opendir = open_dirstream;
+      gl->gl_readdir = read_dirstream;
+      gl->gl_closedir = ansi_free;
+      gl->gl_lstat = local_lstat;
+      gl->gl_stat = local_lstat;
+      /* We don't bother setting gl_lstat, since glob never calls it.
+         The slot is only there for compatibility with 4.4 BSD.  */
+    }
+
+    void
+    hash_init_directories (void)
+    {
+      hash_init (&directories, DIRECTORY_BUCKETS,
+                 directory_hash_1, directory_hash_2, directory_hash_cmp);
+      hash_init (&directory_contents, DIRECTORY_BUCKETS,
+                 directory_contents_hash_1, directory_contents_hash_2,
+                 directory_contents_hash_cmp);
+    }
+
+### MODULE.TARGET.SHARED_LIBRARIES.xxx already defined by xxx
+
+    1. make clean && make clobber // 可能是有残留
+
+    2. 删除多余的
+    rm external/arm-trusted-firmware/lib/zlib/zlib/ -rf
 
 ## Reference
 [Android Open Source Project](https://source.android.com/docs/setup)  
@@ -111,3 +266,8 @@ Cupcake     1.5   API      级别  3，NDK  1
 
 [[GUIDE][COMPLETE] Android ROM Development From Source To End](https://forum.xda-developers.com/t/guide-complete-android-rom-development-from-source-to-end.2814763/)  
 [[Guide][Video Tutorial] How to build Custom ROMs and Kernels![10,P,O,N,M,L]](https://forum.xda-developers.com/t/guide-video-tutorial-how-to-build-custom-roms-and-kernels-10-p-o-n-m-l.3814251/)  
+[[ROM] [4.4.4] [AOSP] Paranoid Rastakat](https://forum.xda-developers.com/t/rom-4-4-4-aosp-paranoid-rastakat.2520202/)  
+[Build AOSP KitKat 4.4](https://developer.sony.com/develop/open-devices/guides/aosp-build-instructions/build-aosp-kitkat-4-4#tutorial-step-1)  
+
+
+

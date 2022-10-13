@@ -55,5 +55,16 @@ excerpt: "macOS brew换源"
     cd "$(brew --repo)/Library/Taps/homebrew/homebrew-cask"
     git remote set-url origin https://github.com/Homebrew/homebrew-cask.git 
 
+### brew tap
+
+    brew tap homebrew/cask           // Application
+    brew tap homebrew/cask-fonts     // 字体源
+    brew tap homebrew/cask-versions  // 老版本应用
+    brew tap homebrew/core
+    brew tap homebrew/command-not-found // 未安全命令提示
+    brew tap homebrew/cask-drivers   // 驱动
+    brew tap                         // 显示当前源
+    brew untap <..>                  // 卸载源
+
 ### Reference
 [Homebrew切换为国内镜像源](http://t.zoukankan.com/anly95-p-14728311.html)  
