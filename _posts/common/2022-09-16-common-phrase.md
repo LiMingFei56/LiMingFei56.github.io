@@ -5,8 +5,12 @@ categories: common
 tags: [common]
 date: 2022-09-16
 ---
+## Phrases
 
-## web
+* [UI User Interface 用户界面]()
+* [UE or UX User Experience]()
+
+### web
 
 * [BI Business intelligence 商业智能](https://en.wikipedia.org/wiki/Business_intelligence)  
  
@@ -37,6 +41,12 @@ date: 2022-09-16
 * [Microservices 微服务](https://baike.baidu.com/item/%E5%BE%AE%E6%9C%8D%E5%8A%A1/18758759?fr=aladdin)
 * [ServiceMesh 服务网格](https://zhuanlan.zhihu.com/p/61901608)
 
+* [PWA Progressive Web App 渐进式网页应用](https://baike.baidu.com/item/PWA/22378897?fr=aladdin)
+* [SSO Single Sign On 单点登录](https://baike.baidu.com/item/SSO/3451380?fromModule=lemma_search-box)
+* [SPA Single-Page Application 单页面应用]
+* [SSR Server-Side Rendering 服务端渲染]
+* [SSG Static Site Generation 静态端渲染]
+
 
 ### language
 
@@ -58,6 +68,7 @@ date: 2022-09-16
 * [CDN Content Delivery Network 内容分发网络](https://baike.baidu.com/item/CDN%E6%8A%80%E6%9C%AF/2277971?fr=aladdin)
 * [GFW Great firewall 中国防火墙](https://blog.mczyx.online/%E4%BB%8E-gfw-%E5%8E%9F%E7%90%86%E5%88%B0%E7%BF%BB%E5%A2%99%E5%8E%9F%E7%90%86%E5%92%8C%E5%8D%8F%E8%AE%AE/)
 * [COS Console Operating System 控制台操作系统](https://www.abbreviationfinder.org/cn/acronyms/cos_console-operating-system.html)
+* [CMS Content Management System 内容管理系统]
 
 ### data
 
@@ -77,6 +88,9 @@ date: 2022-09-16
 * [Scrum 迭代式增量软件开发过程]
 * [ExtremeProgramming XP 极限编程]
 * [POC Proof of concept 概念性验证]
+* [VCS Version Control Systems 版本控制系统, 代表rcs](https://en.wikipedia.org/wiki/Version_control)
+* [CVCS Centralized Version Control Systems 集中化的版本控制系统]
+* [DVCS Distributed Version Control Systems 分布式的版本控制系统]
 
 ### other
 

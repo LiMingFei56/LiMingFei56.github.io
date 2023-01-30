@@ -21,6 +21,8 @@ date: 2022-12-02
 
     Ref link: https://github.com/skygragon/leetcode-cli-plugins/blob/master/docs/cookie.chrome.md
 
+    leetcode user -l -v
+
 ### 登录中国服
 
     /opt/homebrew/lib/node_modules/leetcode-cli/lib/config.js

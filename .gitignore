@@ -5,3 +5,6 @@ _site
 vendor
 tags
 .DS_Store
+node_modules
+minemap/*.png
+package-lock.json
