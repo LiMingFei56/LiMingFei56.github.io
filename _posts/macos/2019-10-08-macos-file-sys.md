@@ -1,11 +1,21 @@
 ---
 layout: post
-title: "Xcode 安装提示 Not enough disk space"
-categories: xcode
-tags: [xcode]
+title: "macOS 文件系统"
+categories: macos
+tags: [macos]
 date: 2019-10-08
 excerpt: "Xcode 安装提示 Not enough disk space"
 ---
+
+## macOS 文件系统
+
+* chflags – change file flags
+
+    sudo chflags uchg /etc/hosts
+    sudo chflags nouchg /etc/hosts
+    sudo chflags schg /etc/hosts
+    sudo chflags noschg /etc/hosts
+    
 
 ## Xcode 安装提示 Not enough disk space
 
