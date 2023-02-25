@@ -25,6 +25,7 @@ date: 2022-09-16
 * [RDS Relational Database Service 关系型数据库服务](https://baike.baidu.com/item/rds/1236881?fr=aladdin)  
 * [SCM Software configuration management 软件配置管理](https://baike.baidu.com/item/scm/2039966?fr=aladdin)  
 * [MMP Massively Parallel Processing 大规模并行处理](https://www.factioninc.com/blog/it-challenges/massively-parallel-processing/)  
+* [SLB Server Load Balancer 服务器负载均衡器](https://baike.baidu.com/item/%E8%B4%9F%E8%BD%BD%E5%9D%87%E8%A1%A1/932451?fr=aladdin)
  
 * [ODPS Open Data Processing Service MaxCompute 云原生大数据计算服务](https://help.aliyun.com/product/27797.html)  
 * [OLAP Online analytical processing 在线分析处理](https://en.wikipedia.org/wiki/Online_analytical_processing)  
@@ -46,6 +47,8 @@ date: 2022-09-16
 * [SPA Single-Page Application 单页面应用]
 * [SSR Server-Side Rendering 服务端渲染]
 * [SSG Static Site Generation 静态端渲染]
+
+* [DevOps](https://baike.baidu.com/item/DevOps/2613029?fr=aladdin)
 
 
 ### language
