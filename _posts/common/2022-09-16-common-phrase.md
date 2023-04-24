@@ -1,8 +1,7 @@
 ---
 layout: post
 title: 名词解释
-categories: common
-tags: [common]
+categories: common tags: [common]
 date: 2022-09-16
 ---
 ## Phrases
@@ -84,6 +83,7 @@ date: 2022-09-16
 * [POJO Plain Ordinary Java Object 普通Java对象]
 * [Entity 表-实体对象]
 * [CRUD Create Read Update Delete 增加 读取 更新 删除]
+* [CTE 公用表表达式]
 
 ### project
 
