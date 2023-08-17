@@ -29,3 +29,4 @@ date: 2022-09-23
 
 [Android FileHost](https://androidfilehost.com/)  
 [TeamWin - TWRP](https://twrp.me/)  
+[自己编译安卓系统实践](https://blog.csdn.net/kfyzjd2008/article/details/124267159)
