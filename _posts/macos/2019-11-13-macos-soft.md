@@ -23,6 +23,10 @@ summary: macOS 卸载应用
 使用`cleaner one`
 
 
+### 清理macOS数据库
+
+    sfltool resetbtm
+
 ### Reference
 
 

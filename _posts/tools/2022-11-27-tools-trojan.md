@@ -105,10 +105,62 @@ date: 2022-11-27
 
     This certificate expires on 2023-05-26.
 
-## Reference
-[Trojan](https://trojan-gfw.github.io/trojan/)  
-[科学上网新姿势-Trojan小白搭建完全图文教程](https://www.4spaces.org/935.html)  
-[Trojan 搭建记录](https://blog.starryvoid.com/archives/461.html)  
-[Trojan 共用 443 端口方案](https://www.chengxiaobai.com/trouble-maker/trojan-shared-443-port-scheme)  
-[Nginx+https+Trojan](https://blog.csdn.net/weixin_42831646/article/details/106874746)  
 
+#### nginx
+
+            server {
+                listen              6005 ssl;                    # 设置监听端口为443
+
+                ssl_protocols       TLSv1.2 TLSv1.3;      # 设置使用的SSL协议版本
+
+                ssl_certificate     /opt/certbot/output/configdir/live/mymikelmf56.win/fullchain.pem; # 证书地址
+                ssl_certificate_key /opt/certbot/output/configdir/live/mymikelmf56.win/privkey.pem; # 秘钥地址
+                ssl_session_cache   shared:SSL:10m;             # SSL TCP会话缓存设置共享内存区域名为
+                                                                # SSL，区域大小为10MB
+                ssl_session_timeout 10m;                        # SSL TCP会话缓存超时时间为10分钟
+                proxy_protocol      on; # 开启proxy_protocol获取真实ip
+                proxy_pass          127.0.0.1:6006; # 后端Trojan监听端口
+        }
+
+        server {
+                listen              6005;
+                server_name mymikelmf56.win;
+                return 301 https://mymikelmf56.win$request_url;
+
+        }
+
+        server {
+                listen 127.0.0.1:80 default_server;
+                server_name mymikelmf56.win;
+
+                location / {
+                        proxy_pass https://www.ietf.org;
+                }
+
+        }
+
+        server {
+                listen 127.0.0.1:80;
+
+                server_name <10.10.10.10>;
+
+                return 301 https://mymikelmf56.win$request_uri;
+        }
+
+        server {
+                listen 0.0.0.0:80;
+                listen [::]:80;
+
+                server_name _;
+
+                return 301 https://$host$request_uri;
+        }
+
+
+## Reference
++ [Trojan](https://trojan-gfw.github.io/trojan/)  
++ [科学上网新姿势-Trojan小白搭建完全图文教程](https://www.4spaces.org/935.html)  
++ [Trojan 搭建记录](https://blog.starryvoid.com/archives/461.html)  
++ [Trojan 共用 443 端口方案](https://www.chengxiaobai.com/trouble-maker/trojan-shared-443-port-scheme)  
++ [Nginx+https+Trojan](https://blog.csdn.net/weixin_42831646/article/details/106874746)  
++ [Nginx+Trojan暂时滴神！](https://xrayr-project.github.io/XrayR-doc/za-xiang/nginx+trojan-zan-shi-di-shen.html)
