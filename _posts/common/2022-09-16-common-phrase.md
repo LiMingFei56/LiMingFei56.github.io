@@ -100,5 +100,7 @@ date: 2022-09-16
 [PDA Personal Digital Assistant 掌上电脑](https://baike.baidu.com/item/%E6%8E%8C%E4%B8%8A%E7%94%B5%E8%84%91/576782?fromtitle=pda&fromid=111022&fr=aladdin)  
 
 
+ ArkUI
+ hapjs
 
 ## Reference

@@ -18,4 +18,23 @@ date: 2023-07-17
 + [好快活]
 + [猪八戒]
 
+widgetbook: ^3.3.0
+A Flutter package that helps developers catalog their widgets, test them quickly on multiple devices and themes and share them easily with designers and clients. Inspired by Storybook.js.
+
+configurations.all {
+    resolutionStrategy {
+        eachDependency {
+            if ((requested.group == "org.jetbrains.kotlin") && (requested.name.startsWith("kotlin-stdlib"))) {
+                useVersion("1.8.0")
+        }
+    }
+}
+
+file_selector: ^1.0.1
+flutter pub add file_selector fixed
+
+// org.jetbrains.kotlin:kotlin-bom artifact purpose is to align kotlin stdlib and related code versions.
+// See: https://youtrack.jetbrains.com/issue/KT-55297/kotlin-stdlib-should-declare-constraints-on-kotlin-stdlib-jdk8-and-kotlin-stdlib-jdk7
+implementation(platform("org.jetbrains.kotlin:kotlin-bom:1.8.10"))
+
 ## Reference
