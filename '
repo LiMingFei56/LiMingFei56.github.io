@@ -1,0 +1,16 @@
+---
+layout: post
+title: Flutter RenderObject
+categories: flutter
+tags: [flutter]
+date: 2024-04-06
+---
+
+## Flutter RenderObject
+
+> layout, painting, compositing and hit-testing
+> render tree
+> Every widget bears an optional direct connection to a specific instance of RenderObject
+
+## Reference
++ [Understanding Flutter RenderObject Class: The Core of Flutter Rendering Engine](https://www.dhiwise.com/post/understanding-flutter-renderobject-class-the-core-of-flutter)

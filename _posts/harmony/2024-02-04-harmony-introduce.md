@@ -153,8 +153,7 @@ HAR资源文件出现重名冲突时, DevEco Studio会以优先级进行覆盖(�
 
 ## Reference
 
-+ [HarmonyOS](https://developer.huawei.com/consumer/cn/hmos/overview/?catalogVersion=V2)
-+ [HarmonyOS Developer](https://developer.harmonyos.com/cn/docs/documentation/doc-guides-V3/start-overview-0000001478061421-V3?catalogVersion=V3)
++ [HarmonyOS Developer](https://developer.huawei.com/consumer/cn/)
 + [DevEco Studio](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V2/devecostudio_userguide-0000001054619202-V2)
 + [术语](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V2/glossary-0000000000029587-V2)
 + [OpenHarmony](https://www.openharmony.cn/mainPlay)

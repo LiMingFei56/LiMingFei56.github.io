@@ -42,4 +42,6 @@ date: 2024-02-09
 @Watch用于监听状态变量的变化。
 
 $$运算符：给内置组件提供TS变量的引用，使得TS变量和内置组件的内部状态保持同步。
+
 ## Reference
++ [状态管理概述](https://developer.harmonyos.com/cn/docs/documentation/doc-guides-V3/arkts-state-management-overview-0000001524537145-V3)

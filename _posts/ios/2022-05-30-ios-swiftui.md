@@ -8,6 +8,14 @@ date: 2022-05-30
 
 ## iOS SwiftUI
 
+> 支持情况
+
+    iOS13.0 + Beta
+    macOS10.15 + beta
+    tvOS 13.0+ beta
+    watchOS 6.0+ beta
+
+
 > 打开SwiftUI预览, Editor > Canvas, 可以由代码和Inspector 控制 (Command-click view). 
 
 ### Preview

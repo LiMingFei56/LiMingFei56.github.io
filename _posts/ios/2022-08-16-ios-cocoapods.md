@@ -27,5 +27,19 @@ date: 2022-08-16
     git remote set-url origin https://github.com/CocoaPods/Specs.git
     git pull
 
+### 找不到最新版本库
+
+    pod repo update
+    pod update GDTMobSDK
+
+    gem cleanup
+    brew uninstall cocoapods
+    sudo gem uninstall cocoapods
+    sudo gem install cocoapods
+    cd ios
+    pod install --repo-update
+
+    
+
 ## Reference
 [COCOAPODS](https://cocoapods.org/)  
