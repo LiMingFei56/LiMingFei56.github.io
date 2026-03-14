@@ -108,4 +108,82 @@ date: 2024-08-05
 * readConcern：操作的读关注级别。
 * writeConcern：操作的写关注级别。
 
+
+### restart
+
+# mongod.conf
+
+# for documentation of all options, see:
+#   http://docs.mongodb.org/manual/reference/configuration-options/
+
+# where to write logging data.
+systemLog:
+  destination: file
+  logAppend: true
+  path: /dev/null
+#  path: /data/mongo_log/mongod.log
+  quiet: true
+
+# Where and how to store data.
+storage:
+  dbPath: /data/mongo_data
+  journal:
+    enabled: true
+#  engine:
+#  wiredTiger:
+
+# how the process runs
+processManagement:
+  fork: true  # fork and run in background
+  pidFilePath: /var/run/mongodb/mongod.pid  # location of pidfile
+  timeZoneInfo: /usr/share/zoneinfo
+
+# network interfaces
+net:
+  port: 27017
+  bindIp: 94.246.94.12 # Enter 0.0.0.0,:: to bind to all IPv4 and IPv6 addresses or, alternatively, use the net.bindIpAll setting.
+
+
+security:
+  authorization: enabled
+  keyFile: /data/mongodb.key
+#operationProfiling:
+
+replication:
+  replSetName: "rs0"
+
+#sharding:
+
+## Enterprise-Only Options
+
+#auditLog:
+
+#snmp:
+
+
+
+sudo systemctl stop mongodb
+
+# 停止 mongod 服务
+systemctl stop mongod
+
+mongod --dbpath /data --repair
+
+# 未持久化的数据, 删除会造成数据不一致
+sudo ls -al /data/mongo_data/journal
+
+# 诊断数据
+sudo ls -al /data/mongo_data/diagnostic.data
+
+systemctl start mongod
+
+
+### 什么是 oplog
+
+Oplog（Operations Log） 是 MongoDB 副本集用来同步数据的操作日志。
+
+它记录了所有写操作（insert/update/delete），副本集成员会通过 oplog 同步数据。
+
+存储在 local.oplog.rs 集合里。
+
 ## Reference
